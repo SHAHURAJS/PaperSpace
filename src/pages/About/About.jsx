@@ -1,5 +1,9 @@
 import { useState } from 'react';
 import { ArrowLeft } from 'lucide-react';
+import CollabAbout from '../../assets/about/CollabAbout.jpg';
+import Pratik from '../../assets/about/Pratik.JPG';
+import Shounak from '../../assets/about/Shounak.JPG';
+import Sushant from '../../assets/about/Sushant.JPG';
 
 function AboutPage() {
   const [currentView, setCurrentView] = useState('main');
@@ -8,30 +12,33 @@ function AboutPage() {
   const teamMembers = [
     {
       id: 'shounak',
-      name: 'Shounak Patel',
-      position: 'Principal Architect',
-      image: '/api/placeholder/400/500',
+      name: 'Ar. Shounak Joshi',
+      position: 'Partner – Client Relations & Execution Head',
+      image: Shounak,
       bio: `Shounak brings over 15 years of architectural expertise to every project. With a passion for sustainable design and innovative solutions, he has led numerous award-winning projects across residential and commercial sectors. His approach combines technical precision with creative vision, ensuring each space tells a unique story while meeting the highest standards of functionality and aesthetics.
 
-      Shounak holds a Master's degree in Architecture from a prestigious institution and is a licensed architect with extensive experience in project management, client relations, and design development. He believes that great architecture should enhance human experiences while respecting environmental considerations.`
+Shounak holds a Master's degree in Architecture from a prestigious institution and is a licensed architect with extensive experience in project management, client relations, and design development. He believes that great architecture should enhance human experiences while respecting environmental considerations.`,
+      quote: '"For me, architecture begins with understanding people. Translating a client\'s vision into built form is where our journey truly begins."'
     },
     {
-      id: 'priya',
-      name: 'Priya Sharma',
-      position: 'Lead Designer',
-      image: '/api/placeholder/400/500',
-      bio: `Priya is our creative visionary with a keen eye for detail and spatial relationships. With 10 years of experience in interior and architectural design, she specializes in creating harmonious environments that reflect our clients' personalities and lifestyles. Her expertise spans from conceptual design to detailed execution.
+      id: 'pratik',
+      name: 'Ar. Pratik Bhende',
+      position: 'Partner – Design Head',
+      image: Pratik,
+      bio: `Pratik is our creative visionary with a keen eye for detail and spatial relationships. With 10 years of experience in interior and architectural design, he specializes in creating harmonious environments that reflect our clients' personalities and lifestyles. His expertise spans from conceptual design to detailed execution.
 
-      She has worked on diverse projects ranging from luxury residences to boutique commercial spaces. Priya's design philosophy centers on creating timeless spaces that balance form and function, always with a focus on sustainability and user experience. Her collaborative approach ensures that every project benefits from multidisciplinary expertise.`
+He has worked on diverse projects ranging from luxury residences to boutique commercial spaces. Pratik's design philosophy centers on creating timeless spaces that balance form and function, always with a focus on sustainability and user experience. His collaborative approach ensures that every project benefits from multidisciplinary expertise.`,
+      quote: '"Design is more than aesthetics; it\'s about purpose, context, and experience. I believe in crafting spaces that speak to the soul."'
     },
     {
-      id: 'arjun',
-      name: 'Arjun Kumar',
-      position: 'Project Director',
-      image: '/api/placeholder/400/500',
-      bio: `Arjun oversees all project operations with meticulous attention to detail and exceptional organizational skills. With 12 years of experience in construction management and architectural coordination, he ensures that every project is delivered on time, within budget, and to the highest quality standards.
+      id: 'sushant',
+      name: 'Ar. Sushant Bhujbal',
+      position: 'Partner – Execution, Legal & Liaisoning Head',
+      image: Sushant,
+      bio: `Sushant oversees all project operations with meticulous attention to detail and exceptional organizational skills. With 12 years of experience in construction management and architectural coordination, he ensures that every project is delivered on time, within budget, and to the highest quality standards.
 
-      His background includes both field experience and design coordination, making him uniquely qualified to bridge the gap between creative vision and practical execution. Arjun is passionate about implementing sustainable building practices and innovative construction techniques that push the boundaries of traditional architecture.`
+His background includes both field experience and design coordination, making him uniquely qualified to bridge the gap between creative vision and practical execution. Sushant is passionate about implementing sustainable building practices and innovative construction techniques that push the boundaries of traditional architecture.`,
+      quote: '"Bridging the gap between vision and reality requires not just design, but precision, process, and policy. I ensure ideas stand on solid ground."'
     }
   ];
 
@@ -60,12 +67,60 @@ function AboutPage() {
       letterSpacing: '-0.02em',
       fontFamily: '"Playfair Display", serif'
     },
+    subsectionTitle: {
+      fontSize: '28px',
+      fontWeight: '600',
+      color: '#1e293b',
+      marginTop: '48px',
+      marginBottom: '24px',
+      letterSpacing: '-0.01em'
+    },
     text: {
       color: '#475569',
       marginBottom: '24px',
       lineHeight: '1.7',
-      fontSize: '20px',
+      fontSize: '18px',
       fontWeight: '300'
+    },
+    boldText: {
+      fontWeight: '600',
+      color: '#1e293b'
+    },
+    quote: {
+      fontSize: '20px',
+      fontStyle: 'italic',
+      color: '#334155',
+      marginTop: '32px',
+      padding: '24px',
+      background: 'rgba(255, 255, 255, 0.5)',
+      borderRadius: '12px',
+      borderLeft: '4px solid #1e293b'
+    },
+    studioQuote: {
+      fontSize: '24px',
+      fontStyle: 'italic',
+      color: '#1e293b',
+      textAlign: 'center',
+      marginTop: '48px',
+      padding: '32px',
+      background: 'rgba(255, 255, 255, 0.8)',
+      borderRadius: '16px',
+      boxShadow: '0 8px 25px rgba(0, 0, 0, 0.08)'
+    },
+    tagline: {
+      fontSize: '32px',
+      fontWeight: '300',
+      color: '#1e293b',
+      textAlign: 'center',
+      marginTop: '32px',
+      fontFamily: '"Playfair Display", serif'
+    },
+    taglineSubtext: {
+      fontSize: '18px',
+      color: '#64748b',
+      textAlign: 'center',
+      marginTop: '8px',
+      fontStyle: 'italic'
     },
     imagePlaceholder: {
       background: 'rgba(255, 255, 255, 0.8)',
@@ -107,14 +162,14 @@ function AboutPage() {
       cursor: 'pointer',
       transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
       boxShadow: '0 10px 25px rgba(0, 0, 0, 0.08)',
-      minHeight: '320px'
+      minHeight: '380px'
     },
     teamImage: {
-      width: '160px',
-      height: '160px',
-      borderRadius: '50%',
+      width: '100%',
+      height: '300px',
+      borderRadius: '16px',
       backgroundColor: '#e2e8f0',
-      margin: '0 auto 32px auto',
+      margin: '0 auto 24px auto',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
@@ -125,15 +180,22 @@ function AboutPage() {
       boxShadow: '0 8px 20px rgba(0, 0, 0, 0.1)'
     },
     teamName: {
-      fontSize: '28px',
+      fontSize: '24px',
       fontWeight: '500',
       color: '#1e293b',
       marginBottom: '12px'
     },
     teamPosition: {
-      fontSize: '18px',
+      fontSize: '16px',
       color: '#64748b',
-      fontWeight: '300'
+      fontWeight: '300',
+      marginBottom: '16px'
+    },
+    teamQuote: {
+      fontSize: '14px',
+      fontStyle: 'italic',
+      color: '#475569',
+      lineHeight: '1.5'
     },
     memberDetailView: {
       display: 'grid',
@@ -178,6 +240,16 @@ function AboutPage() {
       fontWeight: '300',
       whiteSpace: 'pre-line'
     },
+    memberQuote: {
+      fontSize: '20px',
+      fontStyle: 'italic',
+      color: '#334155',
+      marginTop: '32px',
+      padding: '24px',
+      background: 'rgba(255, 255, 255, 0.5)',
+      borderRadius: '12px',
+      borderLeft: '4px solid #1e293b'
+    },
     backButton: {
       display: 'flex',
       alignItems: 'center',
@@ -209,14 +281,11 @@ function AboutPage() {
   const handleTeamMemberClick = (member) => {
     setSelectedMember(member);
     setCurrentView('member');
-    // Update URL without page reload
-    window.history.pushState({}, '', `/about/${member.id}`);
   };
 
   const handleBackClick = () => {
     setCurrentView('main');
     setSelectedMember(null);
-    window.history.pushState({}, '', '/about');
   };
 
   const renderMemberDetail = () => (
@@ -252,6 +321,7 @@ function AboutPage() {
             <h1 style={styles.memberName}>{selectedMember?.name}</h1>
             <p style={styles.memberPosition}>{selectedMember?.position}</p>
             <p style={styles.memberBio}>{selectedMember?.bio}</p>
+            <div style={styles.memberQuote}>{selectedMember?.quote}</div>
           </div>
         </div>
       </div>
@@ -264,24 +334,57 @@ function AboutPage() {
         <div className="about-grid" style={styles.grid}>
           <div>
             <h1 style={styles.sectionTitle}>About Our Studio</h1>
+            
+            <h2 style={styles.subsectionTitle}>About Office</h2>
+            
+            <h3 style={{...styles.boldText, fontSize: '20px', marginTop: '32px', marginBottom: '16px'}}>Vision</h3>
             <p style={styles.text}>
-              With over 15 years of experience in architectural design, we specialize in creating 
-              spaces that inspire and endure. Our team combines creative vision with technical 
-              expertise to deliver exceptional results.
+              To shape meaningful, timeless spaces that seamlessly blend design innovation, functional clarity, 
+              and contextual relevance—making architecture a catalyst for better living and lasting impact.
             </p>
+
+            <h3 style={{...styles.boldText, fontSize: '20px', marginTop: '32px', marginBottom: '16px'}}>Mission</h3>
             <p style={styles.text}>
-              From residential homes to commercial complexes, we approach each project with 
-              meticulous attention to detail and a commitment to sustainable design practices.
+              At Studio Paper Space, we aim to design thoughtful spaces that are functional, beautiful, and built to last. 
+              We work closely with our clients, combining creative ideas with practical solutions, and ensure every project 
+              is delivered with clarity, care, and precision.
             </p>
+
+            <h3 style={{...styles.boldText, fontSize: '20px', marginTop: '32px', marginBottom: '16px'}}>Ideology</h3>
             <p style={styles.text}>
-              Our philosophy centers on the belief that great architecture should enhance the human 
-              experience while respecting the environment. We work closely with our clients to 
-              understand their vision and transform it into reality.
+              We believe that:<br/>
+              <strong>Design is dialogue</strong> – between ideas, users, environment, and culture.<br/>
+              <strong>Execution is expression</strong> – where discipline and detail bring design to life.<br/>
+              <strong>Every space holds power</strong> – when shaped with intention, sensitivity, and precision.<br/>
+              Our strength lies in collaborative minds that respect both creativity and constructability.
             </p>
+
+            <div style={styles.tagline}>
+              Precision on Paper. Power in Space.
+            </div>
+            <div style={styles.taglineSubtext}>
+              A philosophy we live by. A promise we build with.
+            </div>
           </div>
+          
           <div style={styles.imagePlaceholder}>
-            <span>Studio Team Photo</span>
+            <img 
+              src={CollabAbout} 
+              alt="Studio Collaboration" 
+              style={{ 
+                width: '100%', 
+                height: '100%', 
+                objectFit: 'cover', 
+                borderRadius: '20px' 
+              }}
+            />
           </div>
+        </div>
+
+        <div style={styles.studioQuote}>
+          <strong>Studio Paper Space</strong><br/>
+          "At Studio Paper Space, we design with intent, build with integrity, and collaborate with passion. 
+          Every line we draw shapes a story worth telling."
         </div>
         
         <div style={styles.teamSection}>
@@ -311,6 +414,7 @@ function AboutPage() {
                 </div>
                 <h3 style={styles.teamName}>{member.name}</h3>
                 <p style={styles.teamPosition}>{member.position}</p>
+                <p style={styles.teamQuote}>{member.quote}</p>
               </div>
             ))}
           </div>

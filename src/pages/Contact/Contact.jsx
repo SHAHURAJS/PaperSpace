@@ -122,15 +122,15 @@ function ContactPage() {
         <div style={styles.grid}>
           <div style={styles.contactItem}>
             <Phone size={20} style={{ color: '#6B7280' }} />
-            <span style={styles.contactText}>+1 (555) 123-4567</span>
+            <span style={styles.contactText}>8855837620</span>
           </div>
           <div style={styles.contactItem}>
             <Mail size={20} style={{ color: '#6B7280' }} />
-            <span style={styles.contactText}>hello@archstudio.com</span>
+            <span style={styles.contactText}>studiopaperspace@gmail.com</span>
           </div>
           <div style={styles.contactItem}>
             <MapPin size={20} style={{ color: '#6B7280' }} />
-            <span style={styles.contactText}>New York, NY</span>
+            <span style={styles.contactText}>Pune,Maharashtra</span>
           </div>
         </div>
 
