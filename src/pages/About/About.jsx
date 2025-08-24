@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { ArrowLeft } from 'lucide-react';
-import CollabAbout from '../../assets/about/CollabAbout.jpg';
+import CollabAbout from '../../assets/about/CollabAbout.JPG';
 import Pratik from '../../assets/about/Pratik.JPG';
 import Shounak from '../../assets/about/Shounak.JPG';
 import Sushant from '../../assets/about/Sushant.JPG';
