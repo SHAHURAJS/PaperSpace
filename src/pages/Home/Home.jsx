@@ -721,7 +721,7 @@ function HomePage({onNavigate}) {
         <section className="services-section">
           <div className="services-container">
             <h2 className="services-title">
-              Why Choose ArchStudio
+              Why Choose StudioPaperSpace
             </h2>
             
             <div className="services-grid">
