@@ -1,4 +1,5 @@
-import { useState } from 'react';
+
+import { useState, useEffect } from 'react';
 import { ArrowLeft, ChevronLeft, ChevronRight, Play } from 'lucide-react';
 import BHK1 from '../../assets/1.5bhk/BHK1.png'
 import BHK2 from '../../assets/1.5bhk/BHK2.png'
@@ -43,7 +44,7 @@ import Hospital8 from '../../assets/inthospital/Hospital8.png'
 import Jayanti1 from '../../assets/shivjayanti/Jayanti1.png'
 import Jayanti2 from '../../assets/shivjayanti/Jayanti2.png'
 
-function ProjectsPage() {
+function ProjectsPage({ onNavigate, projectSlug }) {
   const [currentView, setCurrentView] = useState('main');
   const [selectedProject, setSelectedProject] = useState(null);
   const [currentMediaIndex, setCurrentMediaIndex] = useState(0);
@@ -54,6 +55,7 @@ function ProjectsPage() {
       title: "Wedding Avenue", 
       category: "Hospitality", 
       year: "2024",
+      slug: "weddingavenue",
       description: `Set against a scenic mountain backdrop, this wedding destination is designed to offer a complete and memorable experience. The venue features a grand indoor hall for 1500 guests, a comfortable indoor dining space for 500, and an open lawn area that can host 1500+ guests.
 
 The layout includes well-appointed cottages for guests and a premium private cottage for the bride and groom, ensuring both luxury and privacy. A swimming pool and beautifully planned landscaped areas add charm, creating perfect spots for photos and peaceful moments.
@@ -74,6 +76,7 @@ Designed with a natural slope in mind, the venue blends beautifully with its sur
       title: "INT 1.5 BHK", 
       category: "Residential Interior", 
       year: "2024",
+      slug: "int-1-5-bhk",
       description: `This 1.5 BHK home has been designed to feel modern, cozy, and practical. The living room uses soft colors, warm lighting, and comfortable furniture to create a welcoming space for family time. The kitchen is smartly planned with neat storage, a stylish backsplash, and is combined with a compact Pooja ghar that blends beautifully into the design. The dining area is convertible, making it easy to use the space in different ways depending on the need. 
 
 The bedroom is calm and comfortable, with smart storage and soothing décor, while the extra half-room works as a flexible space — perfect for a study, guest corner, or relaxation nook. Wooden finishes, greenery, and simple décor touches run through the whole home, making this compact 1.5 BHK apartment look spacious, functional, and warm.`,
@@ -88,6 +91,7 @@ The bedroom is calm and comfortable, with smart storage and soothing décor, whi
       title: "INT 2 BHK", 
       category: "Residential Interior", 
       year: "2024",
+      slug: "int-2-bhk",
       description: `This 2BHK home is designed with a modern yet warm feel, creating a cozy and inviting space. The living room features a soft neutral sofa with a sleek TV unit, keeping the area clean and uncluttered. A simple ceiling design with soft lighting adds a calm glow. The dining area sits right beside, with a compact table and a stylish hanging light, while mirrors or textures on the wall make the space look bigger.
 
 The kitchen continues the modern look with clean lines, smart storage, and fresh finishes that keep it both practical and stylish. The master bedroom focuses on comfort, with a plush headboard, calm neutral tones, and an accent wall for depth. Warm layered lighting makes it a perfect retreat. The second bedroom is versatile, designed to fit a queen or twin beds, with light shades that keep it bright and accents that make it suitable for kids, guests, or study use.
@@ -113,7 +117,6 @@ Across the home, furniture is simple and minimal, colors stay soft with gentle c
         { type: 'image', src: B17, alt: 'Master Bedroom' },
         { type: 'image', src: B18, alt: 'Master Bedroom' },
         { type: 'image', src: B19, alt: 'Master Bedroom' },
-
       ]
     },
     { 
@@ -121,6 +124,7 @@ Across the home, furniture is simple and minimal, colors stay soft with gentle c
       title: "INT Clinic (Hospital)", 
       category: "Healthcare Interior", 
       year: "2023",
+      slug: "int-clinic-hospital",
       description: `This clinic interior design project blends modern elegance with a calm, welcoming atmosphere. The reception is styled with a marble-finished desk and warm wooden accents, creating a professional yet inviting first impression. Neutral tones, soft Roman blinds, and abundant natural light enhance the sense of comfort, while seating combines upholstered benches and sleek chairs for patient ease. Thoughtful greenery and subtle décor elements add freshness and warmth.
 
 A dedicated doctor's relaxation room provides a private retreat, designed with cozy lounge seating, soothing teal cabinetry, and natural accents that encourage rest between consultations. Across the clinic, textures of wood, marble, and fabric are balanced with soft lighting to create harmony. The result is a seamless, modern space that feels professional, comfortable, and healing.`,
@@ -140,6 +144,7 @@ A dedicated doctor's relaxation room provides a private retreat, designed with c
       title: "Arch Bungalow", 
       category: "Residential Architecture", 
       year: "2023",
+      slug: "arch-bungalow",
       description: `This bungalow designed by our studio reflects a balance of simplicity and elegance. The clean, straight lines of the façade are softened with natural tones and textures, creating a warm and welcoming appearance. Large windows allow light to pour in, giving every space an airy and open feeling. Vertical wooden textures add depth to the design, while soft beige tones complement the natural surroundings. 
 
 Each floor is framed with green planters, blending architecture with nature and bringing freshness to the overall look. The balconies provide cozy outdoor corners that connect the indoors to the landscape. Subtle details in the façade add character without overwhelming the design. The ground level maintains a strong, secure base, with patterned gates enhancing the entrance. The proportions are carefully balanced, making the structure feel modern yet timeless. With greenery flowing across the layers, the home feels alive and vibrant. The flat roofline adds to the contemporary style, while keeping the focus on simplicity. This design is both functional and beautiful, reflecting comfort in its true sense. It merges natural charm with modern design language, creating a home that feels stylish yet rooted.`,
@@ -152,6 +157,7 @@ Each floor is framed with green planters, blending architecture with nature and 
       title: "Doctor Bungalow", 
       category: "Residential Architecture", 
       year: "2022",
+      slug: "doctor-bungalow",
       description: `This bungalow is a fine blend of classical elegance and modern sophistication. The exterior carries a timeless charm with tall windows, detailed columns, and graceful balconies that give the home a royal character. Its soft white façade contrasts beautifully with the dark window frames, while the sloping tiled roof adds a subtle traditional touch. The structure feels grand yet balanced, inviting yet private. Large windows flood the interiors with natural light, making the spaces warm and alive throughout the day.
 
 Inside, the home opens into a breathtaking double-height lobby, where a sweeping staircase becomes the central highlight. The staircase, with its delicate wrought iron railing, curves upwards like a piece of art, complemented by the expansive glass wall that frames the outdoors. Natural light plays across the marble flooring, adding depth and elegance to the space. A grand piano and curated artworks enrich the atmosphere, making the interior both luxurious and soulful. The design combines scale with detail, where every corner feels refined and every element has a purpose. This bungalow celebrates both grandeur and comfort, creating a home that is as impressive as it is welcoming.`,
@@ -165,6 +171,7 @@ Inside, the home opens into a breathtaking double-height lobby, where a sweeping
       title: "INT Ek Gaon Ek Shivjayanti", 
       category: "Cultural Interior", 
       year: "2023",
+      slug: "int-ek-gaon-ek-shivjayanti",
       description: `This interior was designed as a thoughtful balance between tradition and functionality. The space carries a cultural essence with its ornate arches, carved columns, and a central backdrop that proudly highlights the grand image of Chhatrapati Shivaji Maharaj as the main focal point. Warm wooden tones and soft lighting create a welcoming and dignified atmosphere, while the seating arrangement is planned for meaningful conversations and gatherings. The chandeliers above add a touch of elegance, blending modern lighting with classic charm. Large windows allow natural light to flow in, ensuring the space remains bright and connected to its surroundings.
 
 More than just a meeting room, this hall holds cultural significance—it is a place where the local Gram Panchayat officials can host meetings, discussions, and cultural seminars. The project reflects how architecture can become a bridge between community needs and design sensibilities. It stands as an example of collaboration between architects and local authorities, creating a space that is not only functional but also rooted in cultural pride. The design nurtures dialogue, respect, and connection—making it both timeless and purposeful.`,
@@ -174,6 +181,21 @@ More than just a meeting room, this hall holds cultural significance—it is a p
       ]
     }
   ];
+
+  // Effect to handle URL-based project selection
+  useEffect(() => {
+    if (projectSlug) {
+      const project = projects.find(p => p.slug === projectSlug);
+      if (project) {
+        setSelectedProject(project);
+        setCurrentView('detail');
+        setCurrentMediaIndex(0);
+      }
+    } else {
+      setCurrentView('main');
+      setSelectedProject(null);
+    }
+  }, [projectSlug]);
 
   const styles = {
     container: {
@@ -401,15 +423,11 @@ More than just a meeting room, this hall holds cultural significance—it is a p
   `;
 
   const handleProjectClick = (project) => {
-    setSelectedProject(project);
-    setCurrentView('detail');
-    setCurrentMediaIndex(0);
+    onNavigate('projects', project.slug);
   };
 
   const handleBackClick = () => {
-    setCurrentView('main');
-    setSelectedProject(null);
-    setCurrentMediaIndex(0);
+    onNavigate('projects');
   };
 
   const nextMedia = () => {
@@ -506,10 +524,10 @@ More than just a meeting room, this hall holds cultural significance—it is a p
           
           <div style={styles.projectInfo}>
             <h1 style={styles.detailTitle}>{selectedProject?.title}</h1>
-            <div style={styles.detailMeta}>
+            {/* <div style={styles.detailMeta}>
               <span style={styles.detailCategory}>{selectedProject?.category}</span>
               <span style={styles.detailYear}>{selectedProject?.year}</span>
-            </div>
+            </div> */}
             <p style={styles.detailDescription}>{selectedProject?.description}</p>
           </div>
         </div>
@@ -546,10 +564,10 @@ More than just a meeting room, this hall holds cultural significance—it is a p
               </div>
               <div style={styles.projectContent}>
                 <h3 style={styles.projectTitle}>{project.title}</h3>
-                <div style={styles.projectMeta}>
+                {/* <div style={styles.projectMeta}>
                   <span style={styles.projectCategory}>{project.category}</span>
                   <span style={styles.projectYear}>{project.year}</span>
-                </div>
+                </div> */}
                 <p style={styles.projectDescription}>
                   {project.description}
                 </p>

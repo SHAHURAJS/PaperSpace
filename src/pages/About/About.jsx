@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, Award, Users, Building, Eye, Target, Lightbulb } from 'lucide-react';
 import CollabAbout from '../../assets/about/CollabAbout.JPG';
 import Pratik from '../../assets/about/Pratik.JPG';
 import Shounak from '../../assets/about/Shounak.JPG';
@@ -42,245 +42,493 @@ His background includes both field experience and design coordination, making hi
     }
   ];
 
-  const styles = {
-    container: {
-      minHeight: 'calc(100vh - 200px)',
-      background: '#f5f5f4',
-      padding: '80px 24px',
-      fontFamily: '"Inter", "Segoe UI", system-ui, sans-serif'
-    },
-    maxWidth: {
-      maxWidth: '1200px',
-      margin: '0 auto'
-    },
-    grid: {
-      display: 'grid',
-      gridTemplateColumns: '1fr',
-      gap: '64px',
-      alignItems: 'center'
-    },
-    sectionTitle: {
-      fontSize: '56px',
-      fontWeight: '200',
-      color: '#1e293b',
-      marginBottom: '32px',
-      letterSpacing: '-0.02em',
-      fontFamily: '"Playfair Display", serif'
-    },
-    subsectionTitle: {
-      fontSize: '28px',
-      fontWeight: '600',
-      color: '#1e293b',
-      marginTop: '48px',
-      marginBottom: '24px',
-      letterSpacing: '-0.01em'
-    },
-    text: {
-      color: '#475569',
-      marginBottom: '24px',
-      lineHeight: '1.7',
-      fontSize: '18px',
-      fontWeight: '300'
-    },
-    boldText: {
-      fontWeight: '600',
-      color: '#1e293b'
-    },
-    quote: {
-      fontSize: '20px',
-      fontStyle: 'italic',
-      color: '#334155',
-      marginTop: '32px',
-      padding: '24px',
-      background: 'rgba(255, 255, 255, 0.5)',
-      borderRadius: '12px',
-      borderLeft: '4px solid #1e293b'
-    },
-    studioQuote: {
-      fontSize: '24px',
-      fontStyle: 'italic',
-      color: '#1e293b',
-      textAlign: 'center',
-      marginTop: '48px',
-      padding: '32px',
-      background: 'rgba(255, 255, 255, 0.8)',
-      borderRadius: '16px',
-      boxShadow: '0 8px 25px rgba(0, 0, 0, 0.08)'
-    },
-    tagline: {
-      fontSize: '32px',
-      fontWeight: '300',
-      color: '#1e293b',
-      textAlign: 'center',
-      marginTop: '32px',
-      fontFamily: '"Playfair Display", serif'
-    },
-    taglineSubtext: {
-      fontSize: '18px',
-      color: '#64748b',
-      textAlign: 'center',
-      marginTop: '8px',
-      fontStyle: 'italic'
-    },
-    imagePlaceholder: {
-      background: 'rgba(255, 255, 255, 0.8)',
-      backdropFilter: 'blur(10px)',
-      border: '1px solid rgba(226, 232, 240, 0.8)',
-      borderRadius: '20px',
-      height: '400px',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      fontSize: '18px',
-      color: '#64748b',
-      fontWeight: '300',
-      boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.08)'
-    },
-    teamSection: {
-      marginTop: '80px'
-    },
-    teamTitle: {
-      fontSize: '40px',
-      fontWeight: '300',
-      color: '#1e293b',
-      marginBottom: '48px',
-      textAlign: 'center',
-      fontFamily: '"Playfair Display", serif'
-    },
-    teamGrid: {
-      display: 'grid',
-      gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
-      gap: '40px'
-    },
-    teamCard: {
-      background: 'rgba(255, 255, 255, 0.8)',
-      backdropFilter: 'blur(10px)',
-      border: '1px solid rgba(226, 232, 240, 0.8)',
-      borderRadius: '24px',
-      padding: '48px 40px',
-      textAlign: 'center',
-      cursor: 'pointer',
-      transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-      boxShadow: '0 10px 25px rgba(0, 0, 0, 0.08)',
-      minHeight: '380px'
-    },
-    teamImage: {
-      width: '100%',
-      height: '300px',
-      borderRadius: '16px',
-      backgroundColor: '#e2e8f0',
-      margin: '0 auto 24px auto',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      fontSize: '16px',
-      color: '#64748b',
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      boxShadow: '0 8px 20px rgba(0, 0, 0, 0.1)'
-    },
-    teamName: {
-      fontSize: '24px',
-      fontWeight: '500',
-      color: '#1e293b',
-      marginBottom: '12px'
-    },
-    teamPosition: {
-      fontSize: '16px',
-      color: '#64748b',
-      fontWeight: '300',
-      marginBottom: '16px'
-    },
-    teamQuote: {
-      fontSize: '14px',
-      fontStyle: 'italic',
-      color: '#475569',
-      lineHeight: '1.5'
-    },
-    memberDetailView: {
-      display: 'grid',
-      gridTemplateColumns: '450px 1fr',
-      gap: '80px',
-      alignItems: 'start'
-    },
-    memberImage: {
-      width: '100%',
-      height: '500px',
-      borderRadius: '20px',
-      backgroundColor: '#e2e8f0',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      fontSize: '16px',
-      color: '#64748b',
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.1)'
-    },
-    memberInfo: {
-      paddingTop: '20px'
-    },
-    memberName: {
-      fontSize: '48px',
-      fontWeight: '300',
-      color: '#1e293b',
-      marginBottom: '8px',
-      fontFamily: '"Playfair Display", serif'
-    },
-    memberPosition: {
-      fontSize: '20px',
-      color: '#64748b',
-      marginBottom: '32px',
-      fontWeight: '300'
-    },
-    memberBio: {
-      fontSize: '18px',
-      color: '#475569',
-      lineHeight: '1.7',
-      fontWeight: '300',
-      whiteSpace: 'pre-line'
-    },
-    memberQuote: {
-      fontSize: '20px',
-      fontStyle: 'italic',
-      color: '#334155',
-      marginTop: '32px',
-      padding: '24px',
-      background: 'rgba(255, 255, 255, 0.5)',
-      borderRadius: '12px',
-      borderLeft: '4px solid #1e293b'
-    },
-    backButton: {
-      display: 'flex',
-      alignItems: 'center',
-      gap: '12px',
-      background: 'linear-gradient(135deg, #1e293b 0%, #334155 100%)',
-      color: 'white',
-      padding: '12px 24px',
-      border: 'none',
-      borderRadius: '12px',
-      cursor: 'pointer',
-      fontSize: '16px',
-      fontWeight: '500',
-      transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-      marginBottom: '40px',
-      boxShadow: '0 4px 12px rgba(30, 41, 59, 0.15)'
-    }
-  };
+  const styles = `
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
 
-  const mediaQueries = `
-    @media (min-width: 768px) {
-      .about-grid { grid-template-columns: 1fr 1fr !important; }
+    .about-container {
+      min-height: 100vh;
+      background: #F5f5f4;
+      font-family: 'Inter', sans-serif;
     }
+
+    /* Hero Section */
+    .hero-section {
+      padding: 120px 24px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -50%;
+      width: 100%;
+      height: 100%;
+      background: #f5f5f4;
+      pointer-events: none;
+    }
+
+    .hero-content {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 100px;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-text {
+      padding-right: 40px;
+    }
+
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(3.5rem, 6vw, 5rem);
+      font-weight: 300;
+      color: #1c1917;
+      margin-bottom: 2rem;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1.2rem, 2vw, 1.5rem);
+      color: #57534e;
+      font-weight: 300;
+      margin-bottom: 3rem;
+      line-height: 1.6;
+    }
+
+    .hero-image {
+      position: relative;
+      border-radius: 30px;
+      overflow: hidden;
+      box-shadow: 0 40px 100px rgba(28, 25, 23, 0.15);
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Values Section */
+    .values-section {
+      padding: 120px 24px;
+      background: white;
+      position: relative;
+    }
+
+    .values-container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 60px;
+    }
+
+    .value-card {
+      position: relative;
+      padding: 0;
+      background: transparent;
+    }
+
+    .value-icon {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, #1c1917 0%, #57534e 100%);
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2rem;
+      box-shadow: 0 15px 35px rgba(28, 25, 23, 0.2);
+    }
+
+    .value-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 400;
+      color: #1c1917;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .value-text {
+      color: #57534e;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      font-weight: 300;
+    }
+
+    .value-text strong {
+      color: #1c1917;
+      font-weight: 600;
+    }
+
+    /* Tagline Section */
+    .tagline-section {
+      padding: 100px 24px;
+      background: #f5f5f4;
+      color: #1c1917;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .tagline-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23000000" fill-opacity="0.05"><circle cx="30" cy="30" r="2"/></g></svg>');
+      pointer-events: none;
+    }
+
+    .tagline-content {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .main-tagline {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 300;
+      margin-bottom: 2rem;
+      line-height: 1.2;
+    }
+
+    .tagline-subtext {
+      font-size: 1.3rem;
+      opacity: 0.8;
+      font-weight: 300;
+      margin-bottom: 3rem;
+    }
+
+    .studio-quote {
+      font-size: 1.4rem;
+      font-style: italic;
+      font-weight: 300;
+      line-height: 1.6;
+      padding: 2rem;
+      border: 2px solid rgba(28, 25, 23, 0.2);
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(10px);
+    }
+
+    /* Construction Excellence Section */
+    .construction-section {
+      padding: 120px 24px;
+      background: #f5f5f4;
+    }
+
+    .construction-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .construction-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.5rem, 5vw, 3.5rem);
+      font-weight: 300;
+      color: #1c1917;
+      margin-bottom: 3rem;
+    }
+
+    .construction-content {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      text-align: left;
+      background: white;
+      padding: 60px;
+      border-radius: 30px;
+      box-shadow: 0 30px 80px rgba(28, 25, 23, 0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .construction-content::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 5px;
+      height: 100%;
+      background: linear-gradient(to bottom, #1c1917, #57534e);
+    }
+
+    .construction-text {
+      color: #57534e;
+      font-size: 1.2rem;
+      line-height: 1.8;
+      font-weight: 300;
+    }
+
+    .construction-text:first-child {
+      margin-bottom: 2rem;
+    }
+
+    /* Team Section */
+    .team-section {
+      padding: 120px 24px;
+      background: white;
+    }
+
+    .team-container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .team-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.5rem, 5vw, 3.5rem);
+      font-weight: 300;
+      color: #1c1917;
+      margin-bottom: 4rem;
+      text-align: center;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+      gap: 50px;
+    }
+
+    .team-card {
+      background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+      border-radius: 30px;
+      padding: 0;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(28, 25, 23, 0.08);
+      position: relative;
+    }
+
+    .team-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, #1c1917, #57534e);
+    }
+
+    .team-image {
+      width: 100%;
+      height: 350px;
+      background-size: cover;
+      background-position: center;
+      background-color: #e5e5e5;
+    }
+
+    .team-content {
+      padding: 40px;
+    }
+
+    .team-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: #1c1917;
+      margin-bottom: 0.5rem;
+    }
+
+    .team-position {
+      color: #57534e;
+      font-size: 1rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .team-quote {
+      color: #78716c;
+      font-style: italic;
+      font-size: 1rem;
+      line-height: 1.6;
+      font-weight: 300;
+    }
+
+    /* Member Detail View */
+    .member-detail-container {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #faf7f0 0%, #f5f2ea 100%);
+      padding: 80px 24px;
+    }
+
+    .member-detail-content {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .back-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: linear-gradient(135deg, #1c1917 0%, #292524 100%);
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      margin-bottom: 60px;
+      box-shadow: 0 10px 30px rgba(28, 25, 23, 0.2);
+    }
+
+    .back-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 20px 40px rgba(28, 25, 23, 0.3);
+    }
+
+    .member-detail-grid {
+      display: grid;
+      grid-template-columns: 500px 1fr;
+      gap: 100px;
+      align-items: start;
+    }
+
+    .member-image-large {
+      width: 100%;
+      height: 600px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 30px;
+      box-shadow: 0 40px 100px rgba(28, 25, 23, 0.15);
+      background-color: #e5e5e5;
+    }
+
+    .member-info {
+      padding-top: 40px;
+    }
+
+    .member-name-large {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(3rem, 5vw, 4rem);
+      font-weight: 300;
+      color: #1c1917;
+      margin-bottom: 1rem;
+      line-height: 1.1;
+    }
+
+    .member-position-large {
+      font-size: 1.3rem;
+      color: #57534e;
+      font-weight: 400;
+      margin-bottom: 3rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .member-bio-large {
+      color: #57534e;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      font-weight: 300;
+      white-space: pre-line;
+      margin-bottom: 3rem;
+    }
+
+    .member-quote-large {
+      font-size: 1.3rem;
+      font-style: italic;
+      color: #1c1917;
+      padding: 30px;
+      background: white;
+      border-radius: 20px;
+      border-left: 5px solid #1c1917;
+      box-shadow: 0 20px 50px rgba(28, 25, 23, 0.08);
+      line-height: 1.6;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 1024px) {
+      .hero-content {
+        grid-template-columns: 1fr;
+        gap: 60px;
+        text-align: center;
+      }
+
+      .hero-text {
+        padding-right: 0;
+      }
+
+      .values-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .member-detail-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+
+      .construction-content {
+        padding: 40px;
+      }
+    }
+
     @media (max-width: 768px) {
-      .member-detail-view { grid-template-columns: 1fr !important; gap: 32px !important; }
-      .member-image { height: 300px !important; }
+      .hero-section {
+        padding: 80px 16px 0;
+      }
+
+      .values-section,
+      .construction-section,
+      .team-section {
+        padding: 80px 16px;
+      }
+
+      .tagline-section {
+        padding: 80px 16px;
+      }
+
+      .team-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .team-card {
+        margin: 0 auto;
+        max-width: 400px;
+      }
+
+      .construction-content {
+        padding: 30px;
+      }
+
+      .member-detail-container {
+        padding: 60px 16px;
+      }
+
+      .back-button {
+        margin-bottom: 40px;
+      }
     }
   `;
 
   const handleTeamMemberClick = (member) => {
-    setSelectedMember(member);
-    setCurrentView('member');
+    // Removed navigation functionality - cards no longer navigate
+    return;
   };
 
   const handleBackClick = () => {
@@ -289,39 +537,27 @@ His background includes both field experience and design coordination, making hi
   };
 
   const renderMemberDetail = () => (
-    <div style={styles.container}>
-      <div style={styles.maxWidth}>
-        <button 
-          style={styles.backButton}
-          onClick={handleBackClick}
-          onMouseOver={(e) => {
-            e.target.style.transform = 'translateY(-2px)';
-            e.target.style.boxShadow = '0 8px 25px rgba(30, 41, 59, 0.25)';
-          }}
-          onMouseOut={(e) => {
-            e.target.style.transform = 'translateY(0)';
-            e.target.style.boxShadow = '0 4px 12px rgba(30, 41, 59, 0.15)';
-          }}
-        >
+    <div className="member-detail-container">
+      <style>{styles}</style>
+      <div className="member-detail-content">
+        <button className="back-button" onClick={handleBackClick}>
           <ArrowLeft size={20} />
           Back to About
         </button>
         
-        <div className="member-detail-view" style={styles.memberDetailView}>
+        <div className="member-detail-grid">
           <div 
+            className="member-image-large"
             style={{
-              ...styles.memberImage,
               backgroundImage: `url(${selectedMember?.image})`
             }}
-          >
-            {selectedMember?.name} Photo
-          </div>
+          />
           
-          <div style={styles.memberInfo}>
-            <h1 style={styles.memberName}>{selectedMember?.name}</h1>
-            <p style={styles.memberPosition}>{selectedMember?.position}</p>
-            <p style={styles.memberBio}>{selectedMember?.bio}</p>
-            <div style={styles.memberQuote}>{selectedMember?.quote}</div>
+          <div className="member-info">
+            <h1 className="member-name-large">{selectedMember?.name}</h1>
+            <p className="member-position-large">{selectedMember?.position}</p>
+            <p className="member-bio-large">{selectedMember?.bio}</p>
+            <div className="member-quote-large">{selectedMember?.quote}</div>
           </div>
         </div>
       </div>
@@ -329,106 +565,136 @@ His background includes both field experience and design coordination, making hi
   );
 
   const renderMainView = () => (
-    <div style={styles.container}>
-      <div style={styles.maxWidth}>
-        <div className="about-grid" style={styles.grid}>
-          <div>
-            <h1 style={styles.sectionTitle}>About Our Studio</h1>
-            
-            <h2 style={styles.subsectionTitle}>About Office</h2>
-            
-            <h3 style={{...styles.boldText, fontSize: '20px', marginTop: '32px', marginBottom: '16px'}}>Vision</h3>
-            <p style={styles.text}>
-              To shape meaningful, timeless spaces that seamlessly blend design innovation, functional clarity, 
-              and contextual relevance—making architecture a catalyst for better living and lasting impact.
+    <div className="about-container">
+      <style>{styles}</style>
+      
+      {/* Hero Section */}
+      <section className="hero-section">
+        <div className="hero-content">
+          <div className="hero-text">
+            <h1 className="hero-title">About Our Studio</h1>
+            <p className="hero-subtitle">
+              We are architects, designers, and builders united by a shared vision: 
+              creating spaces that inspire, function beautifully, and stand the test of time.
             </p>
-
-            <h3 style={{...styles.boldText, fontSize: '20px', marginTop: '32px', marginBottom: '16px'}}>Mission</h3>
-            <p style={styles.text}>
-              At Studio Paper Space, we aim to design thoughtful spaces that are functional, beautiful, and built to last. 
-              We work closely with our clients, combining creative ideas with practical solutions, and ensure every project 
-              is delivered with clarity, care, and precision.
-            </p>
-
-            <h3 style={{...styles.boldText, fontSize: '20px', marginTop: '32px', marginBottom: '16px'}}>Ideology</h3>
-            <p style={styles.text}>
-              We believe that:<br/>
-              <strong>Design is dialogue</strong> – between ideas, users, environment, and culture.<br/>
-              <strong>Execution is expression</strong> – where discipline and detail bring design to life.<br/>
-              <strong>Every space holds power</strong> – when shaped with intention, sensitivity, and precision.<br/>
-              Our strength lies in collaborative minds that respect both creativity and constructability.
-            </p>
-
-            <div style={styles.tagline}>
-              Precision on Paper. Power in Space.
-            </div>
-            <div style={styles.taglineSubtext}>
-              A philosophy we live by. A promise we build with.
-            </div>
           </div>
           
-          <div style={styles.imagePlaceholder}>
-            <img 
-              src={CollabAbout} 
-              alt="Studio Collaboration" 
-              style={{ 
-                width: '100%', 
-                height: '100%', 
-                objectFit: 'cover', 
-                borderRadius: '20px' 
-              }}
-            />
+          <div className="hero-image">
+            <img src={CollabAbout} alt="Studio Collaboration" />
           </div>
         </div>
+      </section>
 
-        <div style={styles.studioQuote}>
-          <strong>Studio Paper Space</strong><br/>
-          "At Studio Paper Space, we design with intent, build with integrity, and collaborate with passion. 
-          Every line we draw shapes a story worth telling."
+      {/* Values Section */}
+      <section className="values-section">
+        <div className="values-container">
+          <div className="values-grid">
+            <div className="value-card">
+              <div className="value-icon">
+                <Eye size={32} color="white" />
+              </div>
+              <h3 className="value-title">Vision</h3>
+              <p className="value-text">
+                To shape meaningful, timeless spaces that seamlessly blend design innovation, 
+                functional clarity, and contextual relevance—making architecture a catalyst 
+                for better living and lasting impact.
+              </p>
+            </div>
+
+            <div className="value-card">
+              <div className="value-icon">
+                <Target size={32} color="white" />
+              </div>
+              <h3 className="value-title">Mission</h3>
+              <p className="value-text">
+                At Studio Paper Space, we aim to design thoughtful spaces that are functional, 
+                beautiful, and built to last. We work closely with our clients, combining creative 
+                ideas with practical solutions, and ensure every project is delivered with clarity, 
+                care, and precision.
+              </p>
+            </div>
+
+            <div className="value-card">
+              <div className="value-icon">
+                <Lightbulb size={32} color="white" />
+              </div>
+              <h3 className="value-title">Ideology</h3>
+              <p className="value-text">
+                We believe that <strong>Design is dialogue</strong> – between ideas, users, environment, and culture. 
+                <strong>Execution is expression</strong> – where discipline and detail bring design to life. 
+                <strong>Every space holds power</strong> – when shaped with intention, sensitivity, and precision.
+              </p>
+            </div>
+          </div>
         </div>
+      </section>
+
+      {/* Tagline Section */}
+      <section className="tagline-section">
+        <div className="tagline-content">
+          <h2 className="main-tagline">Precision on Paper. Power in Space.</h2>
+          <p className="tagline-subtext">A philosophy we live by. A promise we build with.</p>
+          <div className="studio-quote">
+            "At Studio Paper Space, we design with intent, build with integrity, and collaborate with passion. 
+            Every line we draw shapes a story worth telling."
+          </div>
+        </div>
+      </section>
+
+      {/* Construction Excellence Section */}
+      <section className="construction-section">
+        <div className="construction-container">
+          <h2 className="construction-title">Our Construction Excellence</h2>
+          <div className="construction-content">
+            <p className="construction-text">
+              Our construction process reflects the same care and precision that we bring into design. 
+              From the strong foundation to the last detail, every stage is carried out with discipline 
+              and quality checks. The site progresses with clean shuttering, carefully tied reinforcement, 
+              and structural clarity, ensuring long-term durability. Concrete works are executed with accuracy, 
+              giving strength and stability to the building frame. Brick masonry and staircase construction 
+              take shape in a methodical way, keeping both function and design in mind.
+            </p>
+            <p className="construction-text">
+              We believe construction is not just about building walls—it is about creating safe, lasting, 
+              and meaningful spaces. Each project is supervised with attention to detail, blending engineering 
+              expertise with architectural vision. The result is not only a strong structure but also a space 
+              that lives up to the design intent, ready to be transformed into a functional and beautiful environment.
+            </p>
+          </div>
+        </div>
+      </section>
         
-        <div style={styles.teamSection}>
-          <h2 style={styles.teamTitle}>Meet Our Team</h2>
-          <div style={styles.teamGrid}>
+      {/* Team Section */}
+      <section className="team-section">
+        <div className="team-container">
+          <h2 className="team-title">Meet Our Team</h2>
+          <div className="team-grid">
             {teamMembers.map((member) => (
               <div 
                 key={member.id}
-                style={styles.teamCard}
+                className="team-card"
                 onClick={() => handleTeamMemberClick(member)}
-                onMouseOver={(e) => {
-                  e.currentTarget.style.transform = 'translateY(-8px)';
-                  e.currentTarget.style.boxShadow = '0 20px 40px rgba(0, 0, 0, 0.12)';
-                }}
-                onMouseOut={(e) => {
-                  e.currentTarget.style.transform = 'translateY(0)';
-                  e.currentTarget.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.08)';
-                }}
               >
                 <div 
+                  className="team-image"
                   style={{
-                    ...styles.teamImage,
                     backgroundImage: `url(${member.image})`
                   }}
-                >
-                  {member.name}
+                />
+                <div className="team-content">
+                  <h3 className="team-name">{member.name}</h3>
+                  <p className="team-position">{member.position}</p>
+                  <p className="team-quote">{member.quote}</p>
                 </div>
-                <h3 style={styles.teamName}>{member.name}</h3>
-                <p style={styles.teamPosition}>{member.position}</p>
-                <p style={styles.teamQuote}>{member.quote}</p>
               </div>
             ))}
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 
-  return (
-    <>
-      <style>{mediaQueries}</style>
-      {currentView === 'main' ? renderMainView() : renderMemberDetail()}
-    </>
-  );
+  return currentView === 'main' ? renderMainView() : renderMemberDetail();
 }
 
 export default AboutPage;
