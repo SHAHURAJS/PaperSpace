@@ -235,6 +235,7 @@ More than just a meeting room, this hall holds cultural significance—it is a p
     container: {
       minHeight: 'calc(100vh - 200px)',
       background: '#f5f5f4',
+      backgroundAttachment: 'fixed',
       padding: '80px 24px',
       fontFamily: 'Jost, sans-serif'
     },
@@ -532,20 +533,32 @@ More than just a meeting room, this hall holds cultural significance—it is a p
         padding: 0 16px !important;
         gap: 24px !important; 
         grid-template-columns: 1fr !important;
+        justify-items: center !important;
+        max-width: 100% !important;
       }
       .container { 
-        padding: 40px 16px !important; 
+        padding: 40px 16px !important;
+        background-attachment: scroll !important;
+      }
+      .project-card {
+        margin: 0 auto !important;
+        max-width: 90% !important;
+        width: 90% !important;
       }
     }
     
     @media (max-width: 480px) {
       .project-card {
         margin: 0 auto !important;
-        max-width: 100% !important;
-        width: 100% !important;
+        max-width: 95% !important;
+        width: 95% !important;
       }
       .grid-container {
         justify-items: center !important;
+        padding: 0 8px !important;
+      }
+      .container { 
+        padding: 40px 8px !important; 
       }
     }
   `;
