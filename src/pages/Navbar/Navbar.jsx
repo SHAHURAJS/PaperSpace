@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import logo1 from '../../assets/logo1.png';
+
 
 function Navigation({ currentPage, onNavigate }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -41,25 +43,37 @@ function Navigation({ currentPage, onNavigate }) {
       zIndex: shouldUseVideoStyle ? '100' : 'auto',
       backdropFilter: shouldUseVideoStyle ? 'blur(10px)' : 'none',
       borderBottom: shouldUseVideoStyle ? '1px solid rgba(255, 255, 255, 0.1)' : 'none',
-      transition: 'all 0.3s ease'
+      transition: 'all 0.3s ease',
+      fontFamily: 'Jost, sans-serif' // Added Jost font family
     },
     logo: {
-      fontSize: '24px',
+      fontSize: '20px', // Reduced from 24px
       fontWeight: 'bold',
       color: shouldUseVideoStyle ? '#ffffff' : '#374151',
       cursor: 'pointer',
       position: 'absolute',
       left: '24px',
       textShadow: shouldUseVideoStyle ? '0 2px 4px rgba(0,0,0,0.3)' : 'none',
-      transition: 'all 0.3s ease'
+      transition: 'all 0.3s ease',
+      display: 'flex',
+      alignItems: 'center',
+      fontFamily: 'Jost, sans-serif' // Added Jost font family
     },
     logoSpan: {
-      color: shouldUseVideoStyle ? 'rgba(255, 255, 255, 0.8)' : '#6B7280'
+      color: shouldUseVideoStyle ? 'rgba(255, 255, 255, 0.8)' : '#6B7280',
+      marginLeft: '2px', // Reduced spacing between STUDIO and PAPERSPACE
+      fontFamily: 'Jost, sans-serif' // Added Jost font family
+    },
+    logoImg: {
+      height: '32px', // Reduced from 40px
+      marginRight: '6px', // Reduced from 8px
+      verticalAlign: 'middle'
     },
     desktopMenu: {
       display: 'none',
       gap: '48px',
-      alignItems: 'center'
+      alignItems: 'center',
+      fontFamily: 'Jost, sans-serif' // Added Jost font family
     },
     menuLink: {
       color: shouldUseVideoStyle ? '#ffffff' : '#374151',
@@ -68,7 +82,8 @@ function Navigation({ currentPage, onNavigate }) {
       cursor: 'pointer',
       paddingBottom: '4px',
       textShadow: shouldUseVideoStyle ? '0 1px 2px rgba(0,0,0,0.3)' : 'none',
-      fontWeight: shouldUseVideoStyle ? '500' : '400'
+      fontWeight: shouldUseVideoStyle ? '500' : '400',
+      fontFamily: 'Jost, sans-serif' // Added Jost font family
     },
     menuLinkHover: {
       color: shouldUseVideoStyle ? 'rgba(255, 255, 255, 0.8)' : '#6B7280'
@@ -82,7 +97,8 @@ function Navigation({ currentPage, onNavigate }) {
       right: '24px',
       color: '#374151', // Always dark on mobile for visibility
       filter: 'none',
-      zIndex: '101' // Higher z-index to ensure visibility
+      zIndex: '101', // Higher z-index to ensure visibility
+      fontFamily: 'Jost, sans-serif' // Added Jost font family
     },
     mobileMenu: {
       backgroundColor: '#f5f5f4', // Always stone background on mobile
@@ -94,14 +110,16 @@ function Navigation({ currentPage, onNavigate }) {
       left: 'auto',
       right: 'auto',
       zIndex: '100',
-      width: '100%'
+      width: '100%',
+      fontFamily: 'Jost, sans-serif' // Added Jost font family
     },
     mobileMenuContent: {
       padding: '16px 24px',
       display: 'flex',
       flexDirection: 'column',
       gap: '24px',
-      alignItems: 'center'
+      alignItems: 'center',
+      fontFamily: 'Jost, sans-serif' // Added Jost font family
     },
     mobileMenuLink: {
       color: '#374151', // Always dark text on mobile
@@ -109,11 +127,14 @@ function Navigation({ currentPage, onNavigate }) {
       cursor: 'pointer',
       fontSize: '16px',
       fontWeight: '400', // Consistent weight
-      transition: 'all 0.3s ease'
+      transition: 'all 0.3s ease',
+      fontFamily: 'Jost, sans-serif' // Added Jost font family
     }
   };
 
   const mediaQueries = `
+    @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
+    
     @media (max-width: 899px) {
       /* Mobile-specific overrides */
       .navbar-mobile {
@@ -121,44 +142,78 @@ function Navigation({ currentPage, onNavigate }) {
         position: relative !important;
         backdrop-filter: none !important;
         border-bottom: none !important;
+        font-family: 'Jost', sans-serif !important;
       }
       
       .navbar-mobile .logo {
         color: #374151 !important;
         text-shadow: none !important;
+        font-size: 16px !important; /* Smaller on mobile */
+        font-family: 'Jost', sans-serif !important;
+      }
+      
+      .navbar-mobile .logo img {
+        height: 28px !important; /* Smaller image on mobile */
+        margin-right: 4px !important;
       }
       
       .navbar-mobile .logo span {
         color: #6B7280 !important;
+        margin-left: 1px !important;
+        font-family: 'Jost', sans-serif !important;
       }
       
       .mobile-menu-button {
         color: #374151 !important;
         filter: none !important;
+        font-family: 'Jost', sans-serif !important;
       }
       
       .mobile-menu {
         background-color: #f5f5f4 !important;
         position: static !important;
         z-index: 1000 !important;
+        font-family: 'Jost', sans-serif !important;
       }
     }
     
     @media (min-width: 480px) {
-      .logo { font-size: 18px !important; }
+      .logo { 
+        font-size: 16px !important; 
+        font-family: 'Jost', sans-serif !important;
+      }
+      .logo img { 
+        height: 28px !important; 
+        margin-right: 5px !important;
+      }
     }
     
     @media (min-width: 640px) {
-      .logo { font-size: 20px !important; }
+      .logo { 
+        font-size: 18px !important; 
+        font-family: 'Jost', sans-serif !important;
+      }
+      .logo img { 
+        height: 30px !important; 
+        margin-right: 5px !important;
+      }
     }
     
     @media (min-width: 900px) {
       .desktop-menu { 
         display: flex !important; 
-        gap: 24px !important;
+        gap: 20px !important; /* Reduced gap for smaller screens */
+        font-family: 'Jost', sans-serif !important;
       }
       .mobile-menu-button { display: none !important; }
-      .logo { font-size: 22px !important; }
+      .logo { 
+        font-size: 18px !important; /* Smaller on smaller desktop screens */
+        font-family: 'Jost', sans-serif !important;
+      }
+      .logo img { 
+        height: 30px !important;
+        margin-right: 5px !important;
+      }
       
       /* Desktop home page styles */
       .navbar-home-desktop {
@@ -166,34 +221,104 @@ function Navigation({ currentPage, onNavigate }) {
         position: absolute !important;
         backdrop-filter: blur(10px) !important;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+        font-family: 'Jost', sans-serif !important;
       }
       
       .navbar-home-desktop .logo {
         color: #ffffff !important;
         text-shadow: 0 2px 4px rgba(0,0,0,0.3) !important;
+        font-family: 'Jost', sans-serif !important;
       }
       
       .navbar-home-desktop .logo span {
         color: rgba(255, 255, 255, 0.8) !important;
+        font-family: 'Jost', sans-serif !important;
+      }
+    }
+    
+    @media (min-width: 1000px) {
+      .desktop-menu { 
+        gap: 24px !important;
+        font-family: 'Jost', sans-serif !important;
+      }
+      .logo { 
+        font-size: 19px !important;
+        font-family: 'Jost', sans-serif !important;
+      }
+      .logo img { 
+        height: 31px !important;
+        margin-right: 6px !important;
       }
     }
     
     @media (min-width: 1100px) {
       .desktop-menu { 
-        gap: 32px !important;
+        gap: 28px !important;
+        font-family: 'Jost', sans-serif !important;
       }
-      .logo { font-size: 24px !important; }
+      .logo { 
+        font-size: 20px !important;
+        font-family: 'Jost', sans-serif !important;
+      }
+      .logo img { 
+        height: 32px !important;
+        margin-right: 6px !important;
+      }
     }
     
     @media (min-width: 1200px) {
       .desktop-menu { 
-        gap: 40px !important;
+        gap: 32px !important;
+        font-family: 'Jost', sans-serif !important;
+      }
+      .logo { 
+        font-size: 21px !important;
+        font-family: 'Jost', sans-serif !important;
+      }
+      .logo img { 
+        height: 33px !important;
+      }
+    }
+    
+    @media (min-width: 1300px) {
+      .desktop-menu { 
+        gap: 36px !important;
+        font-family: 'Jost', sans-serif !important;
+      }
+      .logo { 
+        font-size: 22px !important;
+        font-family: 'Jost', sans-serif !important;
+      }
+      .logo img { 
+        height: 34px !important;
       }
     }
     
     @media (min-width: 1400px) {
       .desktop-menu { 
+        gap: 40px !important;
+        font-family: 'Jost', sans-serif !important;
+      }
+      .logo { 
+        font-size: 23px !important;
+        font-family: 'Jost', sans-serif !important;
+      }
+      .logo img { 
+        height: 35px !important;
+      }
+    }
+
+    @media (min-width: 1500px) {
+      .desktop-menu { 
         gap: 48px !important;
+        font-family: 'Jost', sans-serif !important;
+      }
+      .logo { 
+        font-size: 24px !important;
+        font-family: 'Jost', sans-serif !important;
+      }
+      .logo img { 
+        height: 36px !important;
       }
     }
 
@@ -230,6 +355,11 @@ function Navigation({ currentPage, onNavigate }) {
         background: rgba(0, 0, 0, 0.2) !important;
       }
     ` : ''}
+
+    /* Apply Jost font to all navigation elements */
+    nav, .logo, .desktop-menu, .mobile-menu, .nav-link, .mobile-nav-link {
+      font-family: 'Jost', sans-serif !important;
+    }
   `;
 
   return (
@@ -237,9 +367,14 @@ function Navigation({ currentPage, onNavigate }) {
       <style>{mediaQueries}</style>
       <nav style={styles.nav} className={`${shouldUseVideoStyle ? 'navbar-home-desktop' : ''} navbar-mobile`}>
         <div className="logo" style={styles.logo} onClick={() => handleNavigation('home')}>
+          <img 
+            src={logo1} 
+            alt="Logo" 
+            style={styles.logoImg}
+          />
           STUDIO<span style={styles.logoSpan}>PAPERSPACE</span>
         </div>
-        
+
         <div className="desktop-menu" style={styles.desktopMenu}>
           <span 
             style={styles.menuLink}

@@ -6,7 +6,7 @@ function CareerPage() {
       minHeight: 'calc(100vh - 200px)',
       background: '#f5f5f4',
       padding: '120px 24px 80px',
-      fontFamily: '"Inter", "Segoe UI", system-ui, sans-serif'
+      fontFamily: 'Jost, sans-serif'
     },
     maxWidth: {
       maxWidth: '1000px',
@@ -19,7 +19,7 @@ function CareerPage() {
       color: '#1c1917',
       marginBottom: '2rem',
       letterSpacing: '-0.02em',
-      fontFamily: '"Playfair Display", serif',
+      fontFamily: 'Jost, sans-serif',
       lineHeight: '1.1'
     },
     description: {
@@ -29,7 +29,8 @@ function CareerPage() {
       marginBottom: '4rem',
       maxWidth: '700px',
       margin: '0 auto 4rem auto',
-      fontWeight: '300'
+      fontWeight: '300',
+      fontFamily: 'Jost, sans-serif'
     },
     whyJoin: {
       marginBottom: '4rem',
@@ -45,7 +46,7 @@ function CareerPage() {
       fontWeight: '300',
       color: '#1c1917',
       marginBottom: '2rem',
-      fontFamily: '"Playfair Display", serif'
+      fontFamily: 'Jost, sans-serif'
     },
     whyJoinList: {
       textAlign: 'left',
@@ -64,7 +65,8 @@ function CareerPage() {
       padding: '1rem 0 1rem 2.5rem',
       borderRadius: '15px',
       background: 'rgba(28, 25, 23, 0.02)',
-      transition: 'all 0.3s ease'
+      transition: 'all 0.3s ease',
+      fontFamily: 'Jost, sans-serif'
     },
     bullet: {
       position: 'absolute',
@@ -73,7 +75,8 @@ function CareerPage() {
       fontSize: '1.2rem',
       top: '50%',
       transform: 'translateY(-50%)',
-      fontWeight: '600'
+      fontWeight: '600',
+      fontFamily: 'Jost, sans-serif'
     },
     contactSection: {
       background: 'rgba(255, 255, 255, 0.9)',
@@ -89,14 +92,15 @@ function CareerPage() {
       fontWeight: '300',
       color: '#1c1917',
       marginBottom: '1.5rem',
-      fontFamily: '"Playfair Display", serif'
+      fontFamily: 'Jost, sans-serif'
     },
     contactText: {
       fontSize: '1.2rem',
       color: '#57534e',
       marginBottom: '2.5rem',
       fontWeight: '300',
-      lineHeight: '1.6'
+      lineHeight: '1.6',
+      fontFamily: 'Jost, sans-serif'
     },
     contactButtons: {
       display: 'flex',
@@ -119,7 +123,8 @@ function CareerPage() {
       transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
       textDecoration: 'none',
       boxShadow: '0 10px 30px rgba(28, 25, 23, 0.2)',
-      minWidth: '150px'
+      minWidth: '150px',
+      fontFamily: 'Jost, sans-serif'
     }
   };
 
@@ -129,13 +134,20 @@ function CareerPage() {
 
   const handleWhatsAppClick = () => {
     // Replace with actual WhatsApp number (format: country code + number without + or spaces)
-    const phoneNumber = '919876543210'; // Example: +91 98765 43210 becomes 919876543210
+    const phoneNumber = '918855837620'; // Example: +91 98765 43210 becomes 919876543210
     const message = encodeURIComponent('Hi! I am interested in career opportunities at Studio Paper Space.');
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
   };
 
   const addHoverEffects = () => {
     return `
+      @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
+      
+      /* Apply Jost font to all elements */
+      * {
+        font-family: 'Jost', sans-serif !important;
+      }
+      
       .contact-button:hover {
         transform: translateY(-3px);
         box-shadow: 0 20px 40px rgba(28, 25, 23, 0.3) !important;

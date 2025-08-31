@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { ArrowLeft, ChevronLeft, ChevronRight, Play } from 'lucide-react';
 import BHK1 from '../../assets/1.5bhk/BHK1.png'
@@ -48,11 +47,13 @@ function ProjectsPage({ onNavigate, projectSlug }) {
   const [currentView, setCurrentView] = useState('main');
   const [selectedProject, setSelectedProject] = useState(null);
   const [currentMediaIndex, setCurrentMediaIndex] = useState(0);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(false);
+  const [progressWidth, setProgressWidth] = useState(0);
 
   const projects = [
     { 
       id: 1, 
-      title: "Wedding Avenue", 
+      title: "Vistara Yeravale", 
       category: "Hospitality", 
       year: "2024",
       slug: "weddingavenue",
@@ -73,8 +74,8 @@ Designed with a natural slope in mind, the venue blends beautifully with its sur
     },
     { 
       id: 2, 
-      title: "INT 1.5 BHK", 
-      category: "Residential Interior", 
+      title: "Shendge Residence", 
+      category: "Interior", 
       year: "2024",
       slug: "int-1-5-bhk",
       description: `This 1.5 BHK home has been designed to feel modern, cozy, and practical. The living room uses soft colors, warm lighting, and comfortable furniture to create a welcoming space for family time. The kitchen is smartly planned with neat storage, a stylish backsplash, and is combined with a compact Pooja ghar that blends beautifully into the design. The dining area is convertible, making it easy to use the space in different ways depending on the need. 
@@ -88,8 +89,8 @@ The bedroom is calm and comfortable, with smart storage and soothing décor, whi
     },
     { 
       id: 3, 
-      title: "INT 2 BHK", 
-      category: "Residential Interior", 
+      title: "Ponkshe Residence", 
+      category: "Interior", 
       year: "2024",
       slug: "int-2-bhk",
       description: `This 2BHK home is designed with a modern yet warm feel, creating a cozy and inviting space. The living room features a soft neutral sofa with a sleek TV unit, keeping the area clean and uncluttered. A simple ceiling design with soft lighting adds a calm glow. The dining area sits right beside, with a compact table and a stylish hanging light, while mirrors or textures on the wall make the space look bigger.
@@ -121,8 +122,8 @@ Across the home, furniture is simple and minimal, colors stay soft with gentle c
     },
     { 
       id: 4, 
-      title: "INT Clinic (Hospital)", 
-      category: "Healthcare Interior", 
+      title: "Manasvardhan Clinic", 
+      category: "Interior", 
       year: "2023",
       slug: "int-clinic-hospital",
       description: `This clinic interior design project blends modern elegance with a calm, welcoming atmosphere. The reception is styled with a marble-finished desk and warm wooden accents, creating a professional yet inviting first impression. Neutral tones, soft Roman blinds, and abundant natural light enhance the sense of comfort, while seating combines upholstered benches and sleek chairs for patient ease. Thoughtful greenery and subtle décor elements add freshness and warmth.
@@ -141,8 +142,8 @@ A dedicated doctor's relaxation room provides a private retreat, designed with c
     },
     { 
       id: 5, 
-      title: "Arch Bungalow", 
-      category: "Residential Architecture", 
+      title: "Kadam's Retreat", 
+      category: "Architecture", 
       year: "2023",
       slug: "arch-bungalow",
       description: `This bungalow designed by our studio reflects a balance of simplicity and elegance. The clean, straight lines of the façade are softened with natural tones and textures, creating a warm and welcoming appearance. Large windows allow light to pour in, giving every space an airy and open feeling. Vertical wooden textures add depth to the design, while soft beige tones complement the natural surroundings. 
@@ -154,8 +155,8 @@ Each floor is framed with green planters, blending architecture with nature and 
     },
     { 
       id: 6, 
-      title: "Doctor Bungalow", 
-      category: "Residential Architecture", 
+      title: "Konha's Villa", 
+      category: "Architecture", 
       year: "2022",
       slug: "doctor-bungalow",
       description: `This bungalow is a fine blend of classical elegance and modern sophistication. The exterior carries a timeless charm with tall windows, detailed columns, and graceful balconies that give the home a royal character. Its soft white façade contrasts beautifully with the dark window frames, while the sloping tiled roof adds a subtle traditional touch. The structure feels grand yet balanced, inviting yet private. Large windows flood the interiors with natural light, making the spaces warm and alive throughout the day.
@@ -168,8 +169,8 @@ Inside, the home opens into a breathtaking double-height lobby, where a sweeping
     },
     { 
       id: 7, 
-      title: "INT Ek Gaon Ek Shivjayanti", 
-      category: "Cultural Interior", 
+      title: "Ek Gaon Ek Shivjayanti", 
+      category: "Urban", 
       year: "2023",
       slug: "int-ek-gaon-ek-shivjayanti",
       description: `This interior was designed as a thoughtful balance between tradition and functionality. The space carries a cultural essence with its ornate arches, carved columns, and a central backdrop that proudly highlights the grand image of Chhatrapati Shivaji Maharaj as the main focal point. Warm wooden tones and soft lighting create a welcoming and dignified atmosphere, while the seating arrangement is planned for meaningful conversations and gatherings. The chandeliers above add a touch of elegance, blending modern lighting with classic charm. Large windows allow natural light to flow in, ensuring the space remains bright and connected to its surroundings.
@@ -182,6 +183,40 @@ More than just a meeting room, this hall holds cultural significance—it is a p
     }
   ];
 
+  // Auto-play carousel with progress bar
+  useEffect(() => {
+    let interval;
+    let progressInterval;
+    
+    if (isAutoPlaying && selectedProject && selectedProject.media.length > 1) {
+      // Reset progress
+      setProgressWidth(0);
+      
+      // Progress bar animation
+      progressInterval = setInterval(() => {
+        setProgressWidth(prev => {
+          if (prev >= 100) {
+            return 0;
+          }
+          return prev + 2; // Adjust speed here (2% every 100ms = 5 seconds total)
+        });
+      }, 100);
+      
+      // Auto advance images
+      interval = setInterval(() => {
+        setCurrentMediaIndex(prev => 
+          prev === selectedProject.media.length - 1 ? 0 : prev + 1
+        );
+        setProgressWidth(0); // Reset progress when changing image
+      }, 5000); // Change image every 5 seconds
+    }
+    
+    return () => {
+      if (interval) clearInterval(interval);
+      if (progressInterval) clearInterval(progressInterval);
+    };
+  }, [isAutoPlaying, selectedProject, currentMediaIndex]);
+
   // Effect to handle URL-based project selection
   useEffect(() => {
     if (projectSlug) {
@@ -190,10 +225,12 @@ More than just a meeting room, this hall holds cultural significance—it is a p
         setSelectedProject(project);
         setCurrentView('detail');
         setCurrentMediaIndex(0);
+        setIsAutoPlaying(true); // Start auto-play when project opens
       }
     } else {
       setCurrentView('main');
       setSelectedProject(null);
+      setIsAutoPlaying(false);
     }
   }, [projectSlug]);
 
@@ -202,7 +239,7 @@ More than just a meeting room, this hall holds cultural significance—it is a p
       minHeight: 'calc(100vh - 200px)',
       background: '#f5f5f4',
       padding: '80px 24px',
-      fontFamily: '"Inter", "Segoe UI", system-ui, sans-serif'
+      fontFamily: 'Jost, sans-serif'
     },
     maxWidth: {
       maxWidth: '1200px',
@@ -215,7 +252,7 @@ More than just a meeting room, this hall holds cultural significance—it is a p
       marginBottom: '48px',
       textAlign: 'center',
       letterSpacing: '-0.02em',
-      fontFamily: '"Playfair Display", serif'
+      fontFamily: 'Jost, sans-serif'
     },
     gridThreeCol: {
       display: 'grid',
@@ -234,23 +271,43 @@ More than just a meeting room, this hall holds cultural significance—it is a p
     },
     projectImage: {
       backgroundColor: '#e2e8f0',
-      height: '280px',
+      height: '380px', // Increased from 280px
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
       color: '#64748b',
       fontSize: '16px',
       backgroundSize: 'cover',
-      backgroundPosition: 'center'
+      backgroundPosition: 'center',
+      position: 'relative'
+    },
+    projectOverlay: {
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      background: 'rgba(30, 41, 59, 0.7)',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      color: 'white',
+      fontSize: '24px',
+      fontWeight: '600',
+      opacity: 0,
+      transition: 'opacity 0.3s ease',
+       fontFamily: 'Jost, sans-serif'
+    
     },
     projectContent: {
-      padding: '32px'
+      padding: '24px' // Reduced padding since description is hidden
     },
     projectTitle: {
       fontSize: '24px',
       fontWeight: '600',
       color: '#1e293b',
-      marginBottom: '12px'
+      marginBottom: '12px',
+      textAlign: 'center'
     },
     projectMeta: {
       display: 'flex',
@@ -262,45 +319,38 @@ More than just a meeting room, this hall holds cultural significance—it is a p
       fontSize: '14px',
       textTransform: 'uppercase',
       letterSpacing: '0.5px',
-      fontWeight: '500'
+      fontWeight: '500',
+      fontFamily: 'Jost, sans-serif'
     },
     projectYear: {
       color: '#64748b',
       fontSize: '14px',
-      fontWeight: '500'
-    },
-    projectDescription: {
-      color: '#475569',
-      lineHeight: '1.6',
-      fontSize: '16px',
-      display: '-webkit-box',
-      WebkitLineClamp: 3,
-      WebkitBoxOrient: 'vertical',
-      overflow: 'hidden'
+      fontWeight: '500',
+      fontFamily: 'Jost, sans-serif'
     },
     // Detail View Styles
     detailContainer: {
-      display: 'grid',
-      gridTemplateColumns: '1fr 1fr',
-      gap: '80px',
-      alignItems: 'start'
+      display: 'flex',
+      flexDirection: 'column',
+      gap: '40px'
     },
     mediaContainer: {
       position: 'relative',
       borderRadius: '20px',
       overflow: 'hidden',
-      boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.1)'
+      boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.1)',
+      width: '100%'
     },
     mediaItem: {
       width: '100%',
-      height: '500px',
+      height: '600px', // Increased height for detail view
       objectFit: 'cover',
       display: 'block'
     },
     videoContainer: {
       position: 'relative',
       width: '100%',
-      height: '500px',
+      height: '600px',
       backgroundColor: '#1e293b',
       display: 'flex',
       alignItems: 'center',
@@ -362,6 +412,41 @@ More than just a meeting room, this hall holds cultural significance—it is a p
     activeIndicator: {
       backgroundColor: 'white'
     },
+    // Progress bar styles
+    progressBarContainer: {
+      position: 'absolute',
+      bottom: '0',
+      left: '0',
+      right: '0',
+      height: '4px',
+      backgroundColor: 'rgba(255, 255, 255, 0.3)',
+      overflow: 'hidden'
+    },
+    progressBar: {
+      height: '100%',
+      backgroundColor: '#3b82f6',
+      transition: 'width 0.1s linear',
+      boxShadow: '0 0 10px rgba(59, 130, 246, 0.5)'
+    },
+    // Auto-play controls
+    autoPlayControls: {
+      position: 'absolute',
+      top: '20px',
+      right: '20px',
+      display: 'flex',
+      gap: '10px'
+    },
+    autoPlayButton: {
+      backgroundColor: 'rgba(255, 255, 255, 0.9)',
+      border: 'none',
+      borderRadius: '8px',
+      padding: '8px 12px',
+      cursor: 'pointer',
+      fontSize: '14px',
+      fontWeight: '500',
+      transition: 'all 0.2s',
+      fontFamily: 'Jost, sans-serif'
+    },
     projectInfo: {
       paddingTop: '20px'
     },
@@ -370,31 +455,39 @@ More than just a meeting room, this hall holds cultural significance—it is a p
       fontWeight: '300',
       color: '#1e293b',
       marginBottom: '8px',
-      fontFamily: '"Playfair Display", serif'
+      textAlign: 'center',
+      fontFamily: 'Jost, sans-serif'
     },
     detailMeta: {
       display: 'flex',
       gap: '32px',
-      marginBottom: '32px'
+      marginBottom: '32px',
+      justifyContent: 'center'
     },
     detailCategory: {
       color: '#64748b',
       fontSize: '18px',
       textTransform: 'uppercase',
       letterSpacing: '0.5px',
-      fontWeight: '500'
+      fontWeight: '500',
+       fontFamily: 'Jost, sans-serif'
     },
     detailYear: {
       color: '#64748b',
       fontSize: '18px',
-      fontWeight: '500'
+      fontWeight: '500',
+       fontFamily: 'Jost, sans-serif'
     },
     detailDescription: {
       fontSize: '18px',
       color: '#475569',
       lineHeight: '1.7',
       fontWeight: '300',
-      whiteSpace: 'pre-line'
+      whiteSpace: 'pre-line',
+      maxWidth: '800px',
+      margin: '0 auto',
+      textAlign: 'center',
+       fontFamily: 'Jost, sans-serif'
     },
     backButton: {
       display: 'flex',
@@ -410,15 +503,24 @@ More than just a meeting room, this hall holds cultural significance—it is a p
       fontWeight: '500',
       transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
       marginBottom: '40px',
-      boxShadow: '0 4px 12px rgba(30, 41, 59, 0.15)'
+      boxShadow: '0 4px 12px rgba(30, 41, 59, 0.15)',
+       fontFamily: 'Jost, sans-serif'
     }
   };
 
   const mediaQueries = `
+
+   @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
+    
+    /* Apply Jost font to all elements */
+    * {
+      font-family: 'Jost', sans-serif !important;
+    }
     @media (max-width: 768px) {
-      .detail-container { grid-template-columns: 1fr !important; gap: 32px !important; }
-      .media-item { height: 300px !important; }
-      .video-container { height: 300px !important; }
+      .media-item { height: 400px !important; }
+      .video-container { height: 400px !important; }
+      .project-image { height: 300px !important; }
+      .detail-title { font-size: 36px !important; }
     }
   `;
 
@@ -428,18 +530,26 @@ More than just a meeting room, this hall holds cultural significance—it is a p
 
   const handleBackClick = () => {
     onNavigate('projects');
+    setIsAutoPlaying(false);
   };
 
   const nextMedia = () => {
     setCurrentMediaIndex((prev) => 
       prev === selectedProject.media.length - 1 ? 0 : prev + 1
     );
+    setProgressWidth(0); // Reset progress when manually changing
   };
 
   const prevMedia = () => {
     setCurrentMediaIndex((prev) => 
       prev === 0 ? selectedProject.media.length - 1 : prev - 1
     );
+    setProgressWidth(0); // Reset progress when manually changing
+  };
+
+  const toggleAutoPlay = () => {
+    setIsAutoPlaying(!isAutoPlaying);
+    setProgressWidth(0);
   };
 
   const renderMediaCarousel = () => {
@@ -466,36 +576,73 @@ More than just a meeting room, this hall holds cultural significance—it is a p
           </div>
         )}
         
-        <button 
-          style={{...styles.navButton, ...styles.navButtonLeft}}
-          onClick={prevMedia}
-          onMouseOver={(e) => e.target.style.backgroundColor = 'white'}
-          onMouseOut={(e) => e.target.style.backgroundColor = 'rgba(255, 255, 255, 0.9)'}
-        >
-          <ChevronLeft size={24} color="#1e293b" />
-        </button>
-        
-        <button 
-          style={{...styles.navButton, ...styles.navButtonRight}}
-          onClick={nextMedia}
-          onMouseOver={(e) => e.target.style.backgroundColor = 'white'}
-          onMouseOut={(e) => e.target.style.backgroundColor = 'rgba(255, 255, 255, 0.9)'}
-        >
-          <ChevronRight size={24} color="#1e293b" />
-        </button>
-        
-        <div style={styles.mediaIndicators}>
-          {selectedProject.media.map((_, index) => (
-            <div
-              key={index}
+        {/* Progress Bar - only show if multiple images and auto-playing */}
+        {selectedProject.media.length > 1 && isAutoPlaying && (
+          <div style={styles.progressBarContainer}>
+            <div 
               style={{
-                ...styles.indicator,
-                ...(index === currentMediaIndex ? styles.activeIndicator : {})
+                ...styles.progressBar,
+                width: `${progressWidth}%`
               }}
-              onClick={() => setCurrentMediaIndex(index)}
             />
-          ))}
-        </div>
+          </div>
+        )}
+        
+        {/* Auto-play controls */}
+        {/* {selectedProject.media.length > 1 && (
+          <div style={styles.autoPlayControls}>
+            <button 
+              style={styles.autoPlayButton}
+              onClick={toggleAutoPlay}
+              onMouseOver={(e) => e.target.style.backgroundColor = 'white'}
+              onMouseOut={(e) => e.target.style.backgroundColor = 'rgba(255, 255, 255, 0.9)'}
+            >
+              {isAutoPlaying ? 'Pause' : 'Play'}
+            </button>
+          </div>
+        )} */}
+        
+        {/* Navigation buttons - only show if multiple images */}
+        {selectedProject.media.length > 1 && (
+          <>
+            <button 
+              style={{...styles.navButton, ...styles.navButtonLeft}}
+              onClick={prevMedia}
+              onMouseOver={(e) => e.target.style.backgroundColor = 'white'}
+              onMouseOut={(e) => e.target.style.backgroundColor = 'rgba(255, 255, 255, 0.9)'}
+            >
+              <ChevronLeft size={24} color="#1e293b" />
+            </button>
+            
+            <button 
+              style={{...styles.navButton, ...styles.navButtonRight}}
+              onClick={nextMedia}
+              onMouseOver={(e) => e.target.style.backgroundColor = 'white'}
+              onMouseOut={(e) => e.target.style.backgroundColor = 'rgba(255, 255, 255, 0.9)'}
+            >
+              <ChevronRight size={24} color="#1e293b" />
+            </button>
+          </>
+        )}
+        
+        {/* Indicators - only show if multiple images */}
+        {selectedProject.media.length > 1 && (
+          <div style={styles.mediaIndicators}>
+            {selectedProject.media.map((_, index) => (
+              <div
+                key={index}
+                style={{
+                  ...styles.indicator,
+                  ...(index === currentMediaIndex ? styles.activeIndicator : {})
+                }}
+                onClick={() => {
+                  setCurrentMediaIndex(index);
+                  setProgressWidth(0);
+                }}
+              />
+            ))}
+          </div>
+        )}
       </div>
     );
   };
@@ -524,10 +671,10 @@ More than just a meeting room, this hall holds cultural significance—it is a p
           
           <div style={styles.projectInfo}>
             <h1 style={styles.detailTitle}>{selectedProject?.title}</h1>
-            {/* <div style={styles.detailMeta}>
+            <div style={styles.detailMeta}>
               <span style={styles.detailCategory}>{selectedProject?.category}</span>
-              <span style={styles.detailYear}>{selectedProject?.year}</span>
-            </div> */}
+              {/* <span style={styles.detailYear}>{selectedProject?.year}</span> */}
+            </div>
             <p style={styles.detailDescription}>{selectedProject?.description}</p>
           </div>
         </div>
@@ -548,29 +695,29 @@ More than just a meeting room, this hall holds cultural significance—it is a p
               onMouseOver={(e) => {
                 e.currentTarget.style.transform = 'translateY(-8px)';
                 e.currentTarget.style.boxShadow = '0 20px 40px rgba(0, 0, 0, 0.12)';
+                const overlay = e.currentTarget.querySelector('.project-overlay');
+                if (overlay) overlay.style.opacity = '1';
               }}
               onMouseOut={(e) => {
                 e.currentTarget.style.transform = 'translateY(0)';
                 e.currentTarget.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.08)';
+                const overlay = e.currentTarget.querySelector('.project-overlay');
+                if (overlay) overlay.style.opacity = '0';
               }}
             >
               <div 
+                className="project-image"
                 style={{
                   ...styles.projectImage,
                   backgroundImage: `url(${project.media[0]?.src})`
                 }}
               >
-                <span>{project.title}</span>
+                <div className="project-overlay" style={styles.projectOverlay}>
+                  Click to View
+                </div>
               </div>
               <div style={styles.projectContent}>
                 <h3 style={styles.projectTitle}>{project.title}</h3>
-                {/* <div style={styles.projectMeta}>
-                  <span style={styles.projectCategory}>{project.category}</span>
-                  <span style={styles.projectYear}>{project.year}</span>
-                </div> */}
-                <p style={styles.projectDescription}>
-                  {project.description}
-                </p>
               </div>
             </div>
           ))}

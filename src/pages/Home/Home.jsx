@@ -84,7 +84,7 @@ function HomePage({ onNavigate }) {
   };
 
   const styles = `
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
     
     * {
       margin: 0;
@@ -100,7 +100,7 @@ function HomePage({ onNavigate }) {
     .homepage-container {
       min-height: 100vh;
       background-color: #f5f5f4;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Jost', sans-serif;
       margin: 0;
       padding: 0;
     }
@@ -197,6 +197,7 @@ function HomePage({ onNavigate }) {
       font-weight: 300;
       margin-bottom: 1.5rem;
       line-height: 1.1;
+      font-family: 'Jost', sans-serif;
     }
 
     .hero-title-bold {
@@ -206,6 +207,7 @@ function HomePage({ onNavigate }) {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
+      font-family: 'Jost', sans-serif;
     }
 
     .hero-tagline-main {
@@ -213,6 +215,7 @@ function HomePage({ onNavigate }) {
       font-weight: 400;
       margin-bottom: 2rem;
       opacity: 0.9;
+      font-family: 'Jost', sans-serif;
     }
 
     .hero-buttons-main {
@@ -236,7 +239,7 @@ function HomePage({ onNavigate }) {
       gap: 1rem;
       font-size: 1.1rem;
       font-weight: 500;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Jost', sans-serif;
       box-shadow: 0 10px 30px rgba(87, 83, 78, 0.3);
     }
 
@@ -256,7 +259,7 @@ function HomePage({ onNavigate }) {
       transition: all 0.4s ease;
       font-size: 1.1rem;
       font-weight: 500;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Jost', sans-serif;
     }
 
     .secondary-button-main:hover {
@@ -288,6 +291,7 @@ function HomePage({ onNavigate }) {
       font-weight: 300;
       color: #1c1917;
       margin-bottom: 1.5rem;
+      font-family: 'Jost', sans-serif;
     }
 
     .carousel-subtitle {
@@ -297,6 +301,7 @@ function HomePage({ onNavigate }) {
       max-width: 600px;
       margin: 0 auto;
       line-height: 1.6;
+      font-family: 'Jost', sans-serif;
     }
 
     .carousel-main {
@@ -337,6 +342,7 @@ function HomePage({ onNavigate }) {
       font-size: 1rem;
       color: #78716c;
       font-weight: 500;
+      font-family: 'Jost', sans-serif;
     }
 
     .slide-subtitle {
@@ -346,6 +352,7 @@ function HomePage({ onNavigate }) {
       letter-spacing: 2px;
       margin-bottom: 1rem;
       font-weight: 600;
+      font-family: 'Jost', sans-serif;
     }
 
     .slide-title {
@@ -354,6 +361,7 @@ function HomePage({ onNavigate }) {
       color: #1c1917;
       margin-bottom: 1.5rem;
       line-height: 1.2;
+      font-family: 'Jost', sans-serif;
     }
 
     .slide-description {
@@ -361,6 +369,7 @@ function HomePage({ onNavigate }) {
       color: #57534e;
       line-height: 1.8;
       margin-bottom: 2rem;
+      font-family: 'Jost', sans-serif;
     }
 
     .slide-meta {
@@ -380,12 +389,14 @@ function HomePage({ onNavigate }) {
       text-transform: uppercase;
       letter-spacing: 1px;
       margin-bottom: 0.5rem;
+      font-family: 'Jost', sans-serif;
     }
 
     .meta-value {
       font-size: 1rem;
       color: #1c1917;
       font-weight: 500;
+      font-family: 'Jost', sans-serif;
     }
 
     .slide-button {
@@ -398,7 +409,7 @@ function HomePage({ onNavigate }) {
       transition: all 0.3s ease;
       font-size: 1rem;
       font-weight: 500;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Jost', sans-serif;
       align-self: flex-start;
       display: flex;
       align-items: center;
@@ -482,6 +493,7 @@ function HomePage({ onNavigate }) {
       max-width: 1200px;
       margin: 0 auto;
       padding: 0 2rem;
+      
     }
 
     .services-title {
@@ -490,6 +502,7 @@ function HomePage({ onNavigate }) {
       text-align: center;
       margin-bottom: 80px;
       color: #1c1917;
+      font-family: 'Jost', sans-serif;
     }
 
     .services-grid {
@@ -536,12 +549,19 @@ function HomePage({ onNavigate }) {
       font-weight: 600;
       margin-bottom: 1.5rem;
       color: #1c1917;
+      font-family: 'Jost', sans-serif;
     }
 
     .service-description {
       color: #57534e;
       line-height: 1.8;
       font-size: 1.1rem;
+      font-family: 'Jost', sans-serif;
+    }
+
+    /* Apply Jost font to all elements */
+    * {
+      font-family: 'Jost', sans-serif !important;
     }
 
     /* Tablet Styles */
