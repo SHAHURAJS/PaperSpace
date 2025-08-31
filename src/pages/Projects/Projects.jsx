@@ -279,7 +279,8 @@ More than just a meeting room, this hall holds cultural significance—it is a p
       color: '#64748b',
       fontSize: '16px',
       backgroundSize: 'cover',
-      backgroundPosition: 'center',
+      backgroundPosition: 'center center',
+      backgroundRepeat: 'no-repeat',
       position: 'relative'
     },
     projectOverlay: {
@@ -345,6 +346,7 @@ More than just a meeting room, this hall holds cultural significance—it is a p
       width: '100%',
       height: '600px',
       objectFit: 'cover',
+      objectPosition: 'center center',
       display: 'block'
     },
     videoContainer: {
@@ -516,12 +518,16 @@ More than just a meeting room, this hall holds cultural significance—it is a p
     @media (max-width: 768px) {
       .media-item { 
         height: 400px !important; 
+        object-position: center center !important;
+        object-fit: cover !important;
       }
       .video-container { 
         height: 400px !important; 
       }
       .project-image { 
         height: 300px !important; 
+        background-position: center center !important;
+        background-size: cover !important;
       }
       .detail-title { 
         font-size: 36px !important; 
@@ -538,7 +544,7 @@ More than just a meeting room, this hall holds cultural significance—it is a p
       }
       .container { 
         padding: 40px 16px !important;
-        background-attachment: scroll !important;
+        background-attachment: fixed !important;
       }
       .project-card {
         margin: 0 auto !important;
@@ -559,6 +565,15 @@ More than just a meeting room, this hall holds cultural significance—it is a p
       }
       .container { 
         padding: 40px 8px !important; 
+        background-attachment: fixed !important;
+      }
+      .media-item { 
+        object-position: center center !important;
+        object-fit: cover !important;
+      }
+      .project-image { 
+        background-position: center center !important;
+        background-size: cover !important;
       }
     }
   `;
