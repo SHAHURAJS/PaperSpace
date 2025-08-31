@@ -150,7 +150,7 @@ A dedicated doctor's relaxation room provides a private retreat, designed with c
 
 Each floor is framed with green planters, blending architecture with nature and bringing freshness to the overall look. The balconies provide cozy outdoor corners that connect the indoors to the landscape. Subtle details in the façade add character without overwhelming the design. The ground level maintains a strong, secure base, with patterned gates enhancing the entrance. The proportions are carefully balanced, making the structure feel modern yet timeless. With greenery flowing across the layers, the home feels alive and vibrant. The flat roofline adds to the contemporary style, while keeping the focus on simplicity. This design is both functional and beautiful, reflecting comfort in its true sense. It merges natural charm with modern design language, creating a home that feels stylish yet rooted.`,
       media: [
-        { type: 'image', src:AB1, alt: 'Front Elevation' }
+        { type: 'image', src: AB1, alt: 'Front Elevation' }
       ]
     },
     { 
@@ -189,26 +189,23 @@ More than just a meeting room, this hall holds cultural significance—it is a p
     let progressInterval;
     
     if (isAutoPlaying && selectedProject && selectedProject.media.length > 1) {
-      // Reset progress
       setProgressWidth(0);
       
-      // Progress bar animation
       progressInterval = setInterval(() => {
         setProgressWidth(prev => {
           if (prev >= 100) {
             return 0;
           }
-          return prev + 2; // Adjust speed here (2% every 100ms = 5 seconds total)
+          return prev + 2;
         });
       }, 100);
       
-      // Auto advance images
       interval = setInterval(() => {
         setCurrentMediaIndex(prev => 
           prev === selectedProject.media.length - 1 ? 0 : prev + 1
         );
-        setProgressWidth(0); // Reset progress when changing image
-      }, 5000); // Change image every 5 seconds
+        setProgressWidth(0);
+      }, 5000);
     }
     
     return () => {
@@ -225,7 +222,7 @@ More than just a meeting room, this hall holds cultural significance—it is a p
         setSelectedProject(project);
         setCurrentView('detail');
         setCurrentMediaIndex(0);
-        setIsAutoPlaying(true); // Start auto-play when project opens
+        setIsAutoPlaying(true);
       }
     } else {
       setCurrentView('main');
@@ -256,8 +253,9 @@ More than just a meeting room, this hall holds cultural significance—it is a p
     },
     gridThreeCol: {
       display: 'grid',
-      gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
-      gap: '40px'
+      gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+      gap: '40px',
+      justifyItems: 'center'
     },
     projectCard: {
       background: 'rgba(255, 255, 255, 0.8)',
@@ -267,11 +265,13 @@ More than just a meeting room, this hall holds cultural significance—it is a p
       overflow: 'hidden',
       boxShadow: '0 10px 25px rgba(0, 0, 0, 0.08)',
       transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-      cursor: 'pointer'
+      cursor: 'pointer',
+      width: '100%',
+      maxWidth: '350px'
     },
     projectImage: {
       backgroundColor: '#e2e8f0',
-      height: '380px', // Increased from 280px
+      height: '380px',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
@@ -296,11 +296,10 @@ More than just a meeting room, this hall holds cultural significance—it is a p
       fontWeight: '600',
       opacity: 0,
       transition: 'opacity 0.3s ease',
-       fontFamily: 'Jost, sans-serif'
-    
+      fontFamily: 'Jost, sans-serif'
     },
     projectContent: {
-      padding: '24px' // Reduced padding since description is hidden
+      padding: '24px'
     },
     projectTitle: {
       fontSize: '24px',
@@ -343,7 +342,7 @@ More than just a meeting room, this hall holds cultural significance—it is a p
     },
     mediaItem: {
       width: '100%',
-      height: '600px', // Increased height for detail view
+      height: '600px',
       objectFit: 'cover',
       display: 'block'
     },
@@ -412,7 +411,6 @@ More than just a meeting room, this hall holds cultural significance—it is a p
     activeIndicator: {
       backgroundColor: 'white'
     },
-    // Progress bar styles
     progressBarContainer: {
       position: 'absolute',
       bottom: '0',
@@ -428,7 +426,6 @@ More than just a meeting room, this hall holds cultural significance—it is a p
       transition: 'width 0.1s linear',
       boxShadow: '0 0 10px rgba(59, 130, 246, 0.5)'
     },
-    // Auto-play controls
     autoPlayControls: {
       position: 'absolute',
       top: '20px',
@@ -470,13 +467,13 @@ More than just a meeting room, this hall holds cultural significance—it is a p
       textTransform: 'uppercase',
       letterSpacing: '0.5px',
       fontWeight: '500',
-       fontFamily: 'Jost, sans-serif'
+      fontFamily: 'Jost, sans-serif'
     },
     detailYear: {
       color: '#64748b',
       fontSize: '18px',
       fontWeight: '500',
-       fontFamily: 'Jost, sans-serif'
+      fontFamily: 'Jost, sans-serif'
     },
     detailDescription: {
       fontSize: '18px',
@@ -487,7 +484,7 @@ More than just a meeting room, this hall holds cultural significance—it is a p
       maxWidth: '800px',
       margin: '0 auto',
       textAlign: 'center',
-       fontFamily: 'Jost, sans-serif'
+      fontFamily: 'Jost, sans-serif'
     },
     backButton: {
       display: 'flex',
@@ -504,23 +501,52 @@ More than just a meeting room, this hall holds cultural significance—it is a p
       transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
       marginBottom: '40px',
       boxShadow: '0 4px 12px rgba(30, 41, 59, 0.15)',
-       fontFamily: 'Jost, sans-serif'
+      fontFamily: 'Jost, sans-serif'
     }
   };
 
   const mediaQueries = `
-
-   @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
     
-    /* Apply Jost font to all elements */
     * {
       font-family: 'Jost', sans-serif !important;
     }
+    
     @media (max-width: 768px) {
-      .media-item { height: 400px !important; }
-      .video-container { height: 400px !important; }
-      .project-image { height: 300px !important; }
-      .detail-title { font-size: 36px !important; }
+      .media-item { 
+        height: 400px !important; 
+      }
+      .video-container { 
+        height: 400px !important; 
+      }
+      .project-image { 
+        height: 300px !important; 
+      }
+      .detail-title { 
+        font-size: 36px !important; 
+      }
+      .section-title { 
+        font-size: 36px !important; 
+      }
+      .grid-container { 
+        padding: 0 16px !important;
+        gap: 24px !important; 
+        grid-template-columns: 1fr !important;
+      }
+      .container { 
+        padding: 40px 16px !important; 
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .project-card {
+        margin: 0 auto !important;
+        max-width: 100% !important;
+        width: 100% !important;
+      }
+      .grid-container {
+        justify-items: center !important;
+      }
     }
   `;
 
@@ -537,14 +563,14 @@ More than just a meeting room, this hall holds cultural significance—it is a p
     setCurrentMediaIndex((prev) => 
       prev === selectedProject.media.length - 1 ? 0 : prev + 1
     );
-    setProgressWidth(0); // Reset progress when manually changing
+    setProgressWidth(0);
   };
 
   const prevMedia = () => {
     setCurrentMediaIndex((prev) => 
       prev === 0 ? selectedProject.media.length - 1 : prev - 1
     );
-    setProgressWidth(0); // Reset progress when manually changing
+    setProgressWidth(0);
   };
 
   const toggleAutoPlay = () => {
@@ -562,13 +588,15 @@ More than just a meeting room, this hall holds cultural significance—it is a p
             src={currentMedia.src}
             alt={currentMedia.alt}
             style={styles.mediaItem}
+            className="media-item"
           />
         ) : (
-          <div style={styles.videoContainer}>
+          <div style={styles.videoContainer} className="video-container">
             <img 
               src={currentMedia.thumbnail}
               alt={currentMedia.alt}
               style={styles.mediaItem}
+              className="media-item"
             />
             <div style={styles.playButton}>
               <Play size={32} color="#1e293b" />
@@ -576,7 +604,6 @@ More than just a meeting room, this hall holds cultural significance—it is a p
           </div>
         )}
         
-        {/* Progress Bar - only show if multiple images and auto-playing */}
         {selectedProject.media.length > 1 && isAutoPlaying && (
           <div style={styles.progressBarContainer}>
             <div 
@@ -588,21 +615,6 @@ More than just a meeting room, this hall holds cultural significance—it is a p
           </div>
         )}
         
-        {/* Auto-play controls */}
-        {/* {selectedProject.media.length > 1 && (
-          <div style={styles.autoPlayControls}>
-            <button 
-              style={styles.autoPlayButton}
-              onClick={toggleAutoPlay}
-              onMouseOver={(e) => e.target.style.backgroundColor = 'white'}
-              onMouseOut={(e) => e.target.style.backgroundColor = 'rgba(255, 255, 255, 0.9)'}
-            >
-              {isAutoPlaying ? 'Pause' : 'Play'}
-            </button>
-          </div>
-        )} */}
-        
-        {/* Navigation buttons - only show if multiple images */}
         {selectedProject.media.length > 1 && (
           <>
             <button 
@@ -625,7 +637,6 @@ More than just a meeting room, this hall holds cultural significance—it is a p
           </>
         )}
         
-        {/* Indicators - only show if multiple images */}
         {selectedProject.media.length > 1 && (
           <div style={styles.mediaIndicators}>
             {selectedProject.media.map((_, index) => (
@@ -648,7 +659,7 @@ More than just a meeting room, this hall holds cultural significance—it is a p
   };
 
   const renderProjectDetail = () => (
-    <div style={styles.container}>
+    <div style={styles.container} className="container">
       <div style={styles.maxWidth}>
         <button 
           style={styles.backButton}
@@ -670,10 +681,9 @@ More than just a meeting room, this hall holds cultural significance—it is a p
           {renderMediaCarousel()}
           
           <div style={styles.projectInfo}>
-            <h1 style={styles.detailTitle}>{selectedProject?.title}</h1>
+            <h1 style={styles.detailTitle} className="detail-title">{selectedProject?.title}</h1>
             <div style={styles.detailMeta}>
               <span style={styles.detailCategory}>{selectedProject?.category}</span>
-              {/* <span style={styles.detailYear}>{selectedProject?.year}</span> */}
             </div>
             <p style={styles.detailDescription}>{selectedProject?.description}</p>
           </div>
@@ -683,14 +693,15 @@ More than just a meeting room, this hall holds cultural significance—it is a p
   );
 
   const renderMainView = () => (
-    <div style={styles.container}>
+    <div style={styles.container} className="container">
       <div style={styles.maxWidth}>
-        <h1 style={styles.sectionTitle}>Our Projects</h1>
-        <div style={styles.gridThreeCol}>
+        <h1 style={styles.sectionTitle} className="section-title">Our Projects</h1>
+        <div style={styles.gridThreeCol} className="grid-container">
           {projects.map((project) => (
             <div 
               key={project.id} 
               style={styles.projectCard}
+              className="project-card"
               onClick={() => handleProjectClick(project)}
               onMouseOver={(e) => {
                 e.currentTarget.style.transform = 'translateY(-8px)';

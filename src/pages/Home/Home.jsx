@@ -16,8 +16,8 @@ function HomePage({ onNavigate }) {
   // Updated properties array with real project data
   const properties = [
     {
-      title: "Wedding Avenue",
-      subtitle: "Hospitality Design",
+      title: "Vistara Yeravale",
+      subtitle: "Hospitality",
       description: "Set against a scenic mountain backdrop, this wedding destination offers a complete experience with grand halls, dining spaces, guest cottages, and landscaped areas.",
       image: AWA1,
       year: "2024",
@@ -25,8 +25,8 @@ function HomePage({ onNavigate }) {
       slug: "weddingavenue"
     },
     {
-      title: "INT 1.5 BHK",
-      subtitle: "Residential Interior",
+      title: "Shendge Residence",
+      subtitle: "Interior",
       description: "Modern, cozy, and practical home design featuring smart storage, convertible dining areas, and wooden finishes that make compact spaces feel spacious and warm.",
       image: BHK1,
       year: "2024",
@@ -34,8 +34,8 @@ function HomePage({ onNavigate }) {
       slug: "int-1-5-bhk"
     },
     {
-      title: "Arch Bungalow",
-      subtitle: "Residential Architecture",
+      title: "Kadam's Retreat",
+      subtitle: "Architecture",
       description: "Elegant bungalow reflecting simplicity and sophistication with clean lines, natural textures, and green planters that blend architecture with nature.",
       image: AB1,
       year: "2023",
@@ -43,8 +43,8 @@ function HomePage({ onNavigate }) {
       slug: "arch-bungalow"
     },
     {
-      title: "Doctor Bungalow",
-      subtitle: "Residential Architecture",
+      title: "Konha's Villa",
+      subtitle: "Architecture",
       description: "Classical elegance meets modern sophistication with tall windows, detailed columns, and a breathtaking double-height lobby featuring a sweeping staircase.",
       image: DB1,
       year: "2022",
@@ -52,8 +52,8 @@ function HomePage({ onNavigate }) {
       slug: "doctor-bungalow"
     },
     {
-      title: "INT Ek Gaon Ek Shivjayanti",
-      subtitle: "Cultural Interior",
+      title: "Ek Gaon Ek Shivjayanti",
+      subtitle: "Urban",
       description: "Thoughtful balance between tradition and functionality with ornate arches, carved columns, and cultural significance for community gatherings and seminars.",
       image: Jayanti1,
       year: "2023",
