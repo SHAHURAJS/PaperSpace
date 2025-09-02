@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ArrowRight, Phone, Mail, MapPin, Users, Briefcase, Award, ChevronLeft, ChevronRight, Play } from 'lucide-react';
-import PaperSpaceHome from '../../assets/home/PaperSpaceHome.mp4';
+import PaperSpaceHome2 from '../../assets/home/PaperSpaceHome2.mp4';
 
 // Import project images
 import AWA1 from '../../assets/awa/AWA1.png'
@@ -712,7 +712,7 @@ function HomePage({ onNavigate }) {
           <div className="hero-video-container">
             <video
               className="hero-video"
-              src={PaperSpaceHome} // or "path/to/your/video.mp4"
+              src={PaperSpaceHome2} // or "path/to/your/video.mp4"
               autoPlay
               muted
               loop
