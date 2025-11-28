@@ -20,7 +20,7 @@ function WhyJoinSection() {
     },
     whyJoinList: {
       textAlign: 'left',
-      width: '80%', // ⬆️ increased width
+      width: '90%', // ⬆️ increased width
       margin: '0 auto',
       display: 'grid',
       gap: '1.5rem'
