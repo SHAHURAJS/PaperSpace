@@ -26,7 +26,7 @@ function WhyJoinSection() {
       gap: '1.5rem'
     },
     whyJoinItem: {
-      fontSize: '1.5rem',
+      fontSize: '1.1rem',
       color: '#57534e',
       paddingLeft: '2rem',
       position: 'relative',
@@ -34,7 +34,7 @@ function WhyJoinSection() {
       lineHeight: '1.6',
       padding: '1rem 0 1rem 2.5rem',
       borderRadius: '15px',
-      background: 'rgba(28, 25, 23, 0.02)',
+      background: 'rgba(82, 44, 19, 0.02)',
       transition: 'all 0.3s ease',
       fontFamily: 'Jost, sans-serif'
     },

@@ -17,7 +17,7 @@ function ContactSection({ Mail, MessageCircle }) {
       fontFamily: 'Jost, sans-serif'
     },
     contactText: {
-      fontSize: '1.4rem',
+      fontSize: '1.2rem',
       color: '#57534e',
       marginBottom: '2.5rem',
       fontWeight: '300',
