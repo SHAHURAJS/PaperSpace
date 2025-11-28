@@ -270,7 +270,7 @@ function CareerPage() {
       fontFamily: 'Jost, sans-serif'
     },
     maxWidth: {
-      maxWidth: '1400px',
+      maxWidth: '1000px',
       margin: '0 auto',
       textAlign: 'center'
     }
