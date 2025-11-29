@@ -21,12 +21,13 @@ body, html {
 
 .hero-video-section {
   position: relative;
-  height: 100vh;
+  height: 100dvh; /* Fix for iOS & mobile viewport */
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 
 .hero-video-container {
   position: absolute;
@@ -39,8 +40,9 @@ body, html {
 
 .hero-video {
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   object-fit: cover;
+  object-position: center;
 }
 
 .video-placeholder {
@@ -533,11 +535,22 @@ body, html {
   }
 }
 
+.hero-content-overlay {
+  padding-top: 80px !important; /* Adjust depending on your navbar height */
+}
+
+@media (max-width: 768px) {
+  .hero-content-overlay {
+    padding-top: 120px !important; /* More space for smaller screens */
+  }
+}
+
+
 @media (max-width: 480px) {
 
   .hero-video-section {
-    height: 60vh;
-    min-height: 400px;
+    height: 100dvh;
+    min-height: 100dvh;
   }
 
 

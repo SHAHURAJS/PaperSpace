@@ -900,11 +900,6 @@ import { useState } from "react";
 import { ArrowLeft } from "lucide-react";
 import "./about.css";
 
-import CollabAbout from "../../assets/about/CollabAbout.JPG";
-import Pratik from "../../assets/about/Pratik.JPG";
-import Shounak from "../../assets/about/Shounak.JPG";
-import Sushant from "../../assets/about/Sushant.JPG";
-
 import HeroSection from "./HeroSection";
 import ValuesSection from "./ValuesSection";
 import TeamSection from "./TeamSection";
@@ -949,7 +944,7 @@ function AboutPage() {
   return currentView === "main" ? (
     <div className="about-container">
 
-      <HeroSection CollabAbout={CollabAbout} />
+      <HeroSection CollabAbout="https://ik.imagekit.io/2ssa5wpda/paperspace/about/CollabAbout.webp?updatedAt=1764268201851" />
 
       <ValuesSection />
 

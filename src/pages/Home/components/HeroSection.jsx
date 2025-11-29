@@ -1,15 +1,26 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
+function HeroSection({ onNavigate }) {
 
-function HeroSection({ onNavigate, video }) {
+  // Your video link here
+  const video = "https://ik.imagekit.io/2ssa5wpda/paperspace/home/PaperSpaceHome2.mp4?updatedAt=1764339484942";
+
   const handleGetStarted = () => onNavigate && onNavigate('contact');
   const handleViewWork = () => onNavigate && onNavigate('projects');
 
   return (
     <section className="hero-video-section">
       <div className="hero-video-container">
-        <video className="hero-video" src={video} autoPlay muted loop playsInline preload="metadata" />
+        <video
+          className="hero-video"
+          src={video}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+        />
       </div>
 
       <div className="video-overlay"></div>
@@ -21,7 +32,9 @@ function HeroSection({ onNavigate, video }) {
             <span className="hero-title-bold">Inspire Lives</span>
           </h1>
 
-          <p className="hero-tagline-main">Precision on Paper. Power in Space.</p>
+          <p className="hero-tagline-main">
+            Precision on Paper. Power in Space.
+          </p>
 
           <div className="hero-buttons-main">
             <button className="primary-button-main" onClick={handleGetStarted}>
