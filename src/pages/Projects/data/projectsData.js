@@ -56,6 +56,7 @@ Warm Material Palette Inspired by Tradition – Rich woods, cane textures, and e
 Functional Living with Cultural Nuance – The suspended seating, illuminated shelving, and streamlined layout offer modern functionality, while curated décor elements and material choices add a refined South Indian character.
 `,
     media: [
+       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%201_3.webp?updatedAt=1764411313004", alt: 'door two' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%204.webp?updatedAt=1764411313627", alt: 'Hall with Swing' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%209.webp?updatedAt=1764411315310", alt: 'Kitchen one' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%201_2.webp?updatedAt=1764411315353", alt: 'Door One' },
@@ -69,7 +70,7 @@ Functional Living with Cultural Nuance – The suspended seating, illuminated sh
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%205.webp?updatedAt=1764411313311", alt: 'hall four' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%2011.webp?updatedAt=1764411313330", alt: 'kitchen three' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%206.webp?updatedAt=1764411313213", alt: 'hall five' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%201_3.webp?updatedAt=1764411313004", alt: 'door two' },
+     
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%2012.webp?updatedAt=1764411311961", alt: 'kitchen four' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%2014.webp?updatedAt=1764411311457", alt: 'kitchen five' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%202.webp?updatedAt=1764411309856", alt: 'hall six' },
