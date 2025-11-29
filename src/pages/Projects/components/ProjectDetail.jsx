@@ -22,48 +22,79 @@ function ProjectDetail({ selectedProject, onBack }) {
   return (
     <div className="container">
       <div className="max-width">
-
+        {/* Back Button */}
         <button className="back-btn" onClick={onBack}>
           <ArrowLeft size={20} /> Back to Projects
         </button>
 
-        {/* ---- HERO ---- */}
+        {/* Hero */}
         <div className="hero-wrapper" onClick={() => openLightbox(0)}>
-          <img 
+          <img
             src={selectedProject.media[0].src}
             alt={selectedProject.media[0].alt}
             className="hero-image"
           />
         </div>
 
-        {/* ---- INFO ---- */}
+        {/* Title */}
         <h1 className="detail-title">{selectedProject.title}</h1>
-        <span className="detail-category">{selectedProject.category}</span>
-        <p className="detail-description">{selectedProject.description}</p>
 
-        {/* ---- GALLERY TITLE (only if more images exist) ---- */}
-        {selectedProject.media.length > 1 && (
-          <h2 className="gallery-title">Gallery</h2>
-        )}
+        {/* Updated Detail Layout */}
+        <div className="detail-wrapper">
+          <div className="detail-left">
+            <span className="meta-badge">
+              <span className="meta-label">Location:</span>{" "}
+              {selectedProject.location}
+            </span>
+            <span className="meta-badge">
+              <span className="meta-label">Year:</span>{" "}
+              {selectedProject.year}
+            </span>
 
-        {/* ---- GALLERY ---- */}
-        <div className="gallery-grid">
-          {selectedProject.media.slice(1).map((item, index) => (
-            <img
-              key={index}
-              src={item.src}
-              className="gallery-image"
-              alt={item.alt}
-              onClick={() => openLightbox(index + 1)}
-            />
-          ))}
+            <span className="meta-badge">
+              <span className="meta-label">Category & Scope:</span>{" "}
+              {selectedProject.category}
+            </span>
+
+          </div>
+
+          <div className="detail-divider"></div>
+
+          <div className="detail-description-box">
+  <ul className="detail-list">
+    {selectedProject.description
+      .split("\n")
+      .filter(line => line.trim() !== "")
+      .map((line, index) => (
+        <li key={index}>{line.trim()}</li>
+      ))}
+  </ul>
+</div>
+
         </div>
+
+        {/* Gallery */}
+        {selectedProject.media.length > 1 && (
+          <>
+            <h2 className="gallery-title">Gallery</h2>
+            <div className="gallery-grid">
+              {selectedProject.media.slice(1).map((item, index) => (
+                <img
+                  key={index}
+                  src={item.src}
+                  alt={item.alt}
+                  className="gallery-image"
+                  onClick={() => openLightbox(index + 1)}
+                />
+              ))}
+            </div>
+          </>
+        )}
       </div>
 
-      {/* ---- LIGHTBOX ---- */}
+      {/* Lightbox */}
       {lightboxIndex !== null && (
         <div className="lightbox-overlay">
-          
           <button className="lightbox-close" onClick={closeLightbox}>
             <X size={32} color="white" />
           </button>
@@ -81,7 +112,6 @@ function ProjectDetail({ selectedProject, onBack }) {
           <button className="lightbox-nav right" onClick={nextImage}>
             <ChevronRight size={40} color="white" />
           </button>
-
         </div>
       )}
     </div>

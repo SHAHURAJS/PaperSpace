@@ -35,12 +35,13 @@
   opacity: 0;
 }
 
+/* 🔥 Updated to black + heavier weight */
 .detail-title {
   font-size: 55px;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   margin-top: 20px;
-  color: #1c1c1c;
+  color: #000 !important;
   letter-spacing: -0.02em;
 }
 
@@ -170,27 +171,84 @@
 }
 
 /* ---------------------------------------------------
-   DETAILS TEXT
+   🔥 NEW IMPROVED DETAIL LAYOUT
 --------------------------------------------------- */
 
-.detail-category {
-  display: block;
-  text-align: center;
+.detail-wrapper {
+  display: grid;
+  grid-template-columns: 260px 3px 1fr;
+  gap: 45px;
+  margin-top: 70px;
+  max-width: 1200px;
+  align-items: start;
+}
+
+/* Left Column */
+.detail-left {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Meta Styling */
+.meta-badge {
+  font-size: 18px;
+  padding: 12px 18px;
+  border-radius: 10px;
+  color: #2a2a2a;
+  width: fit-content;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.meta-badge .meta-label {
+  color: #555;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.detail-list {
   font-size: 20px;
-  color: #575757;
-  letter-spacing: 4px;
-  margin: 10px 0 25px;
-  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 1.85;
+  color: #3b3b3b;
+  padding-left: 25px;
+  margin: 0;
+}
+
+.detail-list li {
+  margin-bottom: 18px;
+}
+
+
+
+
+/* Vertical Divider */
+.detail-divider {
+  width: 3px;
+  min-height: 240px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    #000 30%,
+    #000 70%,
+    transparent 100%
+  );
+  border-radius: 50px; /* gives a subtle taper effect */
+}
+
+
+/* Description */
+.detail-description-box {
+  width: 100%;
 }
 
 .detail-description {
-  font-size: 23px;
+  font-size: 22px;
   font-weight: 300;
-  text-align: center;
-  max-width: 950px;
-  margin: auto;
-  line-height: 1.8;
+  line-height: 1.85;
   color: #3b3b3b;
+  margin: 0;
 }
 
 /* ---------------------------------------------------
@@ -217,7 +275,6 @@
   animation: fadeSlideDown .6s ease forwards;
   opacity: 0;
 }
-
 
 .gallery-image {
   width: 100%;
@@ -261,7 +318,6 @@
   max-height: 85vh;
   border-radius: 18px;
   object-fit: contain;
-  box-shadow: 0px 20px 60px rgba(0,0,0,0.5);
   transition: .3s;
 }
 
@@ -274,11 +330,6 @@
   padding: 12px;
   border-radius: 50%;
   cursor: pointer;
-  transition: .3s;
-}
-
-.lightbox-close:hover {
-  background: rgba(255,255,255,0.3);
 }
 
 .lightbox-nav {
@@ -290,15 +341,62 @@
   padding: 18px;
   border-radius: 50%;
   cursor: pointer;
-  transition: .3s;
-}
-
-.lightbox-nav:hover {
-  background: rgba(255,255,255,0.25);
 }
 
 .lightbox-nav.left { left: 40px; }
 .lightbox-nav.right { right: 40px; }
+
+/* ---------------------------------------------------
+   RESPONSIVE BEHAVIOR
+--------------------------------------------------- */
+
+@media (max-width: 950px) {
+  .detail-wrapper {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: left;
+  }
+
+  .detail-divider {
+    width: 100%;         /* clean short line */
+    height: 2px;        /* thin line */
+    min-height: 0 !important; /* override the desktop min-height */
+    border-radius: 0;
+    background: #000;
+    margin: 10px auto;
+  }
+
+  .detail-left {
+    align-items: left;
+  }
+
+  .detail-description {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 750px) {
+  .grid-container,
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-image { height: 280px; }
+
+  .detail-title {
+    font-size: 32px;
+    margin-top: 30px;
+  }
+
+  .meta-badge {
+    font-size: 16px;
+    padding: 10px 14px;
+  }
+
+  .gallery-image {
+    height: 260px;
+  }
+}
 
 /* ---------------------------------------------------
    ANIMATIONS
@@ -313,28 +411,4 @@
   from {opacity: 0; transform: translateY(-30px);}
   to {opacity: 1; transform: translateY(0);}
 }
-
-/* ---------------------------------------------------
-   RESPONSIVE
---------------------------------------------------- */
-
-@media (max-width: 1300px) {
-  .grid-container,
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .hero-image { height: 520px; }
-}
-
-@media (max-width: 750px) {
-  .grid-container,
-  .gallery-grid {
-    grid-template-columns: 1fr;
-  }
-  .hero-image { height: 350px; }
-  .section-title, .detail-title { font-size: 38px; }
-}
-
-
-
 
