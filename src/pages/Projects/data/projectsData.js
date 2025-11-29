@@ -1,45 +1,3 @@
-import BHK1 from '../../../assets/1.5bhk/BHK1.png'
-import BHK2 from '../../../assets/1.5bhk/BHK2.png'
-import BHK3 from '../../../assets/1.5bhk/BHK3.png'
-import B1 from '../../../assets/2bhk/B1.png'
-import B2 from '../../../assets/2bhk/B2.png'
-import B3 from '../../../assets/2bhk/B3.png'
-import B4 from '../../../assets/2bhk/B4.png'
-import B5 from '../../../assets/2bhk/B5.png'
-import B6 from '../../../assets/2bhk/B6.png'
-import B7 from '../../../assets/2bhk/B7.png'
-import B8 from '../../../assets/2bhk/B8.png'
-import B9 from '../../../assets/2bhk/B9.png'
-import B10 from '../../../assets/2bhk/B10.png'
-import B11 from '../../../assets/2bhk/B11.png'
-import B12 from '../../../assets/2bhk/B12.png'
-import B13 from '../../../assets/2bhk/B13.png'
-import B14 from '../../../assets/2bhk/B14.png'
-import B15 from '../../../assets/2bhk/B15.png'
-import B16 from '../../../assets/2bhk/B16.png'
-import B17 from '../../../assets/2bhk/B17.png'
-import B18 from '../../../assets/2bhk/B18.png'
-import B19 from '../../../assets/2bhk/B19.png'
-import AB1 from '../../../assets/archb/AB1.png'
-import AWA1 from '../../../assets/awa/AWA1.png'
-import AWA2 from '../../../assets/awa/AWA2.png'
-import AWA3 from '../../../assets/awa/AWA3.png'
-import AWA4 from '../../../assets/awa/AWA4.png'
-import AWA5 from '../../../assets/awa/AWA5.png'
-import AWA6 from '../../../assets/awa/AWA6.png'
-import AWA7 from '../../../assets/awa/AWA7.png'
-import DB1 from '../../../assets/db/DB1.png'
-import DB2 from '../../../assets/db/DB2.png'
-import Hospital1 from '../../../assets/inthospital/Hospital1.png'
-import Hospital2 from '../../../assets/inthospital/Hospital2.png'
-import Hospital3 from '../../../assets/inthospital/Hospital3.png'
-import Hospital4 from '../../../assets/inthospital/Hospital4.png'
-import Hospital5 from '../../../assets/inthospital/Hospital5.png'
-import Hospital6 from '../../../assets/inthospital/Hospital6.png'
-import Hospital7 from '../../../assets/inthospital/Hospital7.png'
-import Hospital8 from '../../../assets/inthospital/Hospital8.png'
-import Jayanti1 from '../../../assets/shivjayanti/Jayanti1.png'
-import Jayanti2 from '../../../assets/shivjayanti/Jayanti2.png'
 
 export const projects = [
   { 
@@ -54,12 +12,12 @@ The layout includes well-appointed cottages for guests and a premium private cot
 
 Designed with a natural slope in mind, the venue blends beautifully with its surroundings—making it an ideal setting for weddings that feel grand, yet close to nature.`,
     media: [
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/awa/AWA1.webp?updatedAt=1764268202024", alt: 'Wedding Avenue Exterior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/awa/AWA6.webp?updatedAt=1764268201944", alt: 'Wedding Avenue Exterior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/awa/AWA2.webp?updatedAt=1764268201909", alt: 'Grand Indoor Hall' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/awa/AWA3.webp?updatedAt=1764268201939", alt: 'Indoor Dining Area' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/awa/AWA4.webp?updatedAt=1764268202050", alt: 'Outdoor Lawn Area' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/awa/AWA5.webp?updatedAt=1764268201942", alt: 'Guest Cottages' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/awa/AWA6.webp?updatedAt=1764268201944", alt: 'Private Bride & Groom Cottage' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/awa/AWA1.webp?updatedAt=1764268202024", alt: 'Private Bride & Groom Cottage' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/awa/AWA7.webp?updatedAt=1764268201924", alt: 'Swimming Pool & Landscape' }
     ]
   },
@@ -73,9 +31,9 @@ Designed with a natural slope in mind, the venue blends beautifully with its sur
 
 The bedroom is calm and comfortable, with smart storage and soothing décor, while the extra half-room works as a flexible space — perfect for a study, guest corner, or relaxation nook. Wooden finishes, greenery, and simple décor touches run through the whole home, making this compact 1.5 BHK apartment look spacious, functional, and warm.`,
     media: [
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/1.5bhk/BHK1.webp?updatedAt=1764268201587", alt: 'Living Room' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/1.5bhk/BHK3.webp?updatedAt=1764268201672", alt: 'Living Room' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/1.5bhk/BHK2.webp?updatedAt=1764268201737", alt: 'Kitchen & Pooja Ghar' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/1.5bhk/BHK3.webp?updatedAt=1764268201672", alt: 'Half Room Study Area' }
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/1.5bhk/BHK1.webp?updatedAt=1764268201587", alt: 'Half Room Study Area' }
     ]
   },
   { 
@@ -90,7 +48,7 @@ The kitchen continues the modern look with clean lines, smart storage, and fresh
 
 Across the home, furniture is simple and minimal, colors stay soft with gentle contrasts, and the design balances comfort with modern style—resulting in a home that feels elegant, functional, and timeless.`,
     media: [
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B1.webp?updatedAt=1764268201827", alt: 'Living & Dining Area' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B17.webp?updatedAt=1764268201900", alt: 'Living & Dining Area' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B2.webp?updatedAt=1764268201829", alt: 'Modern Kitchen' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B3.webp?updatedAt=1764268201655", alt: 'Master Bedroom' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B4.webp?updatedAt=1764268201817", alt: 'Master Bedroom' },
@@ -106,7 +64,7 @@ Across the home, furniture is simple and minimal, colors stay soft with gentle c
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B14.webp?updatedAt=1764268201690", alt: 'Master Bedroom' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B15.webp?updatedAt=1764268201824", alt: 'Master Bedroom' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B16.webp?updatedAt=1764268201869", alt: 'Master Bedroom' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B17.webp?updatedAt=1764268201900", alt: 'Master Bedroom' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B1.webp?updatedAt=1764268201827", alt: 'Master Bedroom' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B18.webp?updatedAt=1764268201849", alt: 'Master Bedroom' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B19.webp?updatedAt=1764268201718", alt: 'Master Bedroom' },
     ]
@@ -121,14 +79,14 @@ Across the home, furniture is simple and minimal, colors stay soft with gentle c
 
 A dedicated doctor's relaxation room provides a private retreat, designed with cozy lounge seating, soothing teal cabinetry, and natural accents that encourage rest between consultations. Across the clinic, textures of wood, marble, and fabric are balanced with soft lighting to create harmony. The result is a seamless, modern space that feels professional, comfortable, and healing.`,
     media: [
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/inthospital/Hospital1.webp?updatedAt=1764268201992", alt: 'Reception Area' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/inthospital/Hospital8.webp?updatedAt=1764268201989", alt: 'Reception Area' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/inthospital/Hospital2.webp?updatedAt=1764268201908", alt: 'Waiting Area' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/inthospital/Hospital3.webp?updatedAt=1764268201906", alt: 'Doctor Relaxation Room' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/inthospital/Hospital4.webp?updatedAt=1764268201897", alt: 'Treatment Rooms' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/inthospital/Hospital5.webp?updatedAt=1764268201986", alt: 'Corridor View' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/inthospital/Hospital6.webp?updatedAt=1764268201988", alt: 'Reception Details' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/inthospital/Hospital7.webp?updatedAt=1764268201880", alt: 'Waiting Area Details' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/inthospital/Hospital8.webp?updatedAt=1764268201989", alt: 'Relaxation Room Details' }
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/inthospital/Hospital1.webp?updatedAt=1764268201992", alt: 'Relaxation Room Details' }
     ]
   },
   { 
@@ -154,8 +112,9 @@ Each floor is framed with green planters, blending architecture with nature and 
 
 Inside, the home opens into a breathtaking double-height lobby, where a sweeping staircase becomes the central highlight. The staircase, with its delicate wrought iron railing, curves upwards like a piece of art, complemented by the expansive glass wall that frames the outdoors. Natural light plays across the marble flooring, adding depth and elegance to the space. A grand piano and curated artworks enrich the atmosphere, making the interior both luxurious and soulful.`,
     media: [
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/db/DB1.webp?updatedAt=1764268201991", alt: 'Classical Exterior' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/db/DB2.webp?updatedAt=1764268201923", alt: 'Double-Height Lobby' }
+      
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/db/DB2.webp?updatedAt=1764268201923", alt: 'Double-Height Lobby' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/db/DB1.webp?updatedAt=1764268201991", alt: 'Classical Exterior' }
     ]
   },
   { 
