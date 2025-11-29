@@ -22,58 +22,61 @@ Nature-integrated design that follows the site’s natural slope and blends seam
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/awa/AWA7.webp?updatedAt=1764268201924", alt: 'Swimming Pool & Landscape' }
     ]
   },
+  
   { 
     id: 2, 
-    title: "Shendge Residence", 
-    category: "Interior Design & Execution", 
+    title: "Harkare's Residence", 
+    category: " Architecture – Design", 
     year: "2025",
-    location:"Ambegaon, Pune",
-    slug: "int-1-5-bhk",
-    description: `Warm, modern interiors featuring soft colors, wooden accents, nature-inspired artwork, and cozy lighting to create an inviting ambiance.
+    location:"Pradhikaran, Pune",
+    slug: "arch-harkare-residence",
+    description: `Modern architectural expression featuring clean geometry, framed balconies, and a refined mix of white plaster, brick, and metal accents.
 
-Smart space planning with a multi-functional dining area, compact integrated Pooja ghar, and efficient kitchen storage.
+Light-filled, well-ventilated spaces achieved through thoughtfully placed large openings and layered façade elements.
 
-Flexible room usage where the half-room functions as a study, guest corner, or relaxation nook, making the compact home feel spacious and versatile.`,
+Premium outdoor living experience with an open terrace, contemporary pergola, and a minimalist, elegant street-side presence.
+`,
     media: [
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/1.5bhk/BHK3.webp?updatedAt=1764268201672", alt: 'Living Room' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/1.5bhk/BHK2.webp?updatedAt=1764268201737", alt: 'Kitchen & Pooja Ghar' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/1.5bhk/BHK1.webp?updatedAt=1764268201587", alt: 'Half Room Study Area' }
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Pradhikaran/BScene%2014.webp?updatedAt=1764411265824", alt: 'One Side Overview' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Pradhikaran/BScene%2016.webp?updatedAt=1764411265644", alt: 'Full Overview' }
     ]
   },
+  
   { 
     id: 3, 
-    title: "Ponkshe Residence", 
-    category: "Interior Design & Execution", 
+    title: "202, Baner", 
+    category: " Interior Design & Execution", 
     year: "2025",
-    location:"Ravet, PCMC",
-    slug: "int-2-bhk",
-    description: `A warm, modern 2BHK designed with clean lines, neutral tones, and minimal, clutter-free planning for a calm and inviting ambience.
+    location:"Baner, Pune",
+    slug: "int-baner-residence",
+    description: `Modern Minimal Luxury with South Indian Touches – Clean lines and a muted palette are elevated with subtle South Indian design cues, creating a contemporary space rooted in cultural elegance.
 
-Thoughtfully designed living, dining, and kitchen spaces with smart storage, subtle textures, and soft layered lighting to enhance openness and functionality.
+Warm Material Palette Inspired by Tradition – Rich woods, cane textures, and earthy tones echo classic South Indian craftsmanship while blending seamlessly with modern furniture and finishes.
 
-Comfortable, versatile bedrooms featuring soothing palettes, accent elements, and flexible layouts suitable for adults, kids, guests, or study use.`,
+Functional Living with Cultural Nuance – The suspended seating, illuminated shelving, and streamlined layout offer modern functionality, while curated décor elements and material choices add a refined South Indian character.
+`,
     media: [
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B17.webp?updatedAt=1764268201900", alt: 'Living & Dining Area' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B2.webp?updatedAt=1764268201829", alt: 'Modern Kitchen' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B3.webp?updatedAt=1764268201655", alt: 'Master Bedroom' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B4.webp?updatedAt=1764268201817", alt: 'Master Bedroom' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B5.webp?updatedAt=1764268201754", alt: 'Master Bedroom' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B6.webp?updatedAt=1764268201902", alt: 'Master Bedroom' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B7.webp?updatedAt=1764268201747", alt: 'Master Bedroom' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B8.webp?updatedAt=1764268201877", alt: 'Master Bedroom' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B9.webp?updatedAt=1764268201835", alt: 'Master Bedroom' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B10.webp?updatedAt=1764268201921", alt: 'Master Bedroom' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B11.webp?updatedAt=1764268201899", alt: 'Master Bedroom' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B12.webp?updatedAt=1764268201641", alt: 'Master Bedroom' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B13.webp?updatedAt=1764268201863", alt: 'Master Bedroom' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B14.webp?updatedAt=1764268201690", alt: 'Master Bedroom' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B15.webp?updatedAt=1764268201824", alt: 'Master Bedroom' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B16.webp?updatedAt=1764268201869", alt: 'Master Bedroom' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B1.webp?updatedAt=1764268201827", alt: 'Master Bedroom' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B18.webp?updatedAt=1764268201849", alt: 'Master Bedroom' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B19.webp?updatedAt=1764268201718", alt: 'Master Bedroom' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%204.webp?updatedAt=1764411313627", alt: 'Hall with Swing' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%209.webp?updatedAt=1764411315310", alt: 'Kitchen one' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%201_2.webp?updatedAt=1764411315353", alt: 'Door One' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%203.webp?updatedAt=1764411315153", alt: 'Hall Two' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%2013.webp?updatedAt=1764411313971", alt: 'Kitchen Two' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%2015.webp?updatedAt=1764411313903", alt: 'Kitchen Three' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%2010.webp?updatedAt=1764411313865", alt: 'Kitchen Four' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%207.webp?updatedAt=1764411313862", alt: 'TV Unit' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%204.webp?updatedAt=1764411313627", alt: 'swing two' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%208.webp?updatedAt=1764411313596", alt: 'hall three' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%205.webp?updatedAt=1764411313311", alt: 'hall four' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%2011.webp?updatedAt=1764411313330", alt: 'kitchen three' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%206.webp?updatedAt=1764411313213", alt: 'hall five' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%201_3.webp?updatedAt=1764411313004", alt: 'door two' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%2012.webp?updatedAt=1764411311961", alt: 'kitchen four' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%2014.webp?updatedAt=1764411311457", alt: 'kitchen five' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%202.webp?updatedAt=1764411309856", alt: 'hall six' },
     ]
   },
+  
+  
   { 
     id: 4, 
     title: "Manasvardhan Clinic", 
@@ -149,57 +152,58 @@ Thoughtful Spatial Planning – The L-shaped seating layout, minimal décor acce
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/shivjayanti/Jayanti1.webp?updatedAt=1764268201915", alt: 'Chhatrapati Shivaji Maharaj Backdrop' }
     ]
   },
+  
   { 
-    id: 8, 
-    title: "Harkare's Residence", 
-    category: " Architecture – Design", 
+    id:8, 
+    title: "Shendge Residence", 
+    category: "Interior Design & Execution", 
     year: "2025",
-    location:"Pradhikaran, Pune",
-    slug: "arch-harkare-residence",
-    description: `Modern architectural expression featuring clean geometry, framed balconies, and a refined mix of white plaster, brick, and metal accents.
+    location:"Ambegaon, Pune",
+    slug: "int-1-5-bhk",
+    description: `Warm, modern interiors featuring soft colors, wooden accents, nature-inspired artwork, and cozy lighting to create an inviting ambiance.
 
-Light-filled, well-ventilated spaces achieved through thoughtfully placed large openings and layered façade elements.
+Smart space planning with a multi-functional dining area, compact integrated Pooja ghar, and efficient kitchen storage.
 
-Premium outdoor living experience with an open terrace, contemporary pergola, and a minimalist, elegant street-side presence.
-`,
+Flexible room usage where the half-room functions as a study, guest corner, or relaxation nook, making the compact home feel spacious and versatile.`,
     media: [
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Pradhikaran/BScene%2014.webp?updatedAt=1764411265824", alt: 'One Side Overview' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Pradhikaran/BScene%2016.webp?updatedAt=1764411265644", alt: 'Full Overview' }
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/1.5bhk/BHK3.webp?updatedAt=1764268201672", alt: 'Living Room' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/1.5bhk/BHK2.webp?updatedAt=1764268201737", alt: 'Kitchen & Pooja Ghar' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/1.5bhk/BHK1.webp?updatedAt=1764268201587", alt: 'Half Room Study Area' }
     ]
   },
+  
   { 
     id: 9, 
-    title: "202, Baner", 
-    category: " Interior Design & Execution", 
+    title: "Ponkshe Residence", 
+    category: "Interior Design & Execution", 
     year: "2025",
-    location:"Baner, Pune",
-    slug: "int-baner-residence",
-    description: `Modern Minimal Luxury with South Indian Touches – Clean lines and a muted palette are elevated with subtle South Indian design cues, creating a contemporary space rooted in cultural elegance.
+    location:"Ravet, PCMC",
+    slug: "int-2-bhk",
+    description: `A warm, modern 2BHK designed with clean lines, neutral tones, and minimal, clutter-free planning for a calm and inviting ambience.
 
-Warm Material Palette Inspired by Tradition – Rich woods, cane textures, and earthy tones echo classic South Indian craftsmanship while blending seamlessly with modern furniture and finishes.
+Thoughtfully designed living, dining, and kitchen spaces with smart storage, subtle textures, and soft layered lighting to enhance openness and functionality.
 
-Functional Living with Cultural Nuance – The suspended seating, illuminated shelving, and streamlined layout offer modern functionality, while curated décor elements and material choices add a refined South Indian character.
-`,
+Comfortable, versatile bedrooms featuring soothing palettes, accent elements, and flexible layouts suitable for adults, kids, guests, or study use.`,
     media: [
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%204.webp?updatedAt=1764411313627", alt: 'Hall with Swing' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%209.webp?updatedAt=1764411315310", alt: 'Kitchen one' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%201_2.webp?updatedAt=1764411315353", alt: 'Door One' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%203.webp?updatedAt=1764411315153", alt: 'Hall Two' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%2013.webp?updatedAt=1764411313971", alt: 'Kitchen Two' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%2015.webp?updatedAt=1764411313903", alt: 'Kitchen Three' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%2010.webp?updatedAt=1764411313865", alt: 'Kitchen Four' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%207.webp?updatedAt=1764411313862", alt: 'TV Unit' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%204.webp?updatedAt=1764411313627", alt: 'swing two' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%208.webp?updatedAt=1764411313596", alt: 'hall three' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%205.webp?updatedAt=1764411313311", alt: 'hall four' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%2011.webp?updatedAt=1764411313330", alt: 'kitchen three' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%206.webp?updatedAt=1764411313213", alt: 'hall five' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%201_3.webp?updatedAt=1764411313004", alt: 'door two' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%2012.webp?updatedAt=1764411311961", alt: 'kitchen four' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%2014.webp?updatedAt=1764411311457", alt: 'kitchen five' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%202.webp?updatedAt=1764411309856", alt: 'hall six' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B17.webp?updatedAt=1764268201900", alt: 'Living & Dining Area' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B2.webp?updatedAt=1764268201829", alt: 'Modern Kitchen' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B3.webp?updatedAt=1764268201655", alt: 'Master Bedroom' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B4.webp?updatedAt=1764268201817", alt: 'Master Bedroom' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B5.webp?updatedAt=1764268201754", alt: 'Master Bedroom' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B6.webp?updatedAt=1764268201902", alt: 'Master Bedroom' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B7.webp?updatedAt=1764268201747", alt: 'Master Bedroom' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B8.webp?updatedAt=1764268201877", alt: 'Master Bedroom' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B9.webp?updatedAt=1764268201835", alt: 'Master Bedroom' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B10.webp?updatedAt=1764268201921", alt: 'Master Bedroom' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B11.webp?updatedAt=1764268201899", alt: 'Master Bedroom' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B12.webp?updatedAt=1764268201641", alt: 'Master Bedroom' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B13.webp?updatedAt=1764268201863", alt: 'Master Bedroom' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B14.webp?updatedAt=1764268201690", alt: 'Master Bedroom' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B15.webp?updatedAt=1764268201824", alt: 'Master Bedroom' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B16.webp?updatedAt=1764268201869", alt: 'Master Bedroom' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B1.webp?updatedAt=1764268201827", alt: 'Master Bedroom' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B18.webp?updatedAt=1764268201849", alt: 'Master Bedroom' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B19.webp?updatedAt=1764268201718", alt: 'Master Bedroom' },
     ]
   },
-  
-  
 ];
