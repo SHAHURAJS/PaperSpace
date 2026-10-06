@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
+
+/* Mobile-specific overrides */
+@media (max-width: 899px) {
+  .navbar-mobile {
+    background-color: transparent !important; /* FIXED */
+    position: absolute !important;
+    backdrop-filter: blur(10px) !important; /* optional to match desktop */
+    border-bottom: none !important;
+    font-family: 'Jost', sans-serif !important;
+  }
+
+  .navbar-mobile .logo {
+    color: inherit !important;
+    text-shadow: none !important;
+    font-size: 18px !important;
+    font-family: 'Jost', sans-serif !important;
+  }
+
+  .navbar-mobile .logo img {
+    height: 28px !important;
+    margin-right: 4px !important;
+  }
+
+  .navbar-mobile .logo span {
+    color: inherit !important;
+    margin-left: 1px !important;
+    font-family: 'Jost', sans-serif !important;
+  }
+
+  .mobile-menu-button {
+    color: inherit ;
+    filter: none !important;
+    font-family: 'Jost', sans-serif !important;
+  }
+
+  .mobile-menu {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  background-color: rgba(255,255,255,0.6) !important; /* transparent but readable */
+  backdrop-filter: blur(10px) !important;
+  z-index: 9998 !important;
+  overflow-y: auto;
+}
+
+
+}
+
+@media (min-width: 480px) {
+  .logo { 
+    font-size: 16px !important; 
+    font-family: 'Jost', sans-serif !important;
+  }
+  .logo img { 
+    height: 28px !important; 
+    margin-right: 5px !important;
+  }
+}
+
+@media (min-width: 640px) {
+  .logo { 
+    font-size: 18px !important; 
+    font-family: 'Jost', sans-serif !important;
+  }
+  .logo img { 
+    height: 30px !important; 
+    margin-right: 5px !important;
+  }
+}
+
+@media (min-width: 900px) {
+  .desktop-menu { 
+    display: flex !important; 
+    gap: 20px !important;
+    font-family: 'Jost', sans-serif !important;
+  }
+
+  .mobile-menu-button { 
+    display: none !important; 
+  }
+
+  .logo { 
+    font-size: 18px !important;
+    font-family: 'Jost', sans-serif !important;
+  }
+
+  .logo img { 
+    height: 30px !important;
+    margin-right: 5px !important;
+  }
+
+  /* Desktop home page styles */
+  .navbar-home-desktop {
+    background: transparent !important;
+    position: absolute !important;
+    backdrop-filter: blur(10px) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    font-family: 'Jost', sans-serif !important;
+  }
+  
+  .navbar-home-desktop .logo {
+    color: #ffffff !important;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3) !important;
+    font-family: 'Jost', sans-serif !important;
+  }
+
+  .navbar-home-desktop .logo span {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-family: 'Jost', sans-serif !important;
+  }
+}
+
+@media (min-width: 1000px) {
+  .desktop-menu { 
+    gap: 24px !important;
+    font-family: 'Jost', sans-serif !important;
+  }
+  .logo { 
+    font-size: 19px !important;
+    font-family: 'Jost', sans-serif !important;
+  }
+  .logo img { 
+    height: 31px !important;
+    margin-right: 6px !important;
+  }
+}
+
+@media (min-width: 1100px) {
+  .desktop-menu { 
+    gap: 28px !important;
+    font-family: 'Jost', sans-serif !important;
+  }
+  .logo { 
+    font-size: 20px !important;
+    font-family: 'Jost', sans-serif !important;
+  }
+  .logo img { 
+    height: 32px !important;
+    margin-right: 6px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .desktop-menu { 
+    gap: 32px !important;
+    font-family: 'Jost', sans-serif !important;
+  }
+  .logo { 
+    font-size: 21px !important;
+    font-family: 'Jost', sans-serif !important;
+  }
+  .logo img { 
+    height: 33px !important;
+  }
+}
+
+@media (min-width: 1300px) {
+  .desktop-menu { 
+    gap: 36px !important;
+    font-family: 'Jost', sans-serif !important;
+  }
+  .logo { 
+    font-size: 22px !important;
+    font-family: 'Jost', sans-serif !important;
+  }
+  .logo img { 
+    height: 34px !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .desktop-menu { 
+    gap: 40px !important;
+    font-family: 'Jost', sans-serif !important;
+  }
+  .logo { 
+    font-size: 23px !important;
+    font-family: 'Jost', sans-serif !important;
+  }
+  .logo img { 
+    height: 35px !important;
+  }
+}
+
+@media (min-width: 1500px) {
+  .desktop-menu { 
+    gap: 48px !important;
+    font-family: 'Jost', sans-serif !important;
+  }
+  .logo { 
+    font-size: 24px !important;
+    font-family: 'Jost', sans-serif !important;
+  }
+  .logo img { 
+    height: 36px !important;
+  }
+}
+
+/* Hover effects */
+.nav-link:hover {
+  color: #6B7280 !important;
+  transform: translateY(-1px);
+}
+
+.mobile-nav-link:hover {
+  color: #6B7280 !important;
+  transform: translateX(5px);
+}
+
+
+/* Desktop scroll effect */
+.navbar-home {
+  background: rgba(0, 0, 0, 0.1) !important;
+}
+
+.navbar-home:hover {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Apply font globally */
+nav, .logo, .desktop-menu, .mobile-menu, .nav-link, .mobile-nav-link {
+  font-family: 'Jost', sans-serif !important;
+}
+
+
+.navbar-home-desktop .logo,
+.navbar-mobile.navbar-home-desktop .logo {
+  color: #ffffff !important;
+}
+
+/* Force hamburger icon white on homepage with video */
+.navbar-home-desktop .mobile-menu-button {
+  color: #ffffff !important;
+}
