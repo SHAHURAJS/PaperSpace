@@ -1,5 +1,94 @@
-
+import aakriti from "../../../assets/font/aakriti.png";
 export const projects = [
+
+  { 
+    id: 10, 
+    title: "TriAxis Commercial", 
+    category: "Architecture – Redevelopment feasibility representation", 
+    year: "2026",
+    location:"Pune, Maharashtra",
+    currrent_status:"Completed",
+    slug: "triaxis",
+    description: `A strategic amalgamation of three existing buildings into a single, unified commercial development, designed to create architectural continuity with a cohesive and contemporary building identity for Anadi Anant & PBA PMC.
+    
+Intelligent planning to maximize development potential while ensuring efficient circulation and functional commercial layouts. Seamless integration of spaces to enhance accessibility and operational efficiency.
+
+A thoughtfully designed commercial development at a prime location in Pune City. The design emphasizes modern architecture, efficient urban integration, and a distinctive commercial presence.
+`,
+    media: [
+      { type: 'video', src: "https://ik.imagekit.io/j6tljyacz/continental/continent2%20(1).mp4", alt: 'Continental Walkthrough' },
+      { type: 'video', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Continental/continental_walkthrough.mp4?updatedAt=1791104157931", alt: 'Continental Walkthrough' },
+    ]
+  },
+
+  { 
+    id: 2, 
+    title: "सहवास", 
+    category: " Architecture – Design & Liasoning", 
+    year: "2025",
+    location:"Pradhikaran, Pune",
+    currrent_status:"Sanctioned and ready for construction",
+    slug: "arch-apex-residence",
+    description: `Modern architectural expression featuring clean geometry, framed balconies, and a refined mix of white plaster, brick, and metal accents.
+
+Light-filled, well-ventilated spaces achieved through thoughtfully placed large openings and layered façade elements.
+
+Premium outdoor living experience with an open terrace, contemporary pergola, and a minimalist, elegant street-side presence.
+`,
+    media: [
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Pradhikaran/BScene%2014.webp?updatedAt=1764411265824", alt: 'One Side Overview' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Pradhikaran/BScene%2016.webp?updatedAt=1764411265644", alt: 'Full Overview' }
+    ]
+  },
+
+  { 
+    id: 19, 
+    title: "Vishwakarma Co-operative", 
+    category: "Architecture – Redevelopment feasibility representation", 
+    year: "2026",
+    location:"Pune, Maharashtra",
+    currrent_status:"Completed",
+    slug: "vishwakarma",
+    description: `Conceptual Redevelopment Planning.
+Prepared the conceptual master planning and spatial organization for the proposed 6-acre redevelopment project, establishing the overall development vision, built-form arrangement, and site planning strategy.
+
+
+Planning & Presentation Support - Developed preliminary planning concepts and architectural representations to communicate the proposed redevelopment scheme and overall project organization to Anadi Anant & PBA PMC and relevant stakeholders.
+
+
+Redevelopment Feasibility Representation - Provided conceptual architectural inputs and development representations illustrating the potential planning approach, site utilization, building configuration, circulation, and overall vision for the proposed 6-acre redevelopment.
+`,
+    media: [
+      { type: 'video', src: "https://ik.imagekit.io/j6tljyacz/vishwakarma/vishwakarma_walkthrough.mp4", alt: 'Vishwakarma Walkthrough' },
+    ]
+  },
+
+  
+  
+  { 
+    id: 13, 
+    title: "Seema Garden", 
+    category: "Architecture – 3D Visualization", 
+    year: "2026",
+    location:"Pune, Maharashtra",
+    currrent_status:"Completed",
+    slug: "seema-garden",
+   description: `Large-Scale Development Vision - A proposal-stage <strong>3D visualization</strong> for Mangalam Developers, showcasing the overall vision for a 2.5-acre development in Kothrud, Pune.
+
+Masterplanning & Built-Form Visualization - Conceptual visualization illustrating the proposed site planning, building massing, circulation, and overall development potential.
+
+Architectural Identity & Presentation - A contemporary architectural concept developed to establish a distinctive identity and communicate the proposed project through <strong>3D visualization</strong>.`,
+    media: [
+      { type: 'video', src: "https://ik.imagekit.io/80a9kr2lz/paperspaceStudio/seema/Seema2.mp4", alt: 'Seema Garden Walkthrough' },
+      { type: 'video', src: "https://ik.imagekit.io/80a9kr2lz/paperspaceStudio/seema/Seema4.mp4", alt: 'Seema Garden Walkthrough' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/seemagarden/seema1.jpg?updatedAt=1791106156147", alt: 'Seema Garden 1' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/seemagarden/seema2.jpg?updatedAt=1791106156813", alt: 'Seema Garden 2' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/seemagarden/seema3.jpg?updatedAt=1791106157617", alt: 'Seema Garden 3' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/seemagarden/seema4.jpg?updatedAt=1791106157439", alt: 'Seema Garden 4' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/seemagarden/seema5.jpg?updatedAt=1791106157728", alt: 'Seema Garden 5' },
+    ]
+  },
+
   { 
     id: 1, 
     title: "Vistara Yeravale", 
@@ -21,26 +110,6 @@ Nature-integrated design that follows the site’s natural slope and blends seam
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/awa/AWA5.webp?updatedAt=1764268201942", alt: 'Guest Cottages' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/awa/AWA1.webp?updatedAt=1764268202024", alt: 'Private Bride & Groom Cottage' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/awa/AWA7.webp?updatedAt=1764268201924", alt: 'Swimming Pool & Landscape' }
-    ]
-  },
-  
-  { 
-    id: 2, 
-    title: "Apex Residence", 
-    category: " Architecture – Design & Liasoning", 
-    year: "2025",
-    location:"Pradhikaran, Pune",
-    currrent_status:"Sanctioned and ready for construction",
-    slug: "arch-apex-residence",
-    description: `Modern architectural expression featuring clean geometry, framed balconies, and a refined mix of white plaster, brick, and metal accents.
-
-Light-filled, well-ventilated spaces achieved through thoughtfully placed large openings and layered façade elements.
-
-Premium outdoor living experience with an open terrace, contemporary pergola, and a minimalist, elegant street-side presence.
-`,
-    media: [
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Pradhikaran/BScene%2014.webp?updatedAt=1764411265824", alt: 'One Side Overview' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Pradhikaran/BScene%2016.webp?updatedAt=1764411265644", alt: 'Full Overview' }
     ]
   },
   
@@ -80,15 +149,156 @@ Functional Living with Cultural Nuance – The suspended seating, illuminated sh
     ]
   },
   
+  { 
+    id: 16, 
+    title: "Revive 47 ", 
+    category: "Interior Design", 
+    year: "2026",
+    location:"Karad, Maharashtra",
+    currrent_status:"Completed",
+    slug: "revive-47",
+    description: `Heritage Building Transformation: Renovation and interior design of a stone building constructed in 1947, carefully retaining its original architectural character while adapting the structure for contemporary commercial use.
+Commercial Redevelopment: The existing structure is being transformed into a four-storey commercial building, integrating modern planning, functional spaces, and upgraded building interiors within the historic stone framework.
+
+Contemporary Interior & Renovation: The design combines the building’s original stone character with contemporary interior elements, creating a distinctive commercial environment while respecting the existing structure and its architectural identity.`,
+    media: [
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire1.webp?updatedAt=1791643245081", alt: 'Mohire Shop Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire10.webp?updatedAt=1791643245554", alt: 'Mohire Shop Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire11.webp?updatedAt=1791643245433", alt: 'Mohire Shop Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire12.webp?updatedAt=1791643246564", alt: 'Mohire Shop Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire13.webp?updatedAt=1791643246145", alt: 'Mohire Shop Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire14.webp?updatedAt=1791643246745", alt: 'Mohire Shop Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire15.webp?updatedAt=1791643246848", alt: 'Mohire Shop Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire16.webp?updatedAt=1791643246518", alt: 'Mohire Shop Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire17.webp?updatedAt=1791643246918", alt: 'Mohire Shop Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire18.webp?updatedAt=1791643246895", alt: 'Mohire Shop Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire19.webp?updatedAt=1791643245925", alt: 'Mohire Shop Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire2.webp?updatedAt=1791643245235", alt: 'Mohire Shop Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire20.webp?updatedAt=1791643246646", alt: 'Mohire Shop Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire21.webp?updatedAt=1791643246372", alt: 'Mohire Shop Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire22.webp?updatedAt=1791643246592", alt: 'Mohire Shop Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire23.webp?updatedAt=1791643246553", alt: 'Mohire Shop Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire24.webp?updatedAt=1791643246082", alt: 'Mohire Shop Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire25.webp?updatedAt=1791643246350", alt: 'Mohire Shop Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire26.webp?updatedAt=1791643245449", alt: 'Mohire Shop Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire27.webp?updatedAt=1791643246067", alt: 'Mohire Shop Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire28.webp?updatedAt=1791643245501", alt: 'Mohire Shop Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire29.webp?updatedAt=1791643245513", alt: 'Mohire Shop Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire3.webp?updatedAt=1791643245685", alt: 'Mohire Shop Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire30.webp?updatedAt=1791643246095", alt: 'Mohire Shop Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire31.webp?updatedAt=1791643246065", alt: 'Mohire Shop Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire32.webp?updatedAt=1791643245720", alt: 'Mohire Shop Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire33.webp?updatedAt=1791643245020", alt: 'Mohire Shop Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire34.webp?updatedAt=1791643245574", alt: 'Mohire Shop Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire35.webp?updatedAt=1791643245987", alt: 'Mohire Shop Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire36.webp?updatedAt=1791643246619", alt: 'Mohire Shop Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire37.webp?updatedAt=1791643246495", alt: 'Mohire Shop Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire4.webp?updatedAt=1791643245389", alt: 'Mohire Shop Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire5.webp?updatedAt=1791643245186", alt: 'Mohire Shop Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire6.webp?updatedAt=1791643245592", alt: 'Mohire Shop Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire7.webp?updatedAt=1791643246226", alt: 'Mohire Shop Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire8.webp?updatedAt=1791643244957", alt: 'Mohire Shop Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire9.webp?updatedAt=1791643245166", alt: 'Mohire Shop Interior' },
+
+    ]
+  },
+  { 
+    id: 17, 
+    title: "The Calm House ", 
+    category: "Interior Design & Execution", 
+    year: "2026",
+    location:"Pune, Maharashtra",
+    currrent_status:"Under Execution",
+    slug: "the-calm-house",
+    description: `Contemporary Residential Design: A thoughtfully designed 3 BHK residence in Baner, Pune, featuring a simple yet elegant contemporary design language with a warm and sophisticated ambience.
+
+nterior Detailing & Ambience: Carefully designed false ceilings, lighting, finishes, and interior elements create a cohesive and inviting atmosphere while maintaining a clean and modern aesthetic.
+Design & Execution: The project includes complete interior design and execution, translating the design concept into a well-crafted residential space with attention to detail, functionality, and finish quality.
+`,
+    media: [
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali1.webp?updatedAt=1791645734961", alt: 'Anjali Datar Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali10.webp?updatedAt=1791645735761", alt: 'Anjali Datar Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali11.webp?updatedAt=1791645736079", alt: 'Anjali Datar Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali12.webp?updatedAt=1791645735790", alt: 'Anjali Datar Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali13.webp?updatedAt=1791645736151", alt: 'Anjali Datar Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali14.webp?updatedAt=1791645735652", alt: 'Anjali Datar Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali15.webp?updatedAt=1791645736108", alt: 'Anjali Datar Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali2.webp?updatedAt=1791645734861", alt: 'Anjali Datar Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali3.webp?updatedAt=1791645735055", alt: 'Anjali Datar Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali4.webp?updatedAt=1791645735369", alt: 'Anjali Datar Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali5.webp?updatedAt=1791645735950", alt: 'Anjali Datar Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali6.webp?updatedAt=1791645736012", alt: 'Anjali Datar Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali7.webp?updatedAt=1791645735659", alt: 'Anjali Datar Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali8.webp?updatedAt=1791645735205", alt: 'Anjali Datar Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali9.webp?updatedAt=1791645735856", alt: 'Anjali Datar Interior' },
+    ]
+  },
+  { 
+    id: 18, 
+    title: "The Quiet Classic ", 
+    category: "Interior Design & Visualization", 
+    year: "2026",
+    location:"Pune, Maharashtra",
+    currrent_status:"3D Visualization submitted",
+    slug: "the-quiet-classic",
+    description: `Modern–Classic Design Language: A 3 BHK residence in Wakad, Pune, designed with a contemporary aesthetic enriched by subtle influences of traditional and old-world design elements.
+
+Contemporary Spaces with Old-World Character: The interiors blend modern forms, finishes, and detailing with nostalgic elements to create a warm, timeless, and sophisticated residential ambience.
+
+Design & Visualization: The project includes interior design and 3D visualization, presenting the proposed spaces, materials, lighting, and overall design character before execution`,
+    media: [
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade1.webp?updatedAt=1791644792476", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade10.webp?updatedAt=1791644794965", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade11.webp?updatedAt=1791644794783", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade12.webp?updatedAt=1791644795687", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade13.webp?updatedAt=1791644795693", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade14.webp?updatedAt=1791644795033", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade15.webp?updatedAt=1791644794899", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade16.webp?updatedAt=1791644794981", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade17.webp?updatedAt=1791644795000", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade18.webp?updatedAt=1791644795313", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade19.webp?updatedAt=1791644792788", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade2.webp?updatedAt=1791644792601", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade20.webp?updatedAt=1791644795112", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade21.webp?updatedAt=1791644795251", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade22.webp?updatedAt=1791644794930", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade23.webp?updatedAt=1791644795141", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade24.webp?updatedAt=1791644794875", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade25.webp?updatedAt=1791644795536", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade26.webp?updatedAt=1791644794992", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade27.webp?updatedAt=1791644795366", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade28.webp?updatedAt=1791644795060", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade29.webp?updatedAt=1791644795298", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade3.webp?updatedAt=1791644792682", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade30.webp?updatedAt=1791644795643", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade31.webp?updatedAt=1791644795510", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade32.webp?updatedAt=1791644795788", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade33.webp?updatedAt=1791644795593", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade34.webp?updatedAt=1791644795207", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade35.webp?updatedAt=1791644795674", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade36.webp?updatedAt=1791644795657", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade37.webp?updatedAt=1791644795454", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade38.webp?updatedAt=1791644795570", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade39.webp?updatedAt=1791644795728", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade4.webp?updatedAt=1791644792572", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade40.webp?updatedAt=1791644794791", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade41.webp?updatedAt=1791644795451", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade5.webp?updatedAt=1791644793168", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade6.webp?updatedAt=1791644792754", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade7.webp?updatedAt=1791644793946", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade8.webp?updatedAt=1791644793279", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade9.webp?updatedAt=1791644795621", alt: 'Kothawade Residence Interior' },
+    ]
+  },
   
   { 
     id: 4, 
     title: "Manasvardhan Clinic", 
-    category: "Interior Design & Execution", 
+    category: "Interior Design ", 
     year: "2025",
     location:"Karad, Maharashtra",
     slug: "int-clinic-hospital",
-    current_status: "Ready for execution",
+    currrent_status: "Completed",
     description: `A modern and calming clinic interior designed with warm wooden finishes, marble accents, neutral tones, and soft lighting to create a professional yet welcoming environment.
 
 Thoughtfully planned reception and patient seating areas enhanced with natural light, subtle décor, and greenery, ensuring comfort and a soothing visual experience.
@@ -214,32 +424,14 @@ Comfortable, versatile bedrooms featuring soothing palettes, accent elements, an
     ]
   },
   { 
-    id: 10, 
-    title: "TriAxis Commercial", 
+    id: 11, 
+    title: "Vertex One", 
     category: "Architecture – Redevelopment feasibility representation", 
     year: "2026",
     location:"Pune, Maharashtra",
     currrent_status:"Completed",
-    slug: "triaxis",
-    description: `A strategic amalgamation of three existing buildings into a single, unified commercial development. Designed to create architectural continuity with a cohesive and contemporary building identity for Anadi Anant & PBA PMC.
-    
-Intelligent planning to maximize development potential while ensuring efficient circulation and functional commercial layouts. Seamless integration of spaces to enhance accessibility and operational efficiency.
-
-A thoughtfully designed commercial development at a prime location in Pune City. The design emphasizes modern architecture, efficient urban integration, and a distinctive commercial presence.
-`,
-    media: [
-      { type: 'video', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Continental/continental_walkthrough.mp4?updatedAt=1791104157931", alt: 'Continental Walkthrough' },
-    ]
-  },
-  { 
-    id: 11, 
-    title: "Vertex One", 
-    category: "Architecture – Design", 
-    year: "2026",
-    location:"Pune, Maharashtra",
-    current_status:"Proposal",
     slug: "vertex-one",
-    description: `A contemporary architectural concept featuring a distinctive façade, modern aesthetics, and a strong visual identity. Designed to create a landmark commercial development in the heart of Pune City.
+    description: `A contemporary architectural concept featuring a distinctive façade, modern aesthetics, and a strong visual identity. Designed to create a landmark commercial development in the heart of Pune City for Anadi Anant & PBA PMC.
 
 
 Thoughtfully planned commercial spaces with optimized layouts and efficient vertical and horizontal circulation. Designed to maximize functionality while ensuring seamless movement and space utilization.
@@ -248,16 +440,20 @@ Thoughtfully planned commercial spaces with optimized layouts and efficient vert
 Integration of an innovative automated robotic parking system to optimize parking capacity. Designed to minimize space requirements while enhancing convenience and operational efficiency.
 `,
     media: [
+      { type: 'video', src: "https://ik.imagekit.io/80a9kr2lz/paperspaceStudio/kamala/kamala%20(1)%20(1).webm", alt: 'Continental Walkthrough' },
       { type: 'video', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kamla/kamla_walkthrough.mp4?updatedAt=1791104236402", alt: 'Continental Walkthrough' },
     ]
   },
+  
+  
+  
   { 
     id: 12, 
     title: "City Nexus ", 
     category: "Architecture – Design", 
     year: "2026",
     location:"Pune, Maharashtra",
-    currrent_status:"Planning",
+    currrent_status: "Proposal",
     slug: "meghali",
     description: `Commercial Redevelopment - A proposed commercial redevelopment project for Anadi Anand Developers near Karve Putala, Pune, envisioned as a contemporary development with a strong urban presence.
 
@@ -267,7 +463,8 @@ Contemporary Commercial Design - The proposed building features a modern commerc
 
 Proposal & Development Vision - Currently at the proposal stage, the project presents a cohesive redevelopment vision focused on maximizing functionality, commercial potential, and the overall architectural character of the building.`,
     media: [
-      { type: 'video', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/meghali/meghali_walkthrough.mp4?updatedAt=1791104380249", alt: 'Meghali Walkthrough' },
+      { type: 'video', src: "https://ik.imagekit.io/80a9kr2lz/paperspaceStudio/meghali/Meghali%20(1)%20(1).webm", alt: 'Meghali Walkthrough' },
+      { type: 'video', src: "https://ik.imagekit.io/j6tljyacz/Meghali/meghali_walkthrough.mp4", alt: 'Meghali Walkthrough' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/meghali/meghali1.jpg?updatedAt=1791106058433", alt: 'meghali' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/meghali/meghali2.jpg?updatedAt=1791106099296", alt: 'meghali' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/meghali/meghali3.jpg?updatedAt=1791106099405", alt: 'meghali' },
@@ -275,120 +472,24 @@ Proposal & Development Vision - Currently at the proposal stage, the project pre
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/meghali/meghali5.jpg?updatedAt=1791106099706", alt: 'meghali' },
     ]
   },
-  { 
-    id: 13, 
-    title: "Seema Garden", 
-    category: "Architecture – 3D Visualization", 
-    year: "2026",
-    location:"Pune, Maharashtra",
-    currrent_status:"Completed",
-    slug: "seema-garden",
-    description: `Large-Scale Development Vision - A proposal-stage 3D visualization for Mangalam Developers, showcasing the overall vision for a 2.5-acre development in Kothrud, Pune.
-
-WMasterplanning & Built-Form Visualization  - Conceptual visualization illustrating the proposed site planning, building massing, circulation, and overall development potential.
-
-
-Architectural Identity & Presentation  - A contemporary architectural concept developed to establish a distinctive identity and communicate the proposed project through 3D visualization.`,
-    media: [
-      { type: 'video', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/seemagarden/seema_walkthrough.mp4?updatedAt=1791104446865", alt: 'Seema Garden Walkthrough' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/seemagarden/seema1.jpg?updatedAt=1791106156147", alt: 'Seema Garden 1' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/seemagarden/seema2.jpg?updatedAt=1791106156813", alt: 'Seema Garden 2' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/seemagarden/seema3.jpg?updatedAt=1791106157617", alt: 'Seema Garden 3' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/seemagarden/seema4.jpg?updatedAt=1791106157439", alt: 'Seema Garden 4' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/seemagarden/seema5.jpg?updatedAt=1791106157728", alt: 'Seema Garden 5' },
-    ]
-  },
+  
   { 
     id: 15, 
-    title: "Sukhananda", 
+    title: "Sukhananda Heights", 
     category: "Architecture – Design", 
     year: "2026",
     location:"Pune, Maharashtra",
-    currrent_status:"3D Visualization submitted",
+    currrent_status: "Under Planning",
     slug: "sukhananda",
     description: `Redevelopment Vision: A proposed G+7 redevelopment project for Anadi Anand Developers, located near Saraus Bagh, Pune, envisioned as a contemporary urban development with a refined architectural character.
 Building Design & Planning: The proposed building features a modern façade with efficiently planned spaces, balanced massing, smooth circulation, and a strong architectural identity suited to its prominent location.
 
 Project Status: The project is currently in the pre-sanctioning process, with the proposed design and planning being developed as part of the redevelopment proposal.`,
     media: [
-      { type: 'video', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Sukhananda/sukhananda_walkthrough.mp4?updatedAt=1791104157931", alt: 'Sukhananda Walkthrough' },
+      { type: 'video', src: "https://ik.imagekit.io/j6tljyacz/sukhananda/sukhnanda_walkthrough.mp4", alt: 'Sukhananda Walkthrough' },
     ]
   },
-  { 
-    id: 19, 
-    title: "Vishwakarma", 
-    category: "Architecture – Design", 
-    year: "2026",
-    location:"Pune, Maharashtra",
-    currrent_status:"3D Visualization submitted",
-    slug: "vishwakarma",
-    description: `Conceptual Redevelopment Planning- 
-Prepared the conceptual master planning and spatial organization for the proposed 6-acre redevelopment project, establishing the overall development vision, built-form arrangement, and site planning strategy.
-
-
-Planning & Presentation Support - Developed preliminary planning concepts and architectural representations to communicate the proposed redevelopment scheme and overall project organization to Anadi Anant & PBA PMC and relevant stakeholders.
-
-
-Redevelopment Feasibility Representation - Provided conceptual architectural inputs and development representations illustrating the potential planning approach, site utilization, building configuration, circulation, and overall vision for the proposed 6-acre redevelopment.
-`,
-    media: [
-      { type: 'video', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Vishwakarma/vishwakarma_walkthrough.mp4?updatedAt=1791104157931", alt: 'Vishwakarma Walkthrough' },
-    ]
-  },
-  { 
-    id: 16, 
-    title: "Revive 47 ", 
-    category: "Interior Design", 
-    year: "2026",
-    location:"Karad, Maharashtra",
-    currrent_status:"Completed",
-    slug: "revive-47",
-    description: `Heritage Building Transformation: Renovation and interior design of a stone building constructed in 1947, carefully retaining its original architectural character while adapting the structure for contemporary commercial use.
-Commercial Redevelopment: The existing structure is being transformed into a four-storey commercial building, integrating modern planning, functional spaces, and upgraded building interiors within the historic stone framework.
-
-Contemporary Interior & Renovation: The design combines the building’s original stone character with contemporary interior elements, creating a distinctive commercial environment while respecting the existing structure and its architectural identity.`,
-    media: [
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/mohire1.jpg?updatedAt=1791106217920", alt: 'Mohire Shop Interior' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/mohire2.jpg?updatedAt=1791106217822", alt: 'Mohire Shop Interior' },
-    ]
-  },
-  { 
-    id: 17, 
-    title: "The Calm House ", 
-    category: "Interior Design & Execution", 
-    year: "2026",
-    location:"Pune, Maharashtra",
-    currrent_status:"Under Execution",
-    slug: "the-calm-house",
-    description: `Contemporary Residential Design: A thoughtfully designed 3 BHK residence in Baner, Pune, featuring a simple yet elegant contemporary design language with a warm and sophisticated ambience.
-
-nterior Detailing & Ambience: Carefully designed false ceilings, lighting, finishes, and interior elements create a cohesive and inviting atmosphere while maintaining a clean and modern aesthetic.
-Design & Execution: The project includes complete interior design and execution, translating the design concept into a well-crafted residential space with attention to detail, functionality, and finish quality.
-`,
-    media: [
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/anjali1.jpg?updatedAt=1791106272070", alt: 'Anjali Datar Interior' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/anjali2.jpg?updatedAt=1791106272343", alt: 'Anjali Datar Interior' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/anjali3.jpg?updatedAt=1791106272227", alt: 'Anjali Datar Interior' },
-    ]
-  },
-  { 
-    id: 18, 
-    title: "The Quiet Classic ", 
-    category: "Interior Design & Visualization", 
-    year: "2026",
-    location:"Pune, Maharashtra",
-    currrent_status:"3D Visualization submitted",
-    slug: "the-quiet-classic",
-    description: `Modern–Classic Design Language: A 3 BHK residence in Wakad, Pune, designed with a contemporary aesthetic enriched by subtle influences of traditional and old-world design elements.
-
-Contemporary Spaces with Old-World Character: The interiors blend modern forms, finishes, and detailing with nostalgic elements to create a warm, timeless, and sophisticated residential ambience.
-
-Design & Visualization: The project includes interior design and 3D visualization, presenting the proposed spaces, materials, lighting, and overall design character before execution`,
-    media: [
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/kothawade1.jpg?updatedAt=1791106324763", alt: 'Kothawade Residence Interior' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/kothawade2.jpg?updatedAt=1791106324115", alt: 'Kothawade Residence Interior' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/kothawade3.jpg?updatedAt=1791106324460", alt: 'Kothawade Residence Interior' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/kothawade4.jpg?updatedAt=1791106324802", alt: 'Kothawade Residence Interior' },
-    ]
-  },
+  
+  
+  
 ];

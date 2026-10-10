@@ -10,7 +10,7 @@ export default function FooterContact({ styles, handleLocationClick }) {
       </div>
       <div style={styles.contactItem}>
         <Phone style={styles.contactIcon} size={16} />
-        <span>8855837620</span>
+        <span>9359605919</span>
       </div>
       <div style={styles.contactItem}>
         <MapPin style={styles.contactIcon} size={16} />

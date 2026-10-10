@@ -236,6 +236,7 @@ body, html {
   width: 65%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .slide-content {
@@ -451,6 +452,7 @@ body, html {
     min-height: auto;
   }
 
+  
   .slide-image {
     width: 100%;
     height: 50vh;
@@ -469,6 +471,10 @@ body, html {
   }
 }
 
+video.slide-image {
+  background: #e5e5e5;
+  object-position: center;
+}
 @media (max-width: 768px) {
 
   .hero-video-section {

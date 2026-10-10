@@ -5,9 +5,7 @@ function HeroSection({ CollabAbout }) {
         <div className="hero-text">
           <h1 className="hero-title">About Our Studio</h1>
           <p className="hero-subtitle">
-            We are architects, designers, and builders united by a shared
-            vision: creating spaces that inspire, function beautifully, and
-            stand the test of time.
+            Studio PaperSpace is a Pune-based architecture and interior design studio creating functional, elegant, and thoughtfully designed spaces that blend creativity, practicality, and timeless aesthetics.
           </p>
         </div>
 

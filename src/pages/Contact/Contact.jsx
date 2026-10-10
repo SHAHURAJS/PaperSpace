@@ -209,7 +209,7 @@ function ContactPage() {
                 style={styles.contactText} 
                 onClick={handleWhatsAppClick}
               >
-                8855837620
+                9359605919
               </span>
             </div>
             <div style={styles.contactItem}>

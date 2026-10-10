@@ -234,7 +234,7 @@ function ProjectDetail({ selectedProject, onBack }) {
             <span className="meta-badge">
 
               <span className="meta-label">
-                Current Status
+                Current Status:
               </span>{" "}
 
               {selectedProject.currrent_status}
@@ -262,7 +262,7 @@ function ProjectDetail({ selectedProject, onBack }) {
 
             <ul className="detail-list">
 
-              {selectedProject.description
+              {/* {selectedProject.description
                 .split("\n")
                 .filter(
                   (line) => line.trim() !== ""
@@ -273,7 +273,36 @@ function ProjectDetail({ selectedProject, onBack }) {
                     {line.trim()}
                   </li>
 
-                ))}
+
+                ))} */}
+
+
+
+
+{selectedProject.description
+  .split("\n")
+  .filter((line) => line.trim() !== "")
+  .map((line, index) => {
+    const parts = line.trim().split(/(<strong>.*?<\/strong>)/gi);
+
+    return (
+      <li key={index}>
+        {parts.map((part, i) => {
+          const match = part.match(
+            /^<strong>(.*?)<\/strong>$/i
+          );
+
+          return match ? (
+            <strong key={i}>{match[1]}</strong>
+          ) : (
+            part
+          );
+        })}
+      </li>
+    );
+  })}
+
+
 
             </ul>
 

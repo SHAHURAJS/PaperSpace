@@ -182,11 +182,11 @@ function ProjectsPage({
               </div>
 
 
-              <div
+              {/* <div
                 className={`tab-indicator ${
                   activeTab
                 }`}
-              />
+              /> */}
 
             </div>
 

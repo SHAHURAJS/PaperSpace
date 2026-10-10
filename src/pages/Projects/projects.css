@@ -50,6 +50,7 @@
 
 .tabs-wrapper {
   display: flex;
+  align-items: center;
   gap: 6px;
   position: relative;
   width: fit-content;
@@ -68,7 +69,7 @@
   font-size: 16px;
   font-weight: 500;
   color: #999;
-  transition: all .3s ease-out;
+  transition: background-color 0.3s ease, color 0.3s ease;
   position: relative;
   z-index: 2;
   border-radius: 10px;
@@ -78,11 +79,12 @@
 
 .tab-button:hover {
   color: #404040;
-  font-weight: 500;
 }
 
 /* ACTIVE TAB STYLING */
 .tab-button.active {
+  background: #d9d9d9;
+  color: #404040;
   font-weight: 600;
 }
 
@@ -100,15 +102,8 @@
 
 /* Animated Background Indicator */
 .tab-indicator {
-  position: absolute;
-  top: 6px;
-  left: 6px;
-  height: calc(100% - 12px);
-  border-radius: 8px;
-  transition: all .35s cubic-bezier(0.34, 1.56, 0.64, 1);
-  z-index: 1;
+  display: none;
 }
-
 .tab-indicator.architecture {
   background: linear-gradient(135deg, rgba(128, 128, 128, 0.15), rgba(144, 144, 144, 0.15));
   width: calc(50% - 6px);

@@ -18,44 +18,53 @@ function HomePage({ onNavigate }) {
       description: "Set against a scenic mountain backdrop, this wedding destination offers a complete experience with grand halls, dining spaces, guest cottages, and landscaped areas.",
       image: "https://ik.imagekit.io/2ssa5wpda/paperspace/awa/AWA1.webp?updatedAt=1764268202024",
       year: "2024",
-      location: "Maharashtra",
+      location: "Satara",
       slug: "weddingavenue"
     },
     {
-      title: "Shendge Residence",
-      subtitle: "Interior",
-      description: "Modern, cozy, and practical home design featuring smart storage, convertible dining areas, and wooden finishes that make compact spaces feel spacious and warm.",
-      image: "https://ik.imagekit.io/2ssa5wpda/paperspace/1.5bhk/BHK1.webp?updatedAt=1764268201587",
-      year: "2024",
-      location: "Mumbai",
-      slug: "int-1-5-bhk"
-    },
-    {
-      title: "Kadam's Retreat",
-      subtitle: "Architecture",
-      description: "Elegant bungalow reflecting simplicity and sophistication with clean lines, natural textures, and green planters that blend architecture with nature.",
-      image: "https://ik.imagekit.io/2ssa5wpda/paperspace/archb/AB1.webp?updatedAt=1764268201945",
-      year: "2023",
-      location: "Lonavala",
-      slug: "arch-bungalow"
-    },
-    {
-      title: "Konha's Villa",
-      subtitle: "Architecture",
-      description: "Classical elegance meets modern sophistication with tall windows, detailed columns, and a breathtaking double-height lobby featuring a sweeping staircase.",
-      image: "https://ik.imagekit.io/2ssa5wpda/paperspace/db/DB1.webp?updatedAt=1764268201991",
-      year: "2022",
+      title: "TriAxis Commercial",
+      subtitle: "Commercial",
+      description: "A unified commercial development in Pune, combining contemporary architecture, intelligent planning, efficient circulation, and a distinctive urban presence for Anadi Anant & PBA PMC.",
+      image: "https://ik.imagekit.io/j6tljyacz/continental/continent2%20(1).mp4",
+      year: "2026",
       location: "Pune",
-      slug: "doctor-bungalow"
+      slug: "triaxis"
     },
     {
-      title: "Ek Gaon Ek Shivjayanti",
-      subtitle: "Urban",
-      description: "Thoughtful balance between tradition and functionality with ornate arches, carved columns, and cultural significance for community gatherings and seminars.",
+      title: "सहवास",
+      subtitle: "Bunglow",
+      description: "Contemporary architecture with clean geometry, refined materials, spacious balconies, naturally lit interiors, and elegant outdoor living spaces.",
+      image: "https://ik.imagekit.io/2ssa5wpda/paperspace/archb/AB1.webp?updatedAt=1764268201945",
+      year: "2025",
+      location: "Pune",
+      slug: "arch-apex-residence"
+    },
+    {
+      title: "Vishwakarma Co-operative",
+      subtitle: "Residential",
+      description: "Conceptual master planning for a 6-acre redevelopment, integrating site utilization, building configuration, circulation, feasibility representation, and architectural presentation.",
+      image: "https://ik.imagekit.io/j6tljyacz/vishwakarma/vishwakarma_walkthrough.mp4",
+      year: "2026",
+      location: "Pune",
+      slug: "vishwakarma"
+    },
+    {
+      title: "Revive 47",
+      subtitle: "Commercial - Interior",
+      description: "Renovation of a 1947 stone heritage building into a four-storey commercial space, blending historic character with contemporary architecture and functional interiors.",
       image: "https://ik.imagekit.io/2ssa5wpda/paperspace/shivjayanti/Jayanti1.webp?updatedAt=1764268201915",
-      year: "2023",
-      location: "Rural Maharashtra",
-      slug: "int-ek-gaon-ek-shivjayanti"
+      year: "2026",
+      location: "Karad",
+      slug: "revive-47"
+    },
+    {
+      title: "The Calm House",
+      subtitle: "Residential - Interior",
+      description: "Contemporary 3 BHK residence in Baner, Pune, featuring elegant interiors, thoughtful lighting, refined finishes, and functional design with warm ambience.",
+      image: "https://ik.imagekit.io/2ssa5wpda/paperspace/shivjayanti/Jayanti1.webp?updatedAt=1764268201915",
+      year: "2026",
+      location: "Pune",
+      slug: "the-calm-house"
     }
   ];
 
