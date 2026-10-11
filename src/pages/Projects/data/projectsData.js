@@ -515,7 +515,7 @@ Project Status: The project is currently in the pre-sanctioning process, with th
     title: "Villa Lumin", 
     category: "Architecture – Design", 
     year: "2026",
-    location:"Pune, Maharashtra",
+    location:"Shegaon, Maharashtra",
     currrent_status: "Under Construction",
     slug: "villa-lumin",
     description: `An ongoing residential bungalow construction in Shegaon featuring a sleek, contemporary vertical facade with elegant geometric blocking.
@@ -537,7 +537,7 @@ Designed with large floor-to-ceiling glass windows and full-height glazing that 
     title: "Atrium 26", 
     category: "Architecture – Design", 
     year: "2026",
-    location:"Pune, Maharashtra",
+    location:"Shegaon, Maharashtra",
     currrent_status: "Under Construction",
     slug: "atrium-26",
     description: `⁠A modern under-construction development in Shegaon combining commercial, institutional, and residential spaces into a cohesive multi-functional building. 
@@ -556,7 +556,7 @@ Designed with large floor-to-ceiling glass windows and full-height glazing that 
     title: "The Apex Karad", 
     category: "Architecture – Design", 
     year: "2026",
-    location:"Pune, Maharashtra",
+    location:"Karad, Maharashtra",
     currrent_status: "Sanctioned and Ready for Construction",
     slug: "the-apex-karad",
     description: `A multi-storey modern commercial development currently in the sanctioning stage, designed for corporate offices, retail spaces, or professional suites.
