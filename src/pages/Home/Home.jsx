@@ -34,7 +34,7 @@ function HomePage({ onNavigate }) {
       title: "सहवास",
       subtitle: "Bunglow",
       description: "Contemporary architecture with clean geometry, refined materials, spacious balconies, naturally lit interiors, and elegant outdoor living spaces.",
-      image: "https://ik.imagekit.io/2ssa5wpda/paperspace/archb/AB1.webp?updatedAt=1764268201945",
+      image: "https://ik.imagekit.io/2ssa5wpda/paperspace/Pradhikaran/BScene%2016.webp?updatedAt=1764411265644",
       year: "2025",
       location: "Pune",
       slug: "arch-apex-residence"
@@ -52,7 +52,7 @@ function HomePage({ onNavigate }) {
       title: "Revive 47",
       subtitle: "Commercial - Interior",
       description: "Renovation of a 1947 stone heritage building into a four-storey commercial space, blending historic character with contemporary architecture and functional interiors.",
-      image: "https://ik.imagekit.io/2ssa5wpda/paperspace/shivjayanti/Jayanti1.webp?updatedAt=1764268201915",
+      image: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire27.webp?updatedAt=1791643246067",
       year: "2026",
       location: "Karad",
       slug: "revive-47"
@@ -61,7 +61,7 @@ function HomePage({ onNavigate }) {
       title: "The Calm House",
       subtitle: "Residential - Interior",
       description: "Contemporary 3 BHK residence in Baner, Pune, featuring elegant interiors, thoughtful lighting, refined finishes, and functional design with warm ambience.",
-      image: "https://ik.imagekit.io/2ssa5wpda/paperspace/shivjayanti/Jayanti1.webp?updatedAt=1764268201915",
+      image: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali1.webp?updatedAt=1791645734961",
       year: "2026",
       location: "Pune",
       slug: "the-calm-house"

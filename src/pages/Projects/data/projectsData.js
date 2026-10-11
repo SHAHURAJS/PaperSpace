@@ -128,24 +128,23 @@ Warm Material Palette Inspired by Tradition – Rich woods, cane textures, and e
 Functional Living with Cultural Nuance – The suspended seating, illuminated shelving, and streamlined layout offer modern functionality, while curated décor elements and material choices add a refined South Indian character.
 `,
     media: [
-       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%201_3.webp?updatedAt=1764411313004", alt: 'door two' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%204.webp?updatedAt=1764411313627", alt: 'Hall with Swing' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%209.webp?updatedAt=1764411315310", alt: 'Kitchen one' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%202.webp?updatedAt=1764411309856", alt: 'hall six' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%201_2.webp?updatedAt=1764411315353", alt: 'Door One' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%201_3.webp?updatedAt=1764411313004", alt: 'door two' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%203.webp?updatedAt=1764411315153", alt: 'Hall Two' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%2013.webp?updatedAt=1764411313971", alt: 'Kitchen Two' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%2015.webp?updatedAt=1764411313903", alt: 'Kitchen Three' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%2010.webp?updatedAt=1764411313865", alt: 'Kitchen Four' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%204.webp?updatedAt=1764411313627", alt: 'Hall with Swing' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%207.webp?updatedAt=1764411313862", alt: 'TV Unit' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%204.webp?updatedAt=1764411313627", alt: 'swing two' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%208.webp?updatedAt=1764411313596", alt: 'hall three' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%205.webp?updatedAt=1764411313311", alt: 'hall four' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%2011.webp?updatedAt=1764411313330", alt: 'kitchen three' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%206.webp?updatedAt=1764411313213", alt: 'hall five' },
-     
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%2011.webp?updatedAt=1764411313330", alt: 'kitchen three' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%2012.webp?updatedAt=1764411311961", alt: 'kitchen four' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%2014.webp?updatedAt=1764411311457", alt: 'kitchen five' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%202.webp?updatedAt=1764411309856", alt: 'hall six' },
+      // { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%2014.webp?updatedAt=1764411311457", alt: 'kitchen five' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%209.webp?updatedAt=1764411315310", alt: 'Kitchen one' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%2013.webp?updatedAt=1764411313971", alt: 'Kitchen Two' },
+      // { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%2015.webp?updatedAt=1764411313903", alt: 'Kitchen Three' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Baner/22Scene%2010.webp?updatedAt=1764411313865", alt: 'Kitchen Four' },
     ]
   },
   
@@ -162,6 +161,8 @@ Commercial Redevelopment: The existing structure is being transformed into a fou
 
 Contemporary Interior & Renovation: The design combines the building’s original stone character with contemporary interior elements, creating a distinctive commercial environment while respecting the existing structure and its architectural identity.`,
     media: [
+       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire31.webp?updatedAt=1791643246065", alt: 'Mohire Shop Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire30.webp?updatedAt=1791643246095", alt: 'Mohire Shop Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire1.webp?updatedAt=1791643245081", alt: 'Mohire Shop Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire10.webp?updatedAt=1791643245554", alt: 'Mohire Shop Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire11.webp?updatedAt=1791643245433", alt: 'Mohire Shop Interior' },
@@ -185,8 +186,8 @@ Contemporary Interior & Renovation: The design combines the building’s origina
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire28.webp?updatedAt=1791643245501", alt: 'Mohire Shop Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire29.webp?updatedAt=1791643245513", alt: 'Mohire Shop Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire3.webp?updatedAt=1791643245685", alt: 'Mohire Shop Interior' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire30.webp?updatedAt=1791643246095", alt: 'Mohire Shop Interior' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire31.webp?updatedAt=1791643246065", alt: 'Mohire Shop Interior' },
+
+     
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire32.webp?updatedAt=1791643245720", alt: 'Mohire Shop Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire33.webp?updatedAt=1791643245020", alt: 'Mohire Shop Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire34.webp?updatedAt=1791643245574", alt: 'Mohire Shop Interior' },
@@ -217,20 +218,34 @@ Design & Execution: The project includes complete interior design and execution,
 `,
     media: [
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali1.webp?updatedAt=1791645734961", alt: 'Anjali Datar Interior' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali10.webp?updatedAt=1791645735761", alt: 'Anjali Datar Interior' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali11.webp?updatedAt=1791645736079", alt: 'Anjali Datar Interior' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali12.webp?updatedAt=1791645735790", alt: 'Anjali Datar Interior' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali13.webp?updatedAt=1791645736151", alt: 'Anjali Datar Interior' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali14.webp?updatedAt=1791645735652", alt: 'Anjali Datar Interior' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali15.webp?updatedAt=1791645736108", alt: 'Anjali Datar Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali19.webp?updatedAt=1791721459242", alt: 'Anjali Datar Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali20.webp?updatedAt=1791721459235", alt: 'Anjali Datar Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali21.webp?updatedAt=1791721459257", alt: 'Anjali Datar Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali2.webp?updatedAt=1791645734861", alt: 'Anjali Datar Interior' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali3.webp?updatedAt=1791645735055", alt: 'Anjali Datar Interior' },
+      
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali4.webp?updatedAt=1791645735369", alt: 'Anjali Datar Interior' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali5.webp?updatedAt=1791645735950", alt: 'Anjali Datar Interior' },
+      // { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali5.webp?updatedAt=1791645735950", alt: 'Anjali Datar Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali6.webp?updatedAt=1791645736012", alt: 'Anjali Datar Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali7.webp?updatedAt=1791645735659", alt: 'Anjali Datar Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali8.webp?updatedAt=1791645735205", alt: 'Anjali Datar Interior' },
-      { type: 'image', src: "", alt: 'Anjali Datar Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Scene%2030.webp", alt: 'Anjali Datar Interior' },
+      
+      
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali27.webp?updatedAt=1791721459013", alt: 'Anjali Datar Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali26.webp?updatedAt=1791721458904", alt: 'Anjali Datar Interior' },
+      
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali10.webp?updatedAt=1791645735761", alt: 'Anjali Datar Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali11.webp?updatedAt=1791645736079", alt: 'Anjali Datar Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali23.webp?updatedAt=1791721459434", alt: 'Anjali Datar Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali12.webp?updatedAt=1791645735790", alt: 'Anjali Datar Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali14.webp?updatedAt=1791645735652", alt: 'Anjali Datar Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali13.webp?updatedAt=1791645736151", alt: 'Anjali Datar Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali24.webp?updatedAt=1791721459074", alt: 'Anjali Datar Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali25.webp?updatedAt=1791721459107", alt: 'Anjali Datar Interior' },
+      
+      // { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali22.webp?updatedAt=1791721458827", alt: 'Anjali Datar Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali15.webp?updatedAt=1791645736108", alt: 'Anjali Datar Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali3.webp?updatedAt=1791645735055", alt: 'Anjali Datar Interior' },
     ]
   },
   { 
@@ -248,17 +263,19 @@ Contemporary Spaces with Old-World Character: The interiors blend modern forms, 
 Design & Visualization: The project includes interior design and 3D visualization, presenting the proposed spaces, materials, lighting, and overall design character before execution`,
     media: [
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade1.webp?updatedAt=1791644792476", alt: 'Kothawade Residence Interior' },
+       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade9.webp?updatedAt=1791644795621", alt: 'Kothawade Residence Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade10.webp?updatedAt=1791644794965", alt: 'Kothawade Residence Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade11.webp?updatedAt=1791644794783", alt: 'Kothawade Residence Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade12.webp?updatedAt=1791644795687", alt: 'Kothawade Residence Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade13.webp?updatedAt=1791644795693", alt: 'Kothawade Residence Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade14.webp?updatedAt=1791644795033", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade28.webp?updatedAt=1791644795060", alt: 'Kothawade Residence Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade15.webp?updatedAt=1791644794899", alt: 'Kothawade Residence Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade16.webp?updatedAt=1791644794981", alt: 'Kothawade Residence Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade17.webp?updatedAt=1791644795000", alt: 'Kothawade Residence Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade18.webp?updatedAt=1791644795313", alt: 'Kothawade Residence Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade19.webp?updatedAt=1791644792788", alt: 'Kothawade Residence Interior' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade2.webp?updatedAt=1791644792601", alt: 'Kothawade Residence Interior' },
+      
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade20.webp?updatedAt=1791644795112", alt: 'Kothawade Residence Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade21.webp?updatedAt=1791644795251", alt: 'Kothawade Residence Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade22.webp?updatedAt=1791644794930", alt: 'Kothawade Residence Interior' },
@@ -266,8 +283,8 @@ Design & Visualization: The project includes interior design and 3D visualizatio
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade24.webp?updatedAt=1791644794875", alt: 'Kothawade Residence Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade25.webp?updatedAt=1791644795536", alt: 'Kothawade Residence Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade26.webp?updatedAt=1791644794992", alt: 'Kothawade Residence Interior' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade27.webp?updatedAt=1791644795366", alt: 'Kothawade Residence Interior' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade28.webp?updatedAt=1791644795060", alt: 'Kothawade Residence Interior' },
+      // { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade27.webp?updatedAt=1791644795366", alt: 'Kothawade Residence Interior' },
+      
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade29.webp?updatedAt=1791644795298", alt: 'Kothawade Residence Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade3.webp?updatedAt=1791644792682", alt: 'Kothawade Residence Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade30.webp?updatedAt=1791644795643", alt: 'Kothawade Residence Interior' },
@@ -277,17 +294,18 @@ Design & Visualization: The project includes interior design and 3D visualizatio
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade34.webp?updatedAt=1791644795207", alt: 'Kothawade Residence Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade35.webp?updatedAt=1791644795674", alt: 'Kothawade Residence Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade36.webp?updatedAt=1791644795657", alt: 'Kothawade Residence Interior' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade37.webp?updatedAt=1791644795454", alt: 'Kothawade Residence Interior' },
+      // { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade37.webp?updatedAt=1791644795454", alt: 'Kothawade Residence Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade38.webp?updatedAt=1791644795570", alt: 'Kothawade Residence Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade39.webp?updatedAt=1791644795728", alt: 'Kothawade Residence Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade4.webp?updatedAt=1791644792572", alt: 'Kothawade Residence Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade40.webp?updatedAt=1791644794791", alt: 'Kothawade Residence Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade41.webp?updatedAt=1791644795451", alt: 'Kothawade Residence Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade5.webp?updatedAt=1791644793168", alt: 'Kothawade Residence Interior' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade2.webp?updatedAt=1791644792601", alt: 'Kothawade Residence Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade6.webp?updatedAt=1791644792754", alt: 'Kothawade Residence Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade7.webp?updatedAt=1791644793946", alt: 'Kothawade Residence Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade8.webp?updatedAt=1791644793279", alt: 'Kothawade Residence Interior' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kothawade/Kothawade9.webp?updatedAt=1791644795621", alt: 'Kothawade Residence Interior' },
+     
     ]
   },
   
@@ -403,24 +421,26 @@ Thoughtfully designed living, dining, and kitchen spaces with smart storage, sub
 Comfortable, versatile bedrooms featuring soothing palettes, accent elements, and flexible layouts suitable for adults, kids, guests, or study use.`,
     media: [
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B17.webp?updatedAt=1764268201900", alt: 'Living & Dining Area' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B16.webp?updatedAt=1764268201869", alt: 'Master Bedroom' },
+      // { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B1.webp?updatedAt=1764268201827", alt: 'Master Bedroom' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B18.webp?updatedAt=1764268201849", alt: 'Master Bedroom' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B19.webp?updatedAt=1764268201718", alt: 'Master Bedroom' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B15.webp?updatedAt=1764268201824", alt: 'Master Bedroom' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B12.webp?updatedAt=1764268201641", alt: 'Master Bedroom' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B13.webp?updatedAt=1764268201863", alt: 'Master Bedroom' },
+      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B14.webp?updatedAt=1764268201690", alt: 'Master Bedroom' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B2.webp?updatedAt=1764268201829", alt: 'Modern Kitchen' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B3.webp?updatedAt=1764268201655", alt: 'Master Bedroom' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B4.webp?updatedAt=1764268201817", alt: 'Master Bedroom' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B5.webp?updatedAt=1764268201754", alt: 'Master Bedroom' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B6.webp?updatedAt=1764268201902", alt: 'Master Bedroom' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B7.webp?updatedAt=1764268201747", alt: 'Master Bedroom' },
+      // { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B6.webp?updatedAt=1764268201902", alt: 'Master Bedroom' },
+      // { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B7.webp?updatedAt=1764268201747", alt: 'Master Bedroom' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B8.webp?updatedAt=1764268201877", alt: 'Master Bedroom' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B9.webp?updatedAt=1764268201835", alt: 'Master Bedroom' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B10.webp?updatedAt=1764268201921", alt: 'Master Bedroom' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B11.webp?updatedAt=1764268201899", alt: 'Master Bedroom' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B12.webp?updatedAt=1764268201641", alt: 'Master Bedroom' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B13.webp?updatedAt=1764268201863", alt: 'Master Bedroom' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B14.webp?updatedAt=1764268201690", alt: 'Master Bedroom' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B15.webp?updatedAt=1764268201824", alt: 'Master Bedroom' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B16.webp?updatedAt=1764268201869", alt: 'Master Bedroom' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B1.webp?updatedAt=1764268201827", alt: 'Master Bedroom' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B18.webp?updatedAt=1764268201849", alt: 'Master Bedroom' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B19.webp?updatedAt=1764268201718", alt: 'Master Bedroom' },
+      // { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/2bhk/B11.webp?updatedAt=1764268201899", alt: 'Master Bedroom' },
+      
+      
     ]
   },
   { 
@@ -490,6 +510,65 @@ Project Status: The project is currently in the pre-sanctioning process, with th
     ]
   },
   
+  { 
+    id: 16, 
+    title: "Villa Lumin", 
+    category: "Architecture – Design", 
+    year: "2026",
+    location:"Pune, Maharashtra",
+    currrent_status: "Under Construction",
+    slug: "villa-lumin",
+    description: `An ongoing residential bungalow construction in Shegaon featuring a sleek, contemporary vertical facade with elegant geometric blocking.
+
+Designed with large floor-to-ceiling glass windows and full-height glazing that offer expansive views and fill interior spaces with natural light.
+
+
+⁠​ Incorporates built-in planter boxes, private outdoor balcony spaces, and a top-level open terrace for outdoor living and relaxation.
+ ⁠​Features a dedicated covered parking with a modern entrance gate, seamlessly integrated into the private residence layout.
+`,
+    media: [
+      { type: 'image', src: "https://ik.imagekit.io/2na4gcopf/paperspace/varun/varun.jpg?updatedAt=1791719229297", alt: 'Varun Walkthrough' },
+      { type: 'image', src: "https://ik.imagekit.io/2na4gcopf/paperspace/varun/varun2.jpg?updatedAt=1791719229351", alt: 'Varun Walkthrough' },
+      { type: 'image', src: "https://ik.imagekit.io/2na4gcopf/paperspace/varun/varun3.jpg?updatedAt=1791719229880", alt: 'Varun Walkthrough' },
+    ]
+  },
+  { 
+    id: 17, 
+    title: "Atrium 26", 
+    category: "Architecture – Design", 
+    year: "2026",
+    location:"Pune, Maharashtra",
+    currrent_status: "Under Construction",
+    slug: "atrium-26",
+    description: `⁠A modern under-construction development in Shegaon combining commercial, institutional, and residential spaces into a cohesive multi-functional building. 
+ ⁠Designed for high street-level foot traffic with space for retail shops, medical clinics/pharmacies, and customer-facing outlets.
+ ⁠Features adaptable layouts for institutional facilities, halls, offices, and private residential spaces.  
+ ⁠Highlights an exposed brick facade, stylish jali screens, large glass shopfronts, and a central vertical stair tower.`,
+    media: [
+      { type: 'image', src: "https://ik.imagekit.io/2na4gcopf/paperspace/shegaon/shegaon.jpg?updatedAt=1791719035992", alt: 'Shegaon Walkthrough' },
+      { type: 'image', src: "https://ik.imagekit.io/2na4gcopf/paperspace/shegaon/shegaon1.jpg?updatedAt=1791719035999", alt: 'Shegaon Walkthrough' },
+      { type: 'image', src: "https://ik.imagekit.io/2na4gcopf/paperspace/shegaon/shegaon2.jpg?updatedAt=1791719035977", alt: 'Shegaon Walkthrough' },
+    ]
+  },
+  
+  { 
+    id: 18, 
+    title: "The Apex Karad", 
+    category: "Architecture – Design", 
+    year: "2026",
+    location:"Pune, Maharashtra",
+    currrent_status: "Sanctioned and Ready for Construction",
+    slug: "the-apex-karad",
+    description: `A multi-storey modern commercial development currently in the sanctioning stage, designed for corporate offices, retail spaces, or professional suites.
+⁠​Features a sophisticated asymmetrical design with warm wooden/metallic accents, deep horizontal floor slabs, and a prominent vertical dividing element.
+ ⁠​Integrates lush planter boxes across multiple balcony levels, enhancing aesthetic appeal while promoting natural cooling and urban greenery.
+Outfitted with expansive modern glass facades that maximize natural daylighting and provide excellent street-side visibility for businesses.`,
+    media: [
+      { type: 'image', src: "https://ik.imagekit.io/2na4gcopf/paperspace/lakhole/lakhole.jpg?updatedAt=1791719262962", alt: 'Lakhole Walkthrough' },
+      { type: 'image', src: "https://ik.imagekit.io/2na4gcopf/paperspace/lakhole/lakhole2.jpg?updatedAt=1791719262931", alt: 'Lakhole Walkthrough' },
+      
+    ]
+  },
   
   
 ];
