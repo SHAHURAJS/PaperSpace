@@ -17,7 +17,7 @@ A thoughtfully designed commercial development at a prime location in Pune City.
 `,
     media: [
       { type: 'video', src: "https://ik.imagekit.io/j6tljyacz/continental/continent2%20(1).mp4", alt: 'Continental Walkthrough' },
-      { type: 'video', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/Continental/continental_walkthrough.mp4?updatedAt=1791104157931", alt: 'Continental Walkthrough' },
+      { type: 'video', src: "https://ik.imagekit.io/2na4gcopf/paperspace/triaxis/continental_walkthrough%20(1).webm", alt: 'Continental Walkthrough' },
     ]
   },
 
@@ -80,7 +80,7 @@ Masterplanning & Built-Form Visualization - Conceptual visualization illustratin
 Architectural Identity & Presentation - A contemporary architectural concept developed to establish a distinctive identity and communicate the proposed project through <strong>3D visualization</strong>.`,
     media: [
       { type: 'video', src: "https://ik.imagekit.io/80a9kr2lz/paperspaceStudio/seema/Seema2.mp4", alt: 'Seema Garden Walkthrough' },
-      { type: 'video', src: "https://ik.imagekit.io/80a9kr2lz/paperspaceStudio/seema/Seema4.mp4", alt: 'Seema Garden Walkthrough' },
+      { type: 'video', src: "https://ik.imagekit.io/80a9kr2lz/paperspaceStudio/seema/Seema4%20(1).mp4", alt: 'Seema Garden Walkthrough' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/seemagarden/seema1.jpg?updatedAt=1791106156147", alt: 'Seema Garden 1' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/seemagarden/seema2.jpg?updatedAt=1791106156813", alt: 'Seema Garden 2' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/seemagarden/seema3.jpg?updatedAt=1791106157617", alt: 'Seema Garden 3' },
@@ -230,7 +230,7 @@ Design & Execution: The project includes complete interior design and execution,
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali6.webp?updatedAt=1791645736012", alt: 'Anjali Datar Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali7.webp?updatedAt=1791645735659", alt: 'Anjali Datar Interior' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali8.webp?updatedAt=1791645735205", alt: 'Anjali Datar Interior' },
-      { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali9.webp?updatedAt=1791645735856", alt: 'Anjali Datar Interior' },
+      { type: 'image', src: "", alt: 'Anjali Datar Interior' },
     ]
   },
   { 
@@ -441,7 +441,7 @@ Integration of an innovative automated robotic parking system to optimize parkin
 `,
     media: [
       { type: 'video', src: "https://ik.imagekit.io/80a9kr2lz/paperspaceStudio/kamala/kamala%20(1)%20(1).webm", alt: 'Continental Walkthrough' },
-      { type: 'video', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/kamla/kamla_walkthrough.mp4?updatedAt=1791104236402", alt: 'Continental Walkthrough' },
+      { type: 'video', src: "https://ik.imagekit.io/80a9kr2lz/paperspaceStudio/kamala/kamla_walkthrough%20(1).mp4?updatedAt=1791712387612", alt: 'Continental Walkthrough' },
     ]
   },
   
