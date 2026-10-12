@@ -7,7 +7,7 @@ import ProjectsPage from './pages/Projects/Projects';
 import CareerPage from './pages/Career/Career';
 import ContactPage from './pages/Contact/Contact';
 import Footer from './pages/Footer/Footer';
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 
 function updateURL(page, projectSlug = null) {
   let path;
