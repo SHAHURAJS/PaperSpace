@@ -49,14 +49,13 @@ Premium outdoor living experience with an open terrace, contemporary pergola, an
     location:"Pune, Maharashtra",
     currrent_status:"Completed",
     slug: "vishwakarma",
-    description: `Conceptual Redevelopment Planning.
-Prepared the conceptual master planning and spatial organization for the proposed 6-acre redevelopment project, establishing the overall development vision, built-form arrangement, and site planning strategy.
+    description: `Conceptual Redevelopment Visualization.
 
 
-Planning & Presentation Support - Developed preliminary planning concepts and architectural representations to communicate the proposed redevelopment scheme and overall project organization to Anadi Anant & PBA PMC and relevant stakeholders.
+ Presentation Support - Developed preliminary visualization concepts and architectural representations to communicate the proposed redevelopment scheme and overall project organization for Anadi Anant & PBA PMC and relevant stakeholders.
 
 
-Redevelopment Feasibility Representation - Provided conceptual architectural inputs and development representations illustrating the potential planning approach, site utilization, building configuration, circulation, and overall vision for the proposed 6-acre redevelopment.
+Redevelopment Feasibility Representation - Visualised conceptual architectural inputs and development representations illustrating the potential planning approach, site utilization, building configuration, circulation, and overall vision for the proposed 6-acre redevelopment.
 `,
     media: [
       { type: 'video', src: "https://ik.imagekit.io/j6tljyacz/vishwakarma/vishwakarma_walkthrough.mp4", alt: 'Vishwakarma Walkthrough' },
@@ -475,7 +474,7 @@ Integration of an innovative automated robotic parking system to optimize parkin
     location:"Pune, Maharashtra",
     currrent_status: "Proposal",
     slug: "meghali",
-    description: `Commercial Redevelopment - A proposed commercial redevelopment project for Anadi Anand Developers near Karve Putala, Pune, envisioned as a contemporary development with a strong urban presence.
+    description: `Commercial Redevelopment - A proposed commercial redevelopment project for Anadi Anant Developers near Karve Putala, Pune, envisioned as a contemporary development with a strong urban presence.
 
 
 Contemporary Commercial Design - The proposed building features a modern commercial façade with thoughtfully planned spaces, efficient circulation, and a distinct architectural identity suited to its prominent urban setting.
@@ -493,22 +492,7 @@ Proposal & Development Vision - Currently at the proposal stage, the project pre
     ]
   },
   
-  { 
-    id: 15, 
-    title: "Sukhananda Heights", 
-    category: "Architecture – Design", 
-    year: "2026",
-    location:"Pune, Maharashtra",
-    currrent_status: "Under Planning",
-    slug: "sukhananda",
-    description: `Redevelopment Vision: A proposed G+7 redevelopment project for Anadi Anand Developers, located near Saraus Bagh, Pune, envisioned as a contemporary urban development with a refined architectural character.
-Building Design & Planning: The proposed building features a modern façade with efficiently planned spaces, balanced massing, smooth circulation, and a strong architectural identity suited to its prominent location.
-
-Project Status: The project is currently in the pre-sanctioning process, with the proposed design and planning being developed as part of the redevelopment proposal.`,
-    media: [
-      { type: 'video', src: "https://ik.imagekit.io/j6tljyacz/sukhananda/sukhnanda_walkthrough.mp4", alt: 'Sukhananda Walkthrough' },
-    ]
-  },
+  
   
   { 
     id: 16, 
@@ -532,6 +516,22 @@ Designed with large floor-to-ceiling glass windows and full-height glazing that 
       { type: 'image', src: "https://ik.imagekit.io/2na4gcopf/paperspace/varun/varun3.jpg?updatedAt=1791719229880", alt: 'Varun Walkthrough' },
     ]
   },
+{ 
+    id: 15, 
+    title: "Sukhananda Heights", 
+    category: "Architecture – Design", 
+    year: "2026",
+    location:"Pune, Maharashtra",
+    currrent_status: "Under Planning",
+    slug: "sukhananda",
+    description: `Redevelopment Vision: A proposed G+7 redevelopment project for Anadi Anant Developers, located near Saraus Bagh, Pune, envisioned as a contemporary urban development with a refined architectural character.
+Building Design & Planning: The proposed building features a modern façade with efficiently planned spaces, balanced massing, smooth circulation, and a strong architectural identity suited to its prominent location.
+
+Project Status: The project is currently in the pre-sanctioning process, with the proposed design and planning being developed as part of the redevelopment proposal.`,
+    media: [
+      { type: 'video', src: "https://ik.imagekit.io/j6tljyacz/sukhananda/sukhnanda_walkthrough.mp4", alt: 'Sukhananda Walkthrough' },
+    ]
+  },
   { 
     id: 17, 
     title: "Atrium 26", 
@@ -550,7 +550,7 @@ Designed with large floor-to-ceiling glass windows and full-height glazing that 
       { type: 'image', src: "https://ik.imagekit.io/2na4gcopf/paperspace/shegaon/shegaon2.jpg?updatedAt=1791719035977", alt: 'Shegaon Walkthrough' },
     ]
   },
-  
+     
   { 
     id: 18, 
     title: "The Apex Karad", 
