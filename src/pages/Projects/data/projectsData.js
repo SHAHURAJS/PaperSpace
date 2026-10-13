@@ -16,7 +16,7 @@ Intelligent planning to maximize development potential while ensuring efficient 
 A thoughtfully designed commercial development at a prime location in Pune City. The design emphasizes modern architecture, efficient urban integration, and a distinctive commercial presence.
 `,
     media: [
-      { type: 'video', src: "https://pub-37ec5dbefb624d3f960724d1047cb7c2.r2.dev/TriAxis.webm", alt: 'Continental Walkthrough' },
+      { type: 'video', src: "https://media.studiopaperspace.in/TriAxis.webm", alt: 'Continental Walkthrough' },
       { type: 'video', src: "https://ik.imagekit.io/2na4gcopf/paperspace/triaxis/continental_walkthrough%20(1).webm", alt: 'Continental Walkthrough' },
     ]
   },
@@ -58,7 +58,7 @@ Premium outdoor living experience with an open terrace, contemporary pergola, an
 Redevelopment Feasibility Representation - Visualised conceptual architectural inputs and development representations illustrating the potential planning approach, site utilization, building configuration, circulation, and overall vision for the proposed 6-acre redevelopment.
 `,
     media: [
-      { type: 'video', src: "https://pub-37ec5dbefb624d3f960724d1047cb7c2.r2.dev/Vishwakarma/Vishwakarm_preview.webm", alt: 'Vishwakarma Walkthrough' },
+      { type: 'video', src: "https://media.studiopaperspace.in/Vishwakarma/Vishwakarm_preview.webm", alt: 'Vishwakarma Walkthrough' },
     ]
   },
 
@@ -78,7 +78,7 @@ Masterplanning & Built-Form Visualization - Conceptual visualization illustratin
 
 Architectural Identity & Presentation - A contemporary architectural concept developed to establish a distinctive identity and communicate the proposed project through <strong>3D visualization</strong>.`,
     media: [
-      { type: 'video', src: "https://pub-37ec5dbefb624d3f960724d1047cb7c2.r2.dev/Seema_garden/Seema_garden_preview.webm", alt: 'Seema Garden Walkthrough' },
+      { type: 'video', src: "https://media.studiopaperspace.in/Seema_garden/Seema_garden_preview.webm", alt: 'Seema Garden Walkthrough' },
       { type: 'video', src: "https://ik.imagekit.io/2na4gcopf/paperspace/seema/Seema4%20(1).mp4", alt: 'Seema Garden Walkthrough' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/seemagarden/seema1.jpg?updatedAt=1791106156147", alt: 'Seema Garden 1' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/seemagarden/seema2.jpg?updatedAt=1791106156813", alt: 'Seema Garden 2' },
@@ -459,7 +459,7 @@ Thoughtfully planned commercial spaces with optimized layouts and efficient vert
 Integration of an innovative automated robotic parking system to optimize parking capacity. Designed to minimize space requirements while enhancing convenience and operational efficiency.
 `,
     media: [
-      { type: 'video', src: "https://pub-37ec5dbefb624d3f960724d1047cb7c2.r2.dev/Vertex_One/vertex_preview.webm", alt: 'Continental Walkthrough' },
+      { type: 'video', src: "https://media.studiopaperspace.in/Vertex_One/vertex_preview.webm", alt: 'Continental Walkthrough' },
       { type: 'video', src: "https://ik.imagekit.io/2na4gcopf/paperspace/vertex/kamla_walkthrough%20(1).mp4", alt: 'Continental Walkthrough' },
     ]
   },
@@ -482,7 +482,7 @@ Contemporary Commercial Design - The proposed building features a modern commerc
 
 Proposal & Development Vision - Currently at the proposal stage, the project presents a cohesive redevelopment vision focused on maximizing functionality, commercial potential, and the overall architectural character of the building.`,
     media: [
-      { type: 'video', src: "https://pub-37ec5dbefb624d3f960724d1047cb7c2.r2.dev/City_nexus/city_nexus_preview.webm", alt: 'Meghali Walkthrough' },
+      { type: 'video', src: "https://media.studiopaperspace.in/City_nexus/city_nexus_preview.webm", alt: 'Meghali Walkthrough' },
       { type: 'video', src: "https://ik.imagekit.io/j6tljyacz/Meghali/meghali_walkthrough.mp4", alt: 'Meghali Walkthrough' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/meghali/meghali1.jpg?updatedAt=1791106058433", alt: 'meghali' },
       { type: 'image', src: "https://ik.imagekit.io/2ssa5wpda/paperspace/meghali/meghali2.jpg?updatedAt=1791106099296", alt: 'meghali' },
@@ -529,7 +529,7 @@ Building Design & Planning: The proposed building features a modern façade with
 
 Project Status: The project is currently in the pre-sanctioning process, with the proposed design and planning being developed as part of the redevelopment proposal.`,
     media: [
-      { type: 'video', src: "https://pub-37ec5dbefb624d3f960724d1047cb7c2.r2.dev/Sukhananda_heights/Sukhananda_peview.webm", alt: 'Sukhananda Walkthrough' },
+      { type: 'video', src: "https://media.studiopaperspace.in/Sukhananda_heights/Sukhananda_peview.webm", alt: 'Sukhananda Walkthrough' },
     ]
   },
   { 
