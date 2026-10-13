@@ -25,7 +25,7 @@ function HomePage({ onNavigate }) {
       title: "TriAxis Commercial",
       subtitle: "Commercial",
       description: "A unified commercial development in Pune, combining contemporary architecture, intelligent planning, efficient circulation, and a distinctive urban presence for Anadi Anant & PBA PMC.",
-      image: "https://ik.imagekit.io/j6tljyacz/continental/continent2%20(1).mp4",
+      image: "https://pub-37ec5dbefb624d3f960724d1047cb7c2.r2.dev/TriAxis.webm",
       year: "2026",
       location: "Pune",
       slug: "triaxis"
@@ -43,7 +43,7 @@ function HomePage({ onNavigate }) {
       title: "Vishwakarma Co-operative",
       subtitle: "Residential",
       description: "Conceptual master planning for a 6-acre redevelopment, integrating site utilization, building configuration, circulation, feasibility representation, and architectural presentation.",
-      image: "https://ik.imagekit.io/j6tljyacz/vishwakarma/vishwakarma_walkthrough.mp4",
+      image: "https://pub-37ec5dbefb624d3f960724d1047cb7c2.r2.dev/Vishwakarma/Vishwakarm_preview.webm",
       year: "2026",
       location: "Pune",
       slug: "vishwakarma"
