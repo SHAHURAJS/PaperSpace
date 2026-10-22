@@ -17,7 +17,7 @@ function AboutPage() {
       id: "shounak",
       name: "Ar. Shounak Joshi",
       position: "Client Relation & Execution Head",
-      image: "https://ik.imagekit.io/2ssa5wpda/paperspace/about/Shounak.webp?updatedAt=1764268201734",
+      image: "https://media.studiopaperspace.in/About/shounak.webp",
       quote:
         '"For me, architecture begins with understanding people. Translating a client\'s vision into built form is where our journey truly begins."',
     },
@@ -25,7 +25,7 @@ function AboutPage() {
       id: "pratik",
       name: "Ar. Pratik Bhende",
       position: "Design Head",
-      image: "https://ik.imagekit.io/2ssa5wpda/paperspace/about/Pratik.webp?updatedAt=1764268201882",
+      image: "https://media.studiopaperspace.in/About/pratik.webp",
       quote:
         '"Design is more than aesthetics; it\'s about purpose, context, and experience. I believe in crafting spaces that speak to the soul."',
     },
@@ -33,7 +33,7 @@ function AboutPage() {
       id: "sushant",
       name: "Ar. Sushant Bhujbal",
       position: "Execution, Legal & Liasoning Head",
-      image: "https://ik.imagekit.io/2ssa5wpda/paperspace/about/Sushant.webp?updatedAt=1764268201776",
+      image: "https://media.studiopaperspace.in/About/sushant.webp",
       quote:
         '"Bridging the gap between vision and reality requires not just design, but precision, process, and policy. I ensure ideas stand on solid ground."',
     },
@@ -46,7 +46,7 @@ function AboutPage() {
   return currentView === "main" ? (
     <div className="about-container">
 
-      <HeroSection CollabAbout="https://ik.imagekit.io/2ssa5wpda/paperspace/about/CollabAbout.webp?updatedAt=1764268201851" />
+      <HeroSection CollabAbout="https://media.studiopaperspace.in/About/group.webp" />
 
       <ValuesSection />
 

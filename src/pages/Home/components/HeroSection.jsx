@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 function HeroSection({ onNavigate }) {
 
   // Your video link here
-  const video = "https://ik.imagekit.io/2ssa5wpda/paperspace/home/PaperSpaceHome2.mp4?updatedAt=1764339484942";
+  const video = "https://media.studiopaperspace.in/About/PaperSpaceHome2.webm";
 
   const handleGetStarted = () => onNavigate && onNavigate('contact');
   const handleViewWork = () => onNavigate && onNavigate('projects');
