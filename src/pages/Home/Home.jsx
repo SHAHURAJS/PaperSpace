@@ -16,7 +16,7 @@ function HomePage({ onNavigate }) {
       title: "Vistara Yeravale",
       subtitle: "Hospitality",
       description: "Set against a scenic mountain backdrop, this wedding destination offers a complete experience with grand halls, dining spaces, guest cottages, and landscaped areas.",
-      image: "https://ik.imagekit.io/2ssa5wpda/paperspace/awa/AWA1.webp?updatedAt=1764268202024",
+      image: "https://media.studiopaperspace.in/Architect/vistara/vistara3.webp",
       year: "2024",
       location: "Satara",
       slug: "weddingavenue"
@@ -25,25 +25,25 @@ function HomePage({ onNavigate }) {
       title: "TriAxis Commercial",
       subtitle: "Commercial",
       description: "A unified commercial development in Pune, combining contemporary architecture, intelligent planning, efficient circulation, and a distinctive urban presence for Anadi Anant & PBA PMC.",
-      image: "https://pub-37ec5dbefb624d3f960724d1047cb7c2.r2.dev/TriAxis.webm",
+      image: "https://media.studiopaperspace.in/TriAxis/triaxis%20(1)%20(1).mp4",
       year: "2026",
       location: "Pune",
       slug: "triaxis"
     },
-    {
-      title: "सहवास",
-      subtitle: "Bunglow",
-      description: "Contemporary architecture with clean geometry, refined materials, spacious balconies, naturally lit interiors, and elegant outdoor living spaces.",
-      image: "https://ik.imagekit.io/2ssa5wpda/paperspace/Pradhikaran/BScene%2016.webp?updatedAt=1764411265644",
-      year: "2025",
-      location: "Pune",
-      slug: "arch-apex-residence"
-    },
+    // {
+    //   title: "सहवास",
+    //   subtitle: "Bunglow",
+    //   description: "Contemporary architecture with clean geometry, refined materials, spacious balconies, naturally lit interiors, and elegant outdoor living spaces.",
+    //   image: "https://ik.imagekit.io/2ssa5wpda/paperspace/Pradhikaran/BScene%2016.webp?updatedAt=1764411265644",
+    //   year: "2025",
+    //   location: "Pune",
+    //   slug: "arch-apex-residence"
+    // },
     {
       title: "Vishwakarma Co-operative",
       subtitle: "Residential",
       description: "Conceptual master planning for a 6-acre redevelopment, integrating site utilization, building configuration, circulation, feasibility representation, and architectural presentation.",
-      image: "https://pub-37ec5dbefb624d3f960724d1047cb7c2.r2.dev/Vishwakarma/Vishwakarm_preview.webm",
+      image: "https://media.studiopaperspace.in/Vishwakarma/Vishwakarm_preview-compressed%20(1)%20(1).mp4",
       year: "2026",
       location: "Pune",
       slug: "vishwakarma"
@@ -52,7 +52,7 @@ function HomePage({ onNavigate }) {
       title: "Revive 47",
       subtitle: "Commercial - Interior",
       description: "Renovation of a 1947 stone heritage building into a four-storey commercial space, blending historic character with contemporary architecture and functional interiors.",
-      image: "https://ik.imagekit.io/2ssa5wpda/paperspace/mohire/Mohire27.webp?updatedAt=1791643246067",
+      image: "https://media.studiopaperspace.in/Interior/Revive/revive7.webp",
       year: "2026",
       location: "Karad",
       slug: "revive-47"
@@ -61,7 +61,7 @@ function HomePage({ onNavigate }) {
       title: "The Calm House",
       subtitle: "Residential - Interior",
       description: "Contemporary 3 BHK residence in Baner, Pune, featuring elegant interiors, thoughtful lighting, refined finishes, and functional design with warm ambience.",
-      image: "https://ik.imagekit.io/2ssa5wpda/paperspace/anjali/Anjali1.webp?updatedAt=1791645734961",
+      image: "https://media.studiopaperspace.in/Interior/The%20Calm%20House/calm_house2.webp",
       year: "2026",
       location: "Pune",
       slug: "the-calm-house"
